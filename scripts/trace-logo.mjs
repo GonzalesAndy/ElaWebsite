@@ -81,7 +81,7 @@ const svg = await new Promise((resolve, reject) =>
 const w = meta.width * SCALE;
 const h = meta.height * SCALE;
 const clean = svg
-  .replace(/<svg[^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Aurea — Elena Repka">`)
+  .replace(/<svg[^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Aurea · Elena Repka">`)
   .replace(/<rect[^>]*\/>/, "")
   .replace(/fill="[^"]*"/g, 'fill="currentColor"');
 

@@ -1,21 +1,31 @@
 /* ==========================================================================
-   Serena — design tokens
-   Palette: warm Italian summer. Every text pairing meets WCAG AA (4.5:1+).
+   Aurea design tokens
+   Palette: warm Italian summer (cream, terracotta, olive, apricot).
+   Every text pairing meets WCAG AA (4.5:1 or more); decorative colours are marked.
    ========================================================================== */
 :root {
-  --cream: #f5eee1;        /* page background ("lino") */
-  --cream-2: #ede3d1;      /* alternate section background */
-  --paper: #fbf8f2;        /* cards, inputs */
-  --ink: #2e2622;          /* body text — 13:1 on cream */
-  --ink-soft: #5c4f47;     /* secondary text — 6.8:1 on cream */
-  --terracotta: #a9483a;   /* primary accent — 4.9:1 on cream, white text 5.7:1 */
-  --terracotta-deep: #8e3a2e;
-  --olive: #46694d;        /* secondary accent — 5.4:1 on cream */
-  --olive-deep: #34503a;
-  --apricot: #f4c79b;
-  --bronze: #a27c61;       /* logo colour — decorative, not for body text */      /* decorative only, never text on light */
+  /* Palette */
+  --sage: #46694d;          /* decorative circle (olive) */
+  --olive: #46694d;         /* text & accents: 5.4:1 on cream */
+  --olive-deep: #34503a;    /* featured card; cream text on it 8:1 */
+  --clay-soft: #a9483a;     /* terracotta, decorative */
+  --blush: #f4c79b;         /* apricot: decorative only, never text on light */
+  --blush-light: #f4c79b;   /* apricot as text on olive or over the video */
+
+  /* Surfaces */
+  --cream: #f5eee1;         /* page background ("lino") */
+  --cream-2: #ede3d1;       /* alternate section background */
+  --paper: #fbf8f2;         /* cards, inputs */
+
+  /* Text */
+  --ink: #2e2622;           /* body text: 13:1 on cream */
+  --ink-soft: #5c4f47;      /* secondary text: 6.8:1 on cream */
+  --clay: #a9483a;          /* terracotta accent text & buttons: 4.9:1 on cream, white on it 5.7:1 */
+  --clay-deep: #8e3a2e;     /* button hover */
+
+  --bronze: #a27c61;        /* logo colour, decorative */
   --line: rgba(46, 38, 34, 0.14);
-  --field-border: #8a7b70; /* 3.8:1 on paper — meets non-text contrast */
+  --field-border: #8a7b70;  /* 3.8:1 on paper, meets non-text contrast */
   --glass: rgba(255, 255, 255, 0.24);       /* frosted buttons over the video */
   --glass-hover: rgba(255, 255, 255, 0.34);
 
@@ -23,7 +33,7 @@
   --font-display: var(--ff-cormorant), "Cormorant Garamond", Georgia, serif;
   --font-body: var(--ff-inter), "Helvetica Neue", Helvetica, Arial, sans-serif;
   --body-weight: 300;
-  --display-scale: 1.14;   /* Cormorant runs small — scale headings up to match */
+  --display-scale: 1.14;   /* Cormorant runs small: scale headings up to match */
   --display-tracking: -0.01em;
 
   --frame: clamp(0.5rem, 1.2vw, 1rem);
@@ -37,6 +47,23 @@
 /* Cormorant's 300 is hairline-thin; section headings read better at 400 (the hero stays light) */
 html:not([data-fonts="fraunces"]) :is(.h2, .program-name) {
   font-weight: 400;
+}
+
+/* Cormorant's italic is smaller and lighter than its roman, and much smaller than Inter:
+   give italic accents more weight and size so they match the words around them */
+html:not([data-fonts="fraunces"]) :is(.h2, .hero-title) em {
+  font-weight: 500;
+  font-size: 1.06em;
+}
+
+html:not([data-fonts="fraunces"]) :is(.stat dd, .quote blockquote, .form-success) {
+  font-weight: 400;
+}
+
+html:not([data-fonts="fraunces"]) .about-text p em {
+  font-size: 1.32em;
+  font-weight: 500;
+  line-height: 1;
 }
 
 html[data-fonts="fraunces"] {
@@ -110,13 +137,13 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--terracotta);
+  outline: 2px solid var(--clay);
   outline-offset: 3px;
   border-radius: 6px;
 }
 
 ::selection {
-  background: var(--apricot);
+  background: var(--blush);
   color: var(--ink);
 }
 
@@ -163,7 +190,7 @@ section[id] {
 .h2 em,
 .hero-title em {
   font-variation-settings: "SOFT" 100, "opsz" 144;
-  color: var(--terracotta);
+  color: var(--clay);
 }
 
 .eyebrow {
@@ -175,7 +202,7 @@ section[id] {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--clay);
 }
 
 .eyebrow::before {
@@ -235,12 +262,12 @@ section[id] {
 }
 
 .btn--primary {
-  background: var(--terracotta);
+  background: var(--clay);
   color: #fff;
 }
 
 .btn--primary:hover {
-  background: var(--terracotta-deep);
+  background: var(--clay-deep);
 }
 
 .btn:disabled {
@@ -319,7 +346,7 @@ section[id] {
 
 .site-header.is-solid .pill--accent,
 .site-header.is-solid .pill--accent:hover {
-  background: var(--terracotta);
+  background: var(--clay);
   color: #fff;
 }
 
@@ -613,11 +640,11 @@ section[id] {
 }
 
 .morph-accent {
-  color: var(--apricot);
+  color: var(--blush-light);
 }
 
 .site-header.is-solid .morph-accent {
-  color: var(--terracotta);
+  color: var(--clay);
 }
 
 .show-sm {
@@ -639,7 +666,7 @@ section[id] {
   height: 100%;
   overflow: hidden;
   border-radius: var(--radius-card);
-  /* Fallback while the video loads — a warm sunset wash */
+  /* Fallback while the video loads: a warm sunset wash */
   background: linear-gradient(165deg, #e9b48c 0%, #c97b5e 45%, #6f8a6c 100%);
   color: #fff;
   transform: scale(calc(1 - var(--p) * 0.05));
@@ -670,7 +697,7 @@ section[id] {
 .hero-content {
   position: absolute;
   inset: auto 0 0 0;
-  max-width: 54rem;
+  max-width: 82rem; /* wide enough for "Your next chapter" on one line */
   padding: clamp(1.5rem, 4.5vw, 3.75rem);
   opacity: calc(1 - var(--p) * 1.4);
 }
@@ -694,7 +721,7 @@ section[id] {
 }
 
 .hero-title em {
-  color: var(--apricot);
+  color: var(--blush-light);
 }
 
 .hero-subtitle {
@@ -787,22 +814,22 @@ section[id] {
   pointer-events: none;
 }
 
-.orb--apricot {
+.orb--blush {
   width: 28%;
   aspect-ratio: 1;
   right: -6%;
   bottom: 12%;
-  background: var(--apricot);
+  background: var(--blush);
   mix-blend-mode: multiply;
   animation: float 12s ease-in-out infinite;
 }
 
-.orb--olive {
+.orb--sage {
   width: 12%;
   aspect-ratio: 1;
   left: -3%;
   top: 18%;
-  background: var(--olive);
+  background: var(--sage);
   opacity: 0.85;
   animation: float 14s -4s ease-in-out infinite;
 }
@@ -818,7 +845,7 @@ section[id] {
 
 .about-text em {
   font-family: var(--font-display);
-  font-size: 1.08em;
+  font-size: calc(1.08em * var(--display-scale));
   color: var(--olive);
 }
 
@@ -834,6 +861,7 @@ section[id] {
 .stat {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: flex-end; /* keep the words top-aligned when labels wrap differently */
 }
 
 .stat dd {
@@ -842,7 +870,7 @@ section[id] {
   font-style: italic;
   font-weight: 300;
   line-height: 1.1;
-  color: var(--terracotta);
+  color: var(--clay);
 }
 
 .stat dt {
@@ -950,11 +978,11 @@ section[id] {
   height: 6px;
   margin-top: 0.6em;
   border-radius: 50%;
-  background: var(--terracotta);
+  background: var(--clay);
 }
 
 .program-card--featured .program-points li::before {
-  background: var(--apricot);
+  background: var(--blush);
 }
 
 .program-link {
@@ -962,7 +990,7 @@ section[id] {
   gap: 0.5rem;
   margin-top: auto;
   font-weight: 500;
-  color: var(--terracotta);
+  color: var(--clay);
   text-decoration: none;
 }
 
@@ -975,7 +1003,7 @@ section[id] {
 }
 
 .program-card--featured .program-link {
-  color: var(--apricot);
+  color: var(--blush-light);
 }
 
 /* Stories */
@@ -1006,7 +1034,7 @@ section[id] {
   font-family: var(--font-display);
   font-size: 10rem;
   line-height: 1;
-  color: var(--apricot);
+  color: var(--blush);
   opacity: 0.7;
   pointer-events: none;
 }
@@ -1109,7 +1137,7 @@ section[id] {
 
 .dot.is-active::after {
   width: 22px;
-  background: var(--terracotta);
+  background: var(--clay);
 }
 
 /* Contact */
@@ -1180,7 +1208,7 @@ section[id] {
 .field select:focus-visible,
 .field textarea:focus-visible {
   outline: none;
-  border-color: var(--terracotta);
+  border-color: var(--clay);
   box-shadow: 0 0 0 3px rgba(169, 72, 58, 0.25);
 }
 
@@ -1212,7 +1240,7 @@ section[id] {
 }
 
 .form-error {
-  color: var(--terracotta-deep);
+  color: var(--clay-deep);
   font-weight: 500;
 }
 
@@ -1270,7 +1298,7 @@ section[id] {
 
 .site-footer a:hover,
 .site-footer a[aria-current] {
-  color: var(--terracotta);
+  color: var(--clay);
 }
 
 .footer-bottom {
@@ -1447,7 +1475,7 @@ section[id] {
 }
 
 /* ==========================================================================
-   Reduced motion — keep everything visible and still
+   Reduced motion: keep everything visible and still
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
   *,

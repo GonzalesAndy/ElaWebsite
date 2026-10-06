@@ -60,9 +60,9 @@ export default function Hero({ hero }: { hero: Dictionary["hero"] }) {
           <h1 id="hero-title" className="hero-title rise" style={{ "--i": 1 } as React.CSSProperties}>
             <Rich text={hero.title} />
           </h1>
-          <p className="hero-subtitle rise" style={{ "--i": 2 } as React.CSSProperties}>
+          {/* <p className="hero-subtitle rise" style={{ "--i": 2 } as React.CSSProperties}>
             {hero.subtitle}
-          </p>
+          </p> */}
           <div className="hero-actions rise" style={{ "--i": 3 } as React.CSSProperties}>
             <a href="#contact" className="btn btn--light">
               {hero.cta}

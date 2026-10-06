@@ -71,7 +71,7 @@ export default function MorphMenu({ align, label, trigger, closedWidth, openWidt
           aria-controls={bodyId}
           aria-label={label}
           onClick={(e) => {
-            // A mouse already opened it on hover — keep it open rather than toggling shut.
+            // A mouse already opened it on hover, so keep it open rather than toggling shut.
             const pointerType = (e.nativeEvent as PointerEvent).pointerType;
             setOpen((o) => (pointerType === "mouse" ? true : !o));
           }}

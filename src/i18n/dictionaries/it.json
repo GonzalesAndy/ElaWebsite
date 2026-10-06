@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Aurea — Coaching per il tuo prossimo capitolo",
+    "title": "Aurea · Coaching per il tuo prossimo capitolo",
     "description": "Coaching per donne che si sono allontanate da sé stesse: scopri cosa desideri davvero e costruisci consapevolmente il tuo prossimo capitolo."
   },
   "nav": {
@@ -11,21 +11,21 @@
     "programs": "Percorsi",
     "testimonials": "Storie",
     "contact": "Contatti",
-    "book": "Prenota una chiamata",
+    "book": "Fai il primo passo",
     "language": "Lingua"
   },
   "hero": {
     "eyebrow": "Coaching per donne in transizione",
-    "title": "Il tuo prossimo capitolo *inizia* qui",
-    "subtitle": "Per le donne che hanno costruito la vita che ci si aspettava da loro – e si sono accorte, in silenzio, che non è la loro. Ritrova te stessa, scopri cosa desideri davvero e trova il coraggio di viverlo.",
-    "cta": "Prenota una chiamata gratuita",
+    "title": "Il tuo prossimo capitolo\n*inizia* qui",
+    "subtitle": "Per le donne che hanno costruito la vita che ci si aspettava da loro, e si sono accorte in silenzio che non è la loro. Ritrova te stessa, scopri cosa desideri davvero e trova il coraggio di viverlo.",
+    "cta": "Inizia il tuo prossimo capitolo",
     "secondary": "La mia storia"
   },
   "about": {
     "eyebrow": "Chi sono",
     "title": "Ciao, sono *Elena*.",
-    "p1": "Sono cresciuta in Slovacchia e ho costruito la mia carriera a Vienna. Sulla carta avevo tutto – eppure per anni non mi sono sentita me stessa.",
-    "p2": "Ritrovare la strada verso me stessa ha cambiato tutto. Oggi accompagno donne pronte a smettere di vivere una vita scelta da altri – e a costruire consapevolmente *il proprio* prossimo capitolo.",
+    "p1": "Sono cresciuta in Slovacchia e ho costruito la mia carriera a Vienna. Sulla carta avevo tutto. Eppure per anni non mi sono sentita me stessa.",
+    "p2": "Ritrovare la strada verso me stessa ha cambiato tutto. Oggi accompagno donne pronte a smettere di vivere una vita scelta da altri e a costruire consapevolmente *il proprio* prossimo capitolo.",
     "stats": [
       {
         "value": "Chiarezza",
@@ -44,7 +44,7 @@
   "programs": {
     "eyebrow": "Percorsi",
     "title": "Tre passi verso il tuo *prossimo capitolo*",
-    "intro": "Dopo una separazione, un cambio di carriera, un burnout, una perdita o un trasferimento – o semplicemente con la sensazione silenziosa che qualcosa non va: ogni percorso ti incontra dove sei.",
+    "intro": "Dopo una separazione, un cambio di carriera, un burnout, una perdita, un trasferimento o semplicemente con la sensazione silenziosa che qualcosa non va: ogni percorso ti incontra dove sei.",
     "cta": "Chiedi informazioni",
     "items": [
       {
@@ -52,9 +52,9 @@
         "tag": "Chiarezza",
         "description": "Un percorso breve dedicato alla chiarezza e al ritrovarsi. Capisci dove sei, cosa non ti appartiene più e cosa desideri davvero.",
         "points": [
-          "Dove sono adesso – onestamente?",
+          "Dove sono adesso, onestamente?",
           "Cosa non mi appartiene più",
-          "Cosa voglio davvero – oltre le aspettative degli altri"
+          "Cosa voglio davvero, oltre le aspettative degli altri"
         ]
       },
       {
@@ -70,7 +70,7 @@
       {
         "name": "Become Her",
         "tag": "Trasformazione profonda",
-        "description": "L'accompagnamento più profondo. Dal sapere cosa vuoi al diventare la donna che vive quella vita – ogni giorno.",
+        "description": "L'accompagnamento più profondo. Dal sapere cosa vuoi al diventare la donna che vive quella vita. Ogni giorno.",
         "points": [
           "Radicare nuove abitudini e nuovi confini",
           "Trovare il coraggio di lasciare ciò che non va",
@@ -86,7 +86,7 @@
     "next": "Storia successiva",
     "items": [
       {
-        "quote": "Avevo il lavoro, l'appartamento a Vienna, la vita “perfetta” – e non sentivo niente. Con Elena mi sono finalmente chiesta cosa voglio io. Oggi lo sto vivendo.",
+        "quote": "Avevo il lavoro, l'appartamento a Vienna, la vita “perfetta” e non sentivo niente. Con Elena mi sono finalmente chiesta cosa voglio io. Oggi lo sto vivendo.",
         "name": "Katarína",
         "detail": "38, Vienna"
       },
@@ -118,7 +118,7 @@
     "message": "Il tuo messaggio",
     "submit": "Invia messaggio",
     "sending": "Invio in corso…",
-    "success": "Grazie — il tuo messaggio è arrivato. Ti risponderò presto.",
+    "success": "Grazie! Il tuo messaggio è arrivato. Ti risponderò presto.",
     "error": "Qualcosa è andato storto. Riprova o scrivi a hello@example.com",
     "privacy": "I tuoi dati verranno usati solo per risponderti."
   },

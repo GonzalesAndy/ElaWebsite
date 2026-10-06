@@ -7,8 +7,8 @@ export default function About({ about }: { about: Dictionary["about"] }) {
       <div className="container about-grid">
         <div className="about-visual" data-reveal>
           <div className="portrait" role="img" aria-label="Portrait of Elena Repka" />
-          <span className="orb orb--apricot" aria-hidden="true" />
-          <span className="orb orb--olive" aria-hidden="true" />
+          <span className="orb orb--blush" aria-hidden="true" />
+          <span className="orb orb--sage" aria-hidden="true" />
         </div>
 
         <div className="about-text">

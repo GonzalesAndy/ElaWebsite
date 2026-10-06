@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n/config";
 
-/* Inline SVG flags — emoji flags don't render on Windows. */
+/* Inline SVG flags: emoji flags don't render on Windows. */
 const flags: Record<Locale, React.ReactNode> = {
   en: (
     <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice">
