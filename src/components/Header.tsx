@@ -67,7 +67,7 @@ export default function Header({ nav, locale }: Props) {
         </MorphMenu>
       </div>
 
-      <a href="#top" className="header-logo" aria-label="Elena Repka">
+      <a href="#top" className="header-logo" aria-label="Aurea">
         <Logo />
       </a>
 

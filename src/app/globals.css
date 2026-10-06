@@ -19,7 +19,12 @@
   --glass: rgba(255, 255, 255, 0.24);       /* frosted buttons over the video */
   --glass-hover: rgba(255, 255, 255, 0.34);
 
-  /* --font-display (Fraunces) and --font-body (DM Sans) come from next/font in the layout */
+  /* Fonts (loaded by next/font in the layout). Default: Cormorant Garamond + Inter Light. */
+  --font-display: var(--ff-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-body: var(--ff-inter), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --body-weight: 300;
+  --display-scale: 1.14;   /* Cormorant runs small — scale headings up to match */
+  --display-tracking: -0.01em;
 
   --frame: clamp(0.5rem, 1.2vw, 1rem);
   --radius-card: clamp(1.25rem, 2.5vw, 2rem);
@@ -27,6 +32,19 @@
   --ease-open: cubic-bezier(0.7, 0, 0.2, 1);
 
   color-scheme: light;
+}
+
+/* Cormorant's 300 is hairline-thin; section headings read better at 400 (the hero stays light) */
+html:not([data-fonts="fraunces"]) :is(.h2, .program-name) {
+  font-weight: 400;
+}
+
+html[data-fonts="fraunces"] {
+  --font-display: var(--ff-fraunces), Georgia, serif;
+  --font-body: var(--ff-dmsans), system-ui, sans-serif;
+  --body-weight: 400;
+  --display-scale: 1;
+  --display-tracking: -0.02em;
 }
 
 /* ==========================================================================
@@ -53,6 +71,7 @@ body {
   background: var(--cream);
   color: var(--ink);
   font-family: var(--font-body);
+  font-weight: var(--body-weight);
   font-size: 1.0625rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -134,9 +153,9 @@ section[id] {
 .h2 {
   font-family: var(--font-display);
   font-weight: 350;
-  font-size: clamp(2.25rem, 4.6vw, 3.75rem);
+  font-size: calc(clamp(2.25rem, 4.6vw, 3.75rem) * var(--display-scale));
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--display-tracking);
   font-variation-settings: "SOFT" 50, "opsz" 96;
   text-wrap: balance;
 }
@@ -336,6 +355,7 @@ section[id] {
 
 /* Header shows the logo small, so it uses the bolder trace */
 .header-logo .logo-mark {
+  width: 4.25rem;
   -webkit-mask-image: url("/images/logo-er-bold.svg");
   mask-image: url("/images/logo-er-bold.svg");
 }
@@ -347,10 +367,10 @@ section[id] {
 .logo-word {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.75rem;
+  font-size: calc(1.75rem * var(--display-scale));
   font-weight: 400;
   line-height: 1;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--display-tracking);
   font-variation-settings: "SOFT" 100, "opsz" 72;
 }
 
@@ -666,9 +686,9 @@ section[id] {
 .hero-title {
   font-family: var(--font-display);
   font-weight: 330;
-  font-size: clamp(2.75rem, 7.2vw, 6.5rem);
+  font-size: calc(clamp(2.75rem, 7.2vw, 6.5rem) * var(--display-scale));
   line-height: 0.98;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--display-tracking);
   font-variation-settings: "SOFT" 50, "opsz" 144;
   text-wrap: balance;
 }
@@ -818,7 +838,7 @@ section[id] {
 
 .stat dd {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+  font-size: calc(clamp(1.5rem, 2.4vw, 2.1rem) * var(--display-scale));
   font-style: italic;
   font-weight: 300;
   line-height: 1.1;
@@ -889,10 +909,10 @@ section[id] {
 
 .program-name {
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  font-size: calc(clamp(1.75rem, 2.6vw, 2.25rem) * var(--display-scale));
   font-weight: 350;
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--display-tracking);
 }
 
 .program-desc {
@@ -1010,11 +1030,11 @@ section[id] {
 
 .quote blockquote {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-size: calc(clamp(1.5rem, 3vw, 2.4rem) * var(--display-scale));
   font-weight: 300;
   font-style: italic;
   line-height: 1.3;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--display-tracking);
   text-wrap: balance;
 }
 
@@ -1199,7 +1219,7 @@ section[id] {
 .form-success {
   padding: 2rem 0;
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: calc(1.75rem * var(--display-scale));
   font-style: italic;
   font-weight: 300;
   line-height: 1.35;
@@ -1397,13 +1417,12 @@ section[id] {
     font-size: 1.5rem;
   }
 
-  /* On phones the header shows only the monogram */
   .header-logo .logo-word {
-    display: none;
+    font-size: 1.4rem;
   }
 
   .header-logo .logo-mark {
-    width: 2.9rem;
+    width: 3rem;
   }
 
   .hero-actions .btn {

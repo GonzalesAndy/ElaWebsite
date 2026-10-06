@@ -43,6 +43,21 @@ for (let i = 0; i < dists.length; i++) {
 }
 const hex = "#" + [r, g, b].map((v) => Math.round(v / n).toString(16).padStart(2, "0")).join("");
 
+// Thicken the E's top and bottom bars (pixel positions measured on logo-er-source-large.webp).
+// Each bar copies an existing row of the bar into extra rows, keeping its outer edge in place.
+const E_BARS = [
+  { name: "top", fromRow: 263, rows: [264, 265, 266, 267], x: [605, 778] },
+  { name: "bottom", fromRow: 608, rows: [606, 605, 604, 603], x: [602, 754] },
+];
+if (SRC.endsWith("logo-er-source-large.webp")) {
+  for (const bar of E_BARS) {
+    for (let x = bar.x[0]; x <= bar.x[1]; x++) {
+      const v = mask[bar.fromRow * width + x];
+      for (const y of bar.rows) mask[y * width + x] = Math.max(mask[y * width + x], v);
+    }
+  }
+}
+
 // 2. Trim to the logo, upscale smoothly, and embolden by lowering the trace threshold.
 const trimmed = await sharp(mask, { raw: { width, height, channels: 1 } }).png().trim({ threshold: 30 }).toBuffer();
 const meta = await sharp(trimmed).metadata();
@@ -66,7 +81,7 @@ const svg = await new Promise((resolve, reject) =>
 const w = meta.width * SCALE;
 const h = meta.height * SCALE;
 const clean = svg
-  .replace(/<svg[^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Elena Repka">`)
+  .replace(/<svg[^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="Aurea — Elena Repka">`)
   .replace(/<rect[^>]*\/>/, "")
   .replace(/fill="[^"]*"/g, 'fill="currentColor"');
 

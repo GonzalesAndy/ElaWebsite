@@ -30,7 +30,7 @@ export default function Footer({ footer, nav, locale }: Props) {
       </div>
       <div className="container footer-bottom">
         <p>
-          © {new Date().getFullYear()} Elena Repka. {footer.rights}
+          © {new Date().getFullYear()} Aurea · Elena Repka. {footer.rights}
         </p>
         <p>
           <a href="#">{footer.privacy}</a> · <a href="#">{footer.imprint}</a>
