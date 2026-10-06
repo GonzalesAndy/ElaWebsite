@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Elena Repka — Coaching for your next chapter",
+    "description": "Coaching for women who feel disconnected from themselves: discover what you truly want and consciously build your next chapter."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "close": "Close",
+    "about": "About",
+    "programs": "Programs",
+    "testimonials": "Stories",
+    "contact": "Contact",
+    "book": "Book a call",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Coaching for women in transition",
+    "title": "Your next chapter *starts* here",
+    "subtitle": "For women who built the life they were supposed to — and quietly realised it isn't theirs. Reconnect with yourself, discover what you truly want, and find the courage to live it.",
+    "cta": "Book a free call",
+    "secondary": "Read my story"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "Hello, I'm *Elena*.",
+    "p1": "I grew up in Slovakia and built my career in Vienna. On paper, everything was in place — and yet for years, I didn't feel like myself.",
+    "p2": "Finding my way back changed everything. Today I walk beside women who are ready to stop living a version of life chosen by others — and to consciously build *their own* next chapter.",
+    "stats": [
+      {
+        "value": "Clarity",
+        "label": "on what you truly want"
+      },
+      {
+        "value": "Courage",
+        "label": "to stop staying where you don't fit"
+      },
+      {
+        "value": "Action",
+        "label": "turning clarity into real change"
+      }
+    ]
+  },
+  "programs": {
+    "eyebrow": "Programs",
+    "title": "Three steps into your *next chapter*",
+    "intro": "After a breakup, a career change, burnout, loss or a move — or simply with a quiet sense that something isn't right: each program meets you where you are.",
+    "cta": "Ask about this program",
+    "items": [
+      {
+        "name": "Come Back to Yourself",
+        "tag": "Clarity",
+        "description": "A shorter program focused on clarity and reconnection. Understand where you are, what no longer fits, and what you truly want.",
+        "points": [
+          "Where am I now — honestly?",
+          "What no longer fits",
+          "What I actually want, beyond others' expectations"
+        ]
+      },
+      {
+        "name": "Your Next Chapter",
+        "tag": "Core program",
+        "description": "The main coaching program. A guided process to redefine who you are, make important decisions, and begin building a life that feels genuinely yours.",
+        "points": [
+          "Redefine your identity",
+          "Make important decisions with clarity",
+          "Concrete steps, week by week"
+        ]
+      },
+      {
+        "name": "Become Her",
+        "tag": "Deep transformation",
+        "description": "The deepest journey. Move from knowing what you want to becoming the woman who lives it — every day.",
+        "points": [
+          "Embody new habits and boundaries",
+          "Find the courage to leave what doesn't fit",
+          "Ongoing 1:1 support"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Stories",
+    "title": "Women who began their *next chapter*",
+    "prev": "Previous story",
+    "next": "Next story",
+    "items": [
+      {
+        "quote": "I had the job, the flat in Vienna, the 'perfect' life — and felt nothing. With Elena I finally asked myself what I want. Today I'm living it.",
+        "name": "Katarína",
+        "detail": "38, Vienna"
+      },
+      {
+        "quote": "After my divorce I didn't know who I was anymore. Elena helped me come back to myself — gently and honestly.",
+        "name": "Sophie",
+        "detail": "44, Munich"
+      },
+      {
+        "quote": "Clarity first, then courage, then action. I stopped waiting for permission to change my life.",
+        "name": "Giulia",
+        "detail": "35, Milan"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let's talk",
+    "title": "Your next chapter can begin with *one conversation*",
+    "intro": "Tell me a little about where you are right now, and I'll reply within two working days to arrange a free 20-minute introductory call.",
+    "name": "Name",
+    "email": "Email",
+    "interest": "Which program are you curious about?",
+    "interestOptions": [
+      "Not sure yet",
+      "Come Back to Yourself",
+      "Your Next Chapter",
+      "Become Her"
+    ],
+    "message": "Your message",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Thank you — your message has arrived. I'll be in touch soon.",
+    "error": "Something went wrong. Please try again or write to hello@example.com",
+    "privacy": "Your details are only used to reply to you."
+  },
+  "footer": {
+    "tagline": "Coaching for your next chapter",
+    "privacy": "Privacy",
+    "imprint": "Imprint",
+    "rights": "All rights reserved."
+  }
+}

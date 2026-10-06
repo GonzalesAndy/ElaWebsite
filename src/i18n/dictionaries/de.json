@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Elena Repka — Coaching für dein nächstes Kapitel",
+    "description": "Coaching für Frauen, die sich von sich selbst entfernt haben: Finde heraus, was du wirklich willst, und gestalte dein nächstes Kapitel bewusst."
+  },
+  "nav": {
+    "skip": "Zum Inhalt springen",
+    "menu": "Menü",
+    "close": "Schließen",
+    "about": "Über mich",
+    "programs": "Angebote",
+    "testimonials": "Stimmen",
+    "contact": "Kontakt",
+    "book": "Gespräch buchen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "eyebrow": "Coaching für Frauen im Wandel",
+    "title": "Dein nächstes Kapitel *beginnt* hier",
+    "subtitle": "Für Frauen, die das Leben aufgebaut haben, das man von ihnen erwartet hat – und leise merken, dass es nicht ihres ist. Finde zu dir zurück, erkenne, was du wirklich willst, und hab den Mut, es zu leben.",
+    "cta": "Kostenloses Erstgespräch",
+    "secondary": "Meine Geschichte"
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "title": "Hallo, ich bin *Elena*.",
+    "p1": "Ich bin in der Slowakei aufgewachsen und habe meine Karriere in Wien aufgebaut. Auf dem Papier war alles da – und trotzdem habe ich mich jahrelang nicht wie ich selbst gefühlt.",
+    "p2": "Den Weg zurück zu mir zu finden, hat alles verändert. Heute begleite ich Frauen, die bereit sind, nicht länger ein Leben nach den Vorstellungen anderer zu führen – sondern *ihr eigenes* nächstes Kapitel bewusst zu gestalten.",
+    "stats": [
+      {
+        "value": "Klarheit",
+        "label": "darüber, was du wirklich willst"
+      },
+      {
+        "value": "Mut",
+        "label": "nicht länger zu bleiben, wo du nicht hinpasst"
+      },
+      {
+        "value": "Handeln",
+        "label": "aus Klarheit wird echte Veränderung"
+      }
+    ]
+  },
+  "programs": {
+    "eyebrow": "Programme",
+    "title": "Drei Schritte in dein *nächstes Kapitel*",
+    "intro": "Ob nach einer Trennung, einem Jobwechsel, Burnout, einem Verlust oder einem Umzug – oder einfach mit dem leisen Gefühl, dass etwas nicht stimmt: Jedes Programm holt dich dort ab, wo du gerade stehst.",
+    "cta": "Mehr erfahren",
+    "items": [
+      {
+        "name": "Come Back to Yourself",
+        "tag": "Klarheit",
+        "description": "Ein kürzeres Programm für Klarheit und Wiederverbindung. Verstehe, wo du stehst, was nicht mehr passt und was du wirklich willst.",
+        "points": [
+          "Wo stehe ich gerade – ehrlich?",
+          "Was nicht mehr zu mir passt",
+          "Was ich wirklich will – jenseits fremder Erwartungen"
+        ]
+      },
+      {
+        "name": "Your Next Chapter",
+        "tag": "Kernprogramm",
+        "description": "Das Haupt-Coachingprogramm. Ein begleiteter Prozess, um deine Identität neu zu definieren, wichtige Entscheidungen zu treffen und ein Leben aufzubauen, das sich wirklich nach dir anfühlt.",
+        "points": [
+          "Deine Identität neu definieren",
+          "Wichtige Entscheidungen mit Klarheit treffen",
+          "Konkrete Schritte, Woche für Woche"
+        ]
+      },
+      {
+        "name": "Become Her",
+        "tag": "Tiefe Transformation",
+        "description": "Die tiefste Begleitung. Vom Wissen, was du willst, dazu, die Frau zu werden, die genau dieses Leben lebt – jeden Tag.",
+        "points": [
+          "Neue Gewohnheiten und Grenzen verankern",
+          "Den Mut finden, loszulassen, was nicht passt",
+          "Fortlaufende 1:1-Begleitung"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Stimmen",
+    "title": "Frauen, die ihr *nächstes Kapitel* begonnen haben",
+    "prev": "Vorherige Stimme",
+    "next": "Nächste Stimme",
+    "items": [
+      {
+        "quote": "Ich hatte den Job, die Wohnung in Wien, das „perfekte“ Leben – und habe nichts gefühlt. Mit Elena habe ich mich endlich gefragt, was ich will. Heute lebe ich es.",
+        "name": "Katarína",
+        "detail": "38, Wien"
+      },
+      {
+        "quote": "Nach meiner Scheidung wusste ich nicht mehr, wer ich bin. Elena hat mir geholfen, zu mir zurückzufinden – sanft und ehrlich.",
+        "name": "Sophie",
+        "detail": "44, München"
+      },
+      {
+        "quote": "Erst Klarheit, dann Mut, dann Handeln. Ich habe aufgehört, auf eine Erlaubnis zu warten, mein Leben zu verändern.",
+        "name": "Giulia",
+        "detail": "35, Mailand"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Lass uns sprechen",
+    "title": "Dein nächstes Kapitel kann mit *einem Gespräch* beginnen",
+    "intro": "Erzähl mir ein wenig, wo du gerade stehst – ich melde mich innerhalb von zwei Werktagen für ein kostenloses 20-minütiges Kennenlerngespräch.",
+    "name": "Name",
+    "email": "E-Mail",
+    "interest": "Welches Programm interessiert dich?",
+    "interestOptions": [
+      "Ich weiß es noch nicht",
+      "Come Back to Yourself",
+      "Your Next Chapter",
+      "Become Her"
+    ],
+    "message": "Deine Nachricht",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet…",
+    "success": "Danke – deine Nachricht ist angekommen. Ich melde mich bald.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreib an hello@example.com",
+    "privacy": "Deine Daten werden nur verwendet, um dir zu antworten."
+  },
+  "footer": {
+    "tagline": "Coaching für dein nächstes Kapitel",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
