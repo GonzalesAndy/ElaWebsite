@@ -45,37 +45,19 @@
     "eyebrow": "Percorsi",
     "title": "Tre passi verso il tuo *prossimo capitolo*",
     "intro": "Dopo una separazione, un cambio di carriera, un burnout, una perdita, un trasferimento o semplicemente con la sensazione silenziosa che qualcosa non va: ogni percorso ti incontra dove sei.",
-    "cta": "Chiedi informazioni",
+    "cta": "Trova il tuo punto di partenza",
     "items": [
       {
         "name": "Come Back to Yourself",
-        "tag": "Chiarezza",
-        "description": "Un percorso breve dedicato alla chiarezza e al ritrovarsi. Capisci dove sei, cosa non ti appartiene più e cosa desideri davvero.",
-        "points": [
-          "Dove sono adesso, onestamente?",
-          "Cosa non mi appartiene più",
-          "Cosa voglio davvero, oltre le aspettative degli altri"
-        ]
+        "line": "Capisci dove sei e cosa desideri davvero."
       },
       {
         "name": "Your Next Chapter",
-        "tag": "Percorso principale",
-        "description": "Il percorso di coaching principale. Un processo guidato per ridefinire la tua identità, prendere decisioni importanti e iniziare a costruire una vita che senti davvero tua.",
-        "points": [
-          "Ridefinire la tua identità",
-          "Prendere decisioni importanti con chiarezza",
-          "Passi concreti, settimana dopo settimana"
-        ]
+        "line": "Ridefinisci chi sei e costruisci una vita che senti tua."
       },
       {
         "name": "Become Her",
-        "tag": "Trasformazione profonda",
-        "description": "L'accompagnamento più profondo. Dal sapere cosa vuoi al diventare la donna che vive quella vita. Ogni giorno.",
-        "points": [
-          "Radicare nuove abitudini e nuovi confini",
-          "Trovare il coraggio di lasciare ciò che non va",
-          "Supporto 1:1 continuativo"
-        ]
+        "line": "Dal sapere cosa vuoi al viverlo, ogni giorno."
       }
     ]
   },

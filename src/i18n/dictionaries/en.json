@@ -45,37 +45,19 @@
     "eyebrow": "Programs",
     "title": "Three steps into your *next chapter*",
     "intro": "Whether it's a breakup, a career change, burnout, loss or a move, or simply a quiet sense that something isn't right, each program meets you where you are.",
-    "cta": "Ask about this program",
+    "cta": "Find your starting point",
     "items": [
       {
         "name": "Come Back to Yourself",
-        "tag": "Clarity",
-        "description": "A shorter program focused on clarity and reconnection. Understand where you are, what no longer fits, and what you truly want.",
-        "points": [
-          "Where am I now, honestly?",
-          "What no longer fits",
-          "What I actually want, beyond others' expectations"
-        ]
+        "line": "Understand where you are and what you truly want."
       },
       {
         "name": "Your Next Chapter",
-        "tag": "Core program",
-        "description": "The main coaching program. A guided process to redefine who you are, make important decisions, and begin building a life that feels genuinely yours.",
-        "points": [
-          "Redefine your identity",
-          "Make important decisions with clarity",
-          "Concrete steps, week by week"
-        ]
+        "line": "Redefine who you are and build a life that feels like yours."
       },
       {
         "name": "Become Her",
-        "tag": "Deep transformation",
-        "description": "The deepest journey. Move from knowing what you want to becoming the woman who lives it, every day.",
-        "points": [
-          "Embody new habits and boundaries",
-          "Find the courage to leave what doesn't fit",
-          "Ongoing 1:1 support"
-        ]
+        "line": "From knowing what you want to living it, every day."
       }
     ]
   },

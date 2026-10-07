@@ -45,37 +45,19 @@
     "eyebrow": "Programy",
     "title": "Tri kroky do tvojej *ďalšej kapitoly*",
     "intro": "Či už po rozchode, zmene kariéry, vyhorení, strate, sťahovaní alebo len s tichým pocitom, že niečo nesedí: každý program ťa stretne tam, kde práve si.",
-    "cta": "Zistiť viac",
+    "cta": "Nájdi svoj začiatok",
     "items": [
       {
         "name": "Come Back to Yourself",
-        "tag": "Jasnosť",
-        "description": "Kratší program zameraný na jasnosť a opätovné spojenie so sebou. Pochop, kde sa nachádzaš, čo ti už nesedí a čo naozaj chceš.",
-        "points": [
-          "Kde som teraz, úprimne?",
-          "Čo mi už nesedí",
-          "Čo naozaj chcem, mimo očakávaní iných"
-        ]
+        "line": "Pochop, kde sa nachádzaš a čo naozaj chceš."
       },
       {
         "name": "Your Next Chapter",
-        "tag": "Hlavný program",
-        "description": "Hlavný koučingový program. Sprevádzaný proces, v ktorom nanovo definuješ svoju identitu, urobíš dôležité rozhodnutia a začneš budovať život, ktorý je skutočne tvoj.",
-        "points": [
-          "Nanovo definovať svoju identitu",
-          "Robiť dôležité rozhodnutia s jasnou hlavou",
-          "Konkrétne kroky, týždeň po týždni"
-        ]
+        "line": "Nanovo definuj, kto si, a vybuduj si život, ktorý je tvoj."
       },
       {
         "name": "Become Her",
-        "tag": "Hlboká premena",
-        "description": "Najhlbšie sprevádzanie. Od vedomia, čo chceš, k tomu, aby si sa stala ženou, ktorá tento život naozaj žije. Každý deň.",
-        "points": [
-          "Ukotviť nové návyky a hranice",
-          "Nájsť odvahu pustiť, čo nesedí",
-          "Priebežná podpora 1:1"
-        ]
+        "line": "Od vedomia, čo chceš, k tomu, aby si to žila každý deň."
       }
     ]
   },

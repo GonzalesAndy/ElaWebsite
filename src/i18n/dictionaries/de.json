@@ -45,37 +45,19 @@
     "eyebrow": "Programme",
     "title": "Drei Schritte in dein *nächstes Kapitel*",
     "intro": "Ob nach einer Trennung, einem Jobwechsel, Burnout, einem Verlust, einem Umzug oder einfach mit dem leisen Gefühl, dass etwas nicht stimmt: Jedes Programm holt dich dort ab, wo du gerade stehst.",
-    "cta": "Mehr erfahren",
+    "cta": "Finde deinen Startpunkt",
     "items": [
       {
         "name": "Come Back to Yourself",
-        "tag": "Klarheit",
-        "description": "Ein kürzeres Programm für Klarheit und Wiederverbindung. Verstehe, wo du stehst, was nicht mehr passt und was du wirklich willst.",
-        "points": [
-          "Wo stehe ich gerade, ganz ehrlich?",
-          "Was nicht mehr zu mir passt",
-          "Was ich wirklich will, jenseits fremder Erwartungen"
-        ]
+        "line": "Verstehe, wo du stehst und was du wirklich willst."
       },
       {
         "name": "Your Next Chapter",
-        "tag": "Kernprogramm",
-        "description": "Das Haupt-Coachingprogramm. Ein begleiteter Prozess, um deine Identität neu zu definieren, wichtige Entscheidungen zu treffen und ein Leben aufzubauen, das sich wirklich nach dir anfühlt.",
-        "points": [
-          "Deine Identität neu definieren",
-          "Wichtige Entscheidungen mit Klarheit treffen",
-          "Konkrete Schritte, Woche für Woche"
-        ]
+        "line": "Definiere neu, wer du bist, und baue ein Leben, das sich nach dir anfühlt."
       },
       {
         "name": "Become Her",
-        "tag": "Tiefe Transformation",
-        "description": "Die tiefste Begleitung. Vom Wissen, was du willst, dazu, die Frau zu werden, die genau dieses Leben lebt. Jeden Tag.",
-        "points": [
-          "Neue Gewohnheiten und Grenzen verankern",
-          "Den Mut finden, loszulassen, was nicht passt",
-          "Fortlaufende 1:1-Begleitung"
-        ]
+        "line": "Vom Wissen, was du willst, dazu, es jeden Tag zu leben."
       }
     ]
   },

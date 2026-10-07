@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import RevealObserver from "@/components/RevealObserver";
+import Divider from "@/components/Divider";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -24,7 +25,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <main id="main">
         <Hero hero={dict.hero} />
         <About about={dict.about} />
+        <Divider />
         <Programs programs={dict.programs} />
+        <Divider />
         <Testimonials testimonials={dict.testimonials} />
         <Contact contact={dict.contact} />
       </main>

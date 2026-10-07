@@ -6,9 +6,9 @@ export default function About({ about }: { about: Dictionary["about"] }) {
     <section id="about" className="section about" aria-labelledby="about-title">
       <div className="container about-grid">
         <div className="about-visual" data-reveal>
+          <span className="about-arch" aria-hidden="true" />
+          <span className="about-branch" aria-hidden="true" />
           <div className="portrait" role="img" aria-label="Portrait of Elena Repka" />
-          <span className="orb orb--blush" aria-hidden="true" />
-          <span className="orb orb--sage" aria-hidden="true" />
         </div>
 
         <div className="about-text">

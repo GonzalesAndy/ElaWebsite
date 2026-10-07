@@ -1,6 +1,7 @@
 import Rich from "./Rich";
 import type { Dictionary } from "@/i18n/getDictionary";
 
+/** The three programs as one journey: a line with a marker per step, ending in a single call to action. */
 export default function Programs({ programs }: { programs: Dictionary["programs"] }) {
   return (
     <section id="programs" className="section programs" aria-labelledby="programs-title">
@@ -17,32 +18,21 @@ export default function Programs({ programs }: { programs: Dictionary["programs"
           </p>
         </div>
 
-        <ul className="program-grid">
+        <ol className="journey" data-reveal>
           {programs.items.map((item, i) => (
-            <li
-              key={item.name}
-              className={`program-card ${i === 1 ? "program-card--featured" : ""}`}
-              data-reveal
-              style={{ "--i": i } as React.CSSProperties}
-            >
-              <div className="program-top">
-                <span className="program-num">0{i + 1}</span>
-                <span className="program-duration">{item.tag}</span>
-              </div>
-              <h3 className="program-name">{item.name}</h3>
-              <p className="program-desc">{item.description}</p>
-              <ul className="program-points">
-                {item.points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-              <a href="#contact" className="program-link">
-                {programs.cta}
-                <span aria-hidden="true">→</span>
-              </a>
+            <li key={item.name} className="journey-step" style={{ "--i": i } as React.CSSProperties}>
+              <span className="journey-marker" aria-hidden="true" />
+              <h3 className="journey-name">{item.name}</h3>
+              <p className="journey-line">{item.line}</p>
             </li>
           ))}
-        </ul>
+        </ol>
+
+        <div className="journey-cta" data-reveal>
+          <a href="#contact" className="btn btn--primary">
+            {programs.cta}
+          </a>
+        </div>
       </div>
     </section>
   );
