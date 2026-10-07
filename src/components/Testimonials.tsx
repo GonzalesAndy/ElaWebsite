@@ -59,7 +59,9 @@ export default function Testimonials({ testimonials }: { testimonials: Dictionar
 
         <div className="quote-controls" data-reveal>
           <button className="round-btn" onClick={() => go(index - 1)} aria-label={testimonials.prev}>
-            <span aria-hidden="true">←</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
           </button>
           <div className="quote-dots">
             {items.map((item, i) => (
@@ -73,7 +75,9 @@ export default function Testimonials({ testimonials }: { testimonials: Dictionar
             ))}
           </div>
           <button className="round-btn" onClick={() => go(index + 1)} aria-label={testimonials.next}>
-            <span aria-hidden="true">→</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
           </button>
         </div>
       </div>

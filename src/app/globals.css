@@ -947,108 +947,115 @@ section[id] {
   scale: 0 1;
 }
 
-/* Programs: a journey path. One line spans the section: the first dot starts chapter 1,
-   the middle dot sits at the centre of chapter 2, the last dot ends chapter 3. */
-.programs .section-head {
-  margin-bottom: clamp(3.5rem, 7vw, 5.5rem);
+/* Programs: heading, vertical journey and button on the left; the active chapter's photo on the right.
+   This section runs wider than the others (less side margin). */
+.programs-layout {
+  width: min(100% - 6rem, 1600px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); /* text | photo: raise 1.5 for a bigger photo */
+  grid-template-areas:
+    "head    photo"
+    "journey photo"
+    "cta     photo";
+  column-gap: clamp(3rem, 5vw, 5rem);
+  align-items: center;
 }
 
+.programs .section-head {
+  grid-area: head;
+  margin-bottom: 0;
+}
+
+/* Vertical path: one line from the first dot to the last */
 .journey {
-  --gap: clamp(2rem, 4vw, 4rem);
+  grid-area: journey;
+  --gap: clamp(1.5rem, 2.5vw, 2rem);
   --marker: 13px;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
-  margin: 0;
+  margin: clamp(2.5rem, 4vw, 3rem) 0 0;
   padding: 0;
   list-style: none;
 }
 
-/* The line; it draws itself in from left to right on reveal */
 .journey::before {
   content: "";
   position: absolute;
-  top: calc(var(--marker) / 2);
-  left: 0;
-  right: 0;
-  height: 1px;
+  top: 0.55rem;
+  bottom: 1rem;
+  left: calc(var(--marker) / 2);
+  width: 1px;
   background: var(--field-border);
-  transform-origin: left center;
-  transition: scale 2.2s 0.3s var(--ease-calm);
+  transform-origin: center top;
+  transition: scale 1.8s 0.3s var(--ease-calm);
 }
 
 .journey-step {
   position: relative;
-  padding-top: 2.75rem;
+  padding-left: 2.5rem;
+  cursor: default;
+}
+
+/* Hide the line below the last dot so the path ends there */
+.journey-step:last-child::after {
+  content: "";
+  position: absolute;
+  top: calc(0.55rem + var(--marker));
+  bottom: -1rem;
+  left: 0;
+  width: var(--marker);
+  background: var(--cream);
 }
 
 .journey-marker {
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: 0.55rem;
   left: 0;
   width: var(--marker);
   height: var(--marker);
   border: 1px solid var(--olive);
   border-radius: 50%;
   background: var(--cream);
-  box-shadow: 0 0 0 0.75rem var(--cream); /* small gap in the line around each dot */
-  transition: scale 0.8s calc(0.3s + var(--i) * 0.7s) var(--ease-calm);
+  box-shadow: 0 0 0 0.5rem var(--cream); /* small gap in the line around each dot */
+  transition: scale 0.8s calc(0.3s + var(--i) * 0.4s) var(--ease-calm),
+    background-color 0.5s var(--ease-calm), border-color 0.5s var(--ease-calm);
 }
 
-/* Chapter 2: dot and text centred */
-.journey-step:nth-child(2) {
-  text-align: center;
-}
-
-.journey-step:nth-child(2) .journey-marker {
-  left: 50%;
-  translate: -50% 0;
-  border-color: var(--clay); /* the core program: a quiet hint, not a highlighted card */
+/* The chapter whose photo is showing */
+.journey-step.is-active .journey-marker {
+  border-color: var(--clay);
   background: var(--clay);
-}
-
-.journey-step:nth-child(2) .journey-line {
-  margin-inline: auto;
-}
-
-/* Chapter 3: dot and text at the end */
-.journey-step:nth-child(3) {
-  text-align: right;
-}
-
-.journey-step:nth-child(3) .journey-marker {
-  left: auto;
-  right: 0;
-}
-
-.journey-step:nth-child(3) .journey-line {
-  margin-left: auto;
 }
 
 .journey-name {
   font-family: var(--font-display);
-  font-size: calc(clamp(1.75rem, 2.6vw, 2.25rem) * var(--display-scale));
+  font-size: calc(clamp(1.5rem, 2vw, 1.9rem) * var(--display-scale));
   font-weight: 350;
   line-height: 1.1;
   letter-spacing: var(--display-tracking);
+  color: var(--ink-soft);
+}
+
+.journey-step.is-active .journey-name {
+  color: var(--ink);
 }
 
 .journey-line {
-  max-width: 19rem;
-  margin-top: 1rem;
+  max-width: 30rem;
+  margin-top: 0.5rem;
   color: var(--ink-soft);
 }
 
 .journey-step .journey-name,
 .journey-step .journey-line {
-  transition: opacity 1s calc(0.4s + var(--i) * 0.7s) var(--ease-calm),
-    translate 1s calc(0.4s + var(--i) * 0.7s) var(--ease-calm);
+  transition: color 0.5s var(--ease-calm), opacity 1s calc(0.4s + var(--i) * 0.4s) var(--ease-calm),
+    translate 1s calc(0.4s + var(--i) * 0.4s) var(--ease-calm);
 }
 
 .reveal-ready .journey:not(.is-visible)::before {
-  scale: 0 1;
+  scale: 1 0;
 }
 
 .reveal-ready .journey:not(.is-visible) .journey-marker {
@@ -1061,9 +1068,31 @@ section[id] {
 }
 
 .journey-cta {
-  display: flex;
-  justify-content: center;
-  margin-top: clamp(3.5rem, 7vw, 5rem);
+  grid-area: cta;
+  margin-top: clamp(2.5rem, 4vw, 3rem);
+}
+
+/* The photo frame: 3:2 like the photos, so each one is shown whole */
+.programs-photo {
+  grid-area: photo;
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--cream-2);
+  box-shadow: 0 40px 80px -40px rgba(46, 38, 34, 0.45);
+}
+
+.programs-photo img {
+  object-fit: cover;
+  opacity: 0;
+  scale: 1.04;
+  transition: opacity 1.2s var(--ease-calm), scale 2.4s var(--ease-calm);
+}
+
+.programs-photo img.is-active {
+  opacity: 1;
+  scale: 1;
 }
 
 /* Stories */
@@ -1162,6 +1191,11 @@ section[id] {
   border-radius: 50%;
   background: transparent;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.round-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .round-btn:hover {
@@ -1470,53 +1504,21 @@ section[id] {
     max-width: 26rem;
   }
 
-  /* The path runs vertically on smaller screens, everything left-aligned */
-  .journey {
+  /* Programs stack: heading, photo, then the path right under it */
+  .programs-layout {
+    width: min(100% - 2rem, 1200px);
     grid-template-columns: 1fr;
-    max-width: 34rem;
+    grid-template-areas:
+      "head"
+      "photo"
+      "journey"
+      "cta";
+    row-gap: 2.5rem;
   }
 
-  .journey::before {
-    top: 0.55rem;
-    bottom: 1rem;
-    left: calc(var(--marker) / 2);
-    right: auto;
-    width: 1px;
-    height: auto;
-    transform-origin: center top;
-  }
-
-  .reveal-ready .journey:not(.is-visible)::before {
-    scale: 1 0;
-  }
-
-  .journey-step,
-  .journey-step:nth-child(n) {
-    padding-top: 0;
-    padding-left: 2.5rem;
-    text-align: left;
-  }
-
-  .journey-step:nth-child(n) .journey-marker {
-    top: 0.55rem;
-    left: 0;
-    right: auto;
-    translate: none;
-  }
-
-  .journey-step:nth-child(n) .journey-line {
-    margin-inline: 0;
-  }
-
-  /* Hide the line below the last dot so the path ends there */
-  .journey-step:last-child::after {
-    content: "";
-    position: absolute;
-    top: calc(0.55rem + var(--marker));
-    bottom: -1rem;
-    left: 0;
-    width: var(--marker);
-    background: var(--cream);
+  .journey,
+  .journey-cta {
+    margin-top: 0;
   }
 
   .footer-grid {
