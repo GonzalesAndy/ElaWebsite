@@ -67,7 +67,7 @@ export default function Hero({ hero }: { hero: Dictionary["hero"] }) {
             <a href="#contact" className="btn btn--light">
               {hero.cta}
             </a>
-            <a href="#about" className="btn btn--glass">
+            <a href="#the-way" className="btn btn--glass">
               {hero.secondary}
             </a>
           </div>

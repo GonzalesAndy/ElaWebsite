@@ -1,65 +1,12 @@
 {
-  "meta": {
-    "title": "Aurea · Koučing pre tvoju ďalšiu kapitolu",
-    "description": "Koučing pre ženy, ktoré sa vzdialili samy sebe: zisti, čo naozaj chceš, a vedome si vytvor svoju ďalšiu kapitolu."
-  },
   "nav": {
     "skip": "Preskočiť na obsah",
     "menu": "Menu",
     "close": "Zavrieť",
     "about": "O mne",
-    "programs": "Programy",
-    "testimonials": "Príbehy",
     "contact": "Kontakt",
     "book": "Urob prvý krok",
     "language": "Jazyk"
-  },
-  "hero": {
-    "eyebrow": "Koučing pre ženy v období zmeny",
-    "title": "Tvoja ďalšia kapitola\nsa *začína* tu",
-    "subtitle": "Pre ženy, ktoré si vybudovali život, aký sa od nich očakával, a potichu zistili, že nie je ich. Vráť sa k sebe, zisti, čo naozaj chceš, a nájdi odvahu žiť to.",
-    "cta": "Začni svoju ďalšiu kapitolu",
-    "secondary": "Môj príbeh"
-  },
-  "about": {
-    "eyebrow": "O mne",
-    "title": "Ahoj, som *Elena*.",
-    "p1": "Vyrastala som na Slovensku a kariéru som si vybudovala vo Viedni. Na papieri bolo všetko na svojom mieste. A predsa som sa roky necítila sama sebou.",
-    "p2": "Nájsť cestu späť k sebe zmenilo všetko. Dnes sprevádzam ženy, ktoré sú pripravené prestať žiť život podľa predstáv iných a vedome si vytvoriť *svoju vlastnú* ďalšiu kapitolu.",
-    "stats": [
-      {
-        "value": "Jasnosť",
-        "label": "v tom, čo naozaj chceš"
-      },
-      {
-        "value": "Odvaha",
-        "label": "neostávať tam, kam nepatríš"
-      },
-      {
-        "value": "Čin",
-        "label": "z jasnosti skutočná zmena"
-      }
-    ]
-  },
-  "programs": {
-    "eyebrow": "Programy",
-    "title": "Tri kroky do tvojej *ďalšej kapitoly*",
-    "intro": "Či už po rozchode, zmene kariéry, vyhorení, strate, sťahovaní alebo len s tichým pocitom, že niečo nesedí: každý program ťa stretne tam, kde práve si.",
-    "cta": "Nájdi svoj začiatok",
-    "items": [
-      {
-        "name": "Come Back to Yourself",
-        "line": "Pochop, kde sa nachádzaš a čo naozaj chceš."
-      },
-      {
-        "name": "Your Next Chapter",
-        "line": "Nanovo definuj, kto si, a vybuduj si život, ktorý je tvoj."
-      },
-      {
-        "name": "Become Her",
-        "line": "Od vedomia, čo chceš, k tomu, aby si to žila každý deň."
-      }
-    ]
   },
   "testimonials": {
     "eyebrow": "Príbehy",
@@ -86,17 +33,8 @@
   },
   "contact": {
     "eyebrow": "Porozprávajme sa",
-    "title": "Tvoja ďalšia kapitola sa môže začať *jedným rozhovorom*",
-    "intro": "Napíš mi, kde sa práve nachádzaš. Ozvem sa do dvoch pracovných dní a dohodneme si bezplatný 20-minútový úvodný hovor.",
     "name": "Meno",
     "email": "E-mail",
-    "interest": "Ktorý program ťa zaujíma?",
-    "interestOptions": [
-      "Ešte neviem",
-      "Come Back to Yourself",
-      "Your Next Chapter",
-      "Become Her"
-    ],
     "message": "Tvoja správa",
     "submit": "Odoslať správu",
     "sending": "Odosiela sa…",
@@ -105,7 +43,6 @@
     "privacy": "Tvoje údaje použijem len na to, aby som ti odpovedala."
   },
   "footer": {
-    "tagline": "Koučing pre tvoju ďalšiu kapitolu",
     "privacy": "Ochrana súkromia",
     "imprint": "Impresum",
     "rights": "Všetky práva vyhradené."

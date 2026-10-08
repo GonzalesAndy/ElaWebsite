@@ -1,65 +1,12 @@
 {
-  "meta": {
-    "title": "Aurea · Coaching per il tuo prossimo capitolo",
-    "description": "Coaching per donne che si sono allontanate da sé stesse: scopri cosa desideri davvero e costruisci consapevolmente il tuo prossimo capitolo."
-  },
   "nav": {
     "skip": "Vai al contenuto",
     "menu": "Menu",
     "close": "Chiudi",
     "about": "Chi sono",
-    "programs": "Percorsi",
-    "testimonials": "Storie",
     "contact": "Contatti",
     "book": "Fai il primo passo",
     "language": "Lingua"
-  },
-  "hero": {
-    "eyebrow": "Coaching per donne in transizione",
-    "title": "Il tuo prossimo capitolo\n*inizia* qui",
-    "subtitle": "Per le donne che hanno costruito la vita che ci si aspettava da loro, e si sono accorte in silenzio che non è la loro. Ritrova te stessa, scopri cosa desideri davvero e trova il coraggio di viverlo.",
-    "cta": "Inizia il tuo prossimo capitolo",
-    "secondary": "La mia storia"
-  },
-  "about": {
-    "eyebrow": "Chi sono",
-    "title": "Ciao, sono *Elena*.",
-    "p1": "Sono cresciuta in Slovacchia e ho costruito la mia carriera a Vienna. Sulla carta avevo tutto. Eppure per anni non mi sono sentita me stessa.",
-    "p2": "Ritrovare la strada verso me stessa ha cambiato tutto. Oggi accompagno donne pronte a smettere di vivere una vita scelta da altri e a costruire consapevolmente *il proprio* prossimo capitolo.",
-    "stats": [
-      {
-        "value": "Chiarezza",
-        "label": "su ciò che desideri davvero"
-      },
-      {
-        "value": "Coraggio",
-        "label": "di non restare dove non ti senti a casa"
-      },
-      {
-        "value": "Azione",
-        "label": "dalla chiarezza al cambiamento concreto"
-      }
-    ]
-  },
-  "programs": {
-    "eyebrow": "Percorsi",
-    "title": "Tre passi verso il tuo *prossimo capitolo*",
-    "intro": "Dopo una separazione, un cambio di carriera, un burnout, una perdita, un trasferimento o semplicemente con la sensazione silenziosa che qualcosa non va: ogni percorso ti incontra dove sei.",
-    "cta": "Trova il tuo punto di partenza",
-    "items": [
-      {
-        "name": "Come Back to Yourself",
-        "line": "Capisci dove sei e cosa desideri davvero."
-      },
-      {
-        "name": "Your Next Chapter",
-        "line": "Ridefinisci chi sei e costruisci una vita che senti tua."
-      },
-      {
-        "name": "Become Her",
-        "line": "Dal sapere cosa vuoi al viverlo, ogni giorno."
-      }
-    ]
   },
   "testimonials": {
     "eyebrow": "Storie",
@@ -86,17 +33,8 @@
   },
   "contact": {
     "eyebrow": "Parliamone",
-    "title": "Il tuo prossimo capitolo può iniziare con *una conversazione*",
-    "intro": "Raccontami dove ti trovi adesso: ti risponderò entro due giorni lavorativi per fissare una chiamata conoscitiva gratuita di 20 minuti.",
     "name": "Nome",
     "email": "Email",
-    "interest": "Quale percorso ti interessa?",
-    "interestOptions": [
-      "Non lo so ancora",
-      "Come Back to Yourself",
-      "Your Next Chapter",
-      "Become Her"
-    ],
     "message": "Il tuo messaggio",
     "submit": "Invia messaggio",
     "sending": "Invio in corso…",
@@ -105,7 +43,6 @@
     "privacy": "I tuoi dati verranno usati solo per risponderti."
   },
   "footer": {
-    "tagline": "Coaching per il tuo prossimo capitolo",
     "privacy": "Privacy",
     "imprint": "Note legali",
     "rights": "Tutti i diritti riservati."

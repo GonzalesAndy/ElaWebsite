@@ -947,23 +947,41 @@ section[id] {
   scale: 0 1;
 }
 
-/* Programs: heading, vertical journey and button on the left; the active chapter's photo on the right.
+/* The way: heading and intro across the full width, then the four clearings and the active
+   clearing's photo side by side, centred on each other.
    This section runs wider than the others (less side margin). */
 .programs-layout {
   width: min(100% - 6rem, 1600px);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); /* text | photo: raise 1.5 for a bigger photo */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); /* clearings | photo: raise 1.5 for a bigger photo */
   grid-template-areas:
-    "head    photo"
-    "journey photo"
-    "cta     photo";
+    "head    head"
+    "journey photo";
   column-gap: clamp(3rem, 5vw, 5rem);
+  row-gap: clamp(3rem, 5vw, 4.5rem);
   align-items: center;
 }
 
 .programs .section-head {
   grid-area: head;
+  max-width: none;
   margin-bottom: 0;
+}
+
+.programs .section-intro {
+  max-width: none;
+  text-wrap: pretty; /* no lonely words on the last line */
+}
+
+/* The intro breaks into two set lines on desktop only */
+@media (max-width: 960px) {
+  .programs .section-intro br {
+    display: none;
+  }
+}
+
+.programs .journey {
+  margin-top: 0; /* centred on the photo */
 }
 
 /* Vertical path: one line from the first dot to the last */
@@ -1083,16 +1101,637 @@ section[id] {
   box-shadow: 0 40px 80px -40px rgba(46, 38, 34, 0.45);
 }
 
-.programs-photo img {
+.programs-photo > :is(img, .photo-placeholder) {
   object-fit: cover;
   opacity: 0;
   scale: 1.04;
   transition: opacity 1.2s var(--ease-calm), scale 2.4s var(--ease-calm);
 }
 
-.programs-photo img.is-active {
+.programs-photo > .is-active {
   opacity: 1;
   scale: 1;
+}
+
+/* Text link with an arrow: used for "Read my journey", offers, page links */
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: var(--clay);
+  text-decoration: none;
+}
+
+.text-link span {
+  transition: translate 0.4s var(--ease-calm);
+}
+
+.text-link:hover span {
+  translate: 4px 0;
+}
+
+.about-more {
+  margin-top: 2rem !important;
+}
+
+/* Photo placeholder: a warm wash with a faint olive sprig, until the real photo is added */
+.photo-placeholder {
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: linear-gradient(160deg, #efdcc4 0%, #dcb894 55%, #c0926f 100%);
+}
+
+.photo-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 22%;
+  aspect-ratio: 510 / 457;
+  background: var(--cream);
+  opacity: 0.45;
+  -webkit-mask: url("/images/olive-branch.svg") center / contain no-repeat;
+  mask: url("/images/olive-branch.svg") center / contain no-repeat;
+}
+
+/* The Way: each clearing's guiding question */
+.journey-question {
+  margin-top: 0.35rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: calc(1.2rem * var(--display-scale));
+  line-height: 1.3;
+  color: var(--clay);
+}
+
+/* Offers: three quiet columns */
+.offers {
+  padding-top: 0;
+}
+
+.offers .section-head {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.offer-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--field-border);
+}
+
+.offer-name {
+  font-family: var(--font-display);
+  font-variant-numeric: lining-nums; /* "1:1" reads clearly in Cormorant */
+  font-size: calc(clamp(1.6rem, 2.2vw, 2rem) * var(--display-scale));
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: var(--display-tracking);
+}
+
+.offer-line {
+  margin: 0.75rem 0 1.5rem;
+  color: var(--ink-soft);
+}
+
+.offer .text-link {
+  margin-top: auto;
+}
+
+/* Photo frames on the pilgrimage page */
+.road-photo,
+.wide-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--cream-2);
+  box-shadow: 0 40px 80px -40px rgba(46, 38, 34, 0.45);
+}
+
+.road-photo {
+  aspect-ratio: 4 / 5; /* portrait: the St Francis statue */
+}
+
+.road-photo img {
+  object-position: 50% 35%; /* keep his face and hands in view */
+}
+
+.road-photo img,
+.wide-photo img {
+  object-fit: cover;
+}
+
+/* Inner pages */
+.page-main {
+  padding-top: 5.5rem; /* room for the fixed header */
+}
+
+.site-header--page {
+  animation-delay: 0s;
+}
+
+.page-hero {
+  padding-block: clamp(3.5rem, 8vw, 6.5rem) clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.page-hero .rise {
+  animation-delay: calc(0.1s + var(--i, 0) * 0.12s);
+}
+
+.page-hero-grid {
+  display: grid;
+  gap: clamp(3rem, 7vw, 6rem);
+  align-items: center;
+}
+
+.page-hero--split .page-hero-grid {
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.page-hero-text {
+  max-width: 48rem;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-weight: 330;
+  font-size: calc(clamp(2.75rem, 5.5vw, 5rem) * var(--display-scale));
+  line-height: 1.02;
+  letter-spacing: var(--display-tracking);
+  text-wrap: balance;
+}
+
+.page-title em {
+  color: var(--clay);
+}
+
+html:not([data-fonts="fraunces"]) .page-title em {
+  font-weight: 500;
+  font-size: 1.06em;
+}
+
+.page-subtitle {
+  margin-top: 1.25rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: calc(clamp(1.3rem, 2vw, 1.65rem) * var(--display-scale));
+  line-height: 1.3;
+  color: var(--ink-soft);
+}
+
+.page-intro {
+  max-width: 40rem;
+  margin-top: 1.75rem;
+  color: var(--ink-soft);
+}
+
+/* Wide variant: full width, intro on one line on desktop */
+.page-hero--wide .page-hero-text {
+  max-width: none;
+}
+
+.page-hero--wide .page-intro {
+  max-width: none;
+}
+
+@media (min-width: 1100px) {
+  .page-hero--wide :is(.page-title, .page-intro) {
+    white-space: nowrap;
+  }
+}
+
+.page-hero-aside .about-visual {
+  max-width: 26rem;
+  margin-left: auto;
+}
+
+.list-title {
+  margin-bottom: 1.25rem;
+  font-family: var(--font-display);
+  font-size: calc(clamp(1.6rem, 2.2vw, 2rem) * var(--display-scale));
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+/* Journey page: the story as a vertical path */
+.story-wrap {
+  max-width: 50rem;
+}
+
+.story {
+  --marker: 11px;
+  position: relative;
+  display: grid;
+  gap: clamp(2.25rem, 4vw, 3rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.story::before {
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  bottom: 1rem;
+  left: calc(var(--marker) / 2);
+  width: 1px;
+  background: var(--field-border);
+}
+
+.story-chapter {
+  position: relative;
+  padding-left: 2.75rem;
+}
+
+.story-chapter:last-child::after {
+  content: "";
+  position: absolute;
+  top: calc(0.75rem + var(--marker));
+  bottom: -1rem;
+  left: 0;
+  width: var(--marker);
+  background: var(--cream);
+}
+
+.story-marker {
+  position: absolute;
+  z-index: 1;
+  top: 0.75rem;
+  left: 0;
+  width: var(--marker);
+  height: var(--marker);
+  border: 1px solid var(--olive);
+  border-radius: 50%;
+  background: var(--cream);
+  box-shadow: 0 0 0 0.5rem var(--cream);
+}
+
+.story-chapter:last-child .story-marker {
+  border-color: var(--clay);
+  background: var(--clay);
+}
+
+.story-title {
+  font-family: var(--font-display);
+  font-size: calc(clamp(1.6rem, 2.3vw, 2.1rem) * var(--display-scale));
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.story-text {
+  max-width: 40rem;
+  margin-top: 0.6rem;
+  color: var(--ink-soft);
+}
+
+.story-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  margin-top: 1.25rem;
+}
+
+.story-closing {
+  max-width: 44rem;
+  margin-top: clamp(4rem, 8vw, 6rem);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: calc(clamp(1.5rem, 2.4vw, 2.1rem) * var(--display-scale));
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.story-closing em {
+  font-weight: 600;
+  color: var(--clay);
+}
+
+/* Pilgrimage page */
+.wide-photo {
+  aspect-ratio: 21 / 9;
+}
+
+/* Town carousel at the top of the pilgrimage page */
+.town-carousel img {
+  object-fit: cover;
+  opacity: 0;
+  scale: 1.08;
+  transition: opacity 1.6s var(--ease-calm), scale 8s linear;
+}
+
+.town-carousel img.is-active {
+  opacity: 1;
+  scale: 1;
+}
+
+.town-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(36, 24, 18, 0.55) 0%, rgba(36, 24, 18, 0.1) 40%, transparent 60%);
+  pointer-events: none;
+}
+
+.town-caption {
+  position: absolute;
+  left: clamp(1.25rem, 3vw, 2.25rem);
+  bottom: clamp(1rem, 2.5vw, 1.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #fff;
+}
+
+.town-count {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+}
+
+.town-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: calc(clamp(1.75rem, 3vw, 2.5rem) * var(--display-scale));
+  line-height: 1;
+}
+
+.town-controls {
+  position: absolute;
+  right: clamp(1.25rem, 3vw, 2.25rem);
+  bottom: clamp(1rem, 2.5vw, 1.75rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.town-dots {
+  display: flex;
+  gap: 0.15rem;
+}
+
+.town-dot {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0;
+  background: transparent;
+}
+
+.town-dot::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 7px;
+  height: 7px;
+  translate: -50% -50%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  transition: width 0.5s var(--ease-calm), background-color 0.5s;
+}
+
+.town-dot.is-active::after {
+  width: 20px;
+  background: #fff;
+}
+
+.town-dot:focus-visible,
+.town-toggle:focus-visible {
+  outline-color: #fff;
+}
+
+.town-toggle {
+  position: static;
+}
+
+.is-not-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  max-width: 64rem;
+}
+
+.plain-list {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plain-list li {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.plain-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.plain-list--yes li::before {
+  background: var(--olive);
+}
+
+.plain-list--no li {
+  color: var(--ink-soft);
+}
+
+.plain-list--no li::before {
+  border: 1px solid var(--field-border);
+}
+
+.route {
+  --marker: 13px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(var(--stops, 6), 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* The line runs from the first stop's centre to the last one's */
+.route::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--marker) / 2);
+  left: calc(100% / 12);
+  right: calc(100% / 12);
+  height: 1px;
+  background: var(--field-border);
+  transform-origin: left center;
+  transition: scale 2.4s 0.3s var(--ease-calm);
+}
+
+.route-stop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.route-marker {
+  position: relative;
+  z-index: 1;
+  width: var(--marker);
+  height: var(--marker);
+  border: 1px solid var(--olive);
+  border-radius: 50%;
+  background: var(--cream);
+  box-shadow: 0 0 0 0.5rem var(--cream);
+  transition: scale 0.8s calc(0.4s + var(--i) * 0.3s) var(--ease-calm);
+}
+
+.route-stop:first-child .route-marker,
+.route-stop:last-child .route-marker {
+  border-color: var(--clay);
+  background: var(--clay);
+}
+
+.route-name {
+  font-family: var(--font-display);
+  font-size: calc(clamp(1.3rem, 1.8vw, 1.65rem) * var(--display-scale));
+  line-height: 1.1;
+  transition: opacity 0.9s calc(0.5s + var(--i) * 0.3s) var(--ease-calm);
+}
+
+.reveal-ready .route:not(.is-visible)::before {
+  scale: 0 1;
+}
+
+.reveal-ready .route:not(.is-visible) .route-marker {
+  scale: 0;
+}
+
+.reveal-ready .route:not(.is-visible) .route-name {
+  opacity: 0;
+}
+
+.route-section {
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.road-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(3rem, 7vw, 6rem);
+  align-items: center;
+}
+
+.road-text {
+  margin-top: 1.25rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: calc(clamp(1.3rem, 1.9vw, 1.6rem) * var(--display-scale));
+  line-height: 1.45;
+}
+
+.road-return-title {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 1.25rem;
+}
+
+/* Closing call to action on inner pages */
+.page-cta-inner {
+  max-width: 46rem;
+  text-align: center;
+}
+
+.page-cta-inner > * + * {
+  margin-top: 1.5rem;
+}
+
+.page-cta-note {
+  color: var(--ink-soft);
+}
+
+/* Research page: sober and typographic */
+.research-narrow {
+  max-width: 54rem;
+}
+
+.question-list {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.question-list li {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  align-items: baseline;
+}
+
+.question-num {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: calc(1.4rem * var(--display-scale));
+  color: var(--clay);
+}
+
+.question-list p {
+  font-family: var(--font-display);
+  font-size: calc(clamp(1.45rem, 2.2vw, 1.9rem) * var(--display-scale));
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.research-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.research-columns p {
+  color: var(--ink-soft);
+}
+
+.research-themes {
+  margin-top: clamp(3.5rem, 7vw, 5rem);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--field-border);
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+
+.research-note {
+  max-width: 40rem;
+  margin-top: 2.5rem;
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: var(--ink-soft);
 }
 
 /* Stories */
@@ -1511,14 +2150,56 @@ section[id] {
     grid-template-areas:
       "head"
       "photo"
-      "journey"
-      "cta";
+      "journey";
     row-gap: 2.5rem;
   }
 
   .journey,
   .journey-cta {
     margin-top: 0;
+  }
+
+  .offer-list,
+  .page-hero--split .page-hero-grid,
+  .is-not-grid,
+  .road-grid,
+  .research-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero-aside .about-visual {
+    margin-left: 0;
+  }
+
+  .wide-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Route runs vertically on smaller screens */
+  .route {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    max-width: 24rem;
+  }
+
+  .route::before {
+    top: 0.4rem;
+    bottom: 0.4rem;
+    left: calc(var(--marker) / 2);
+    right: auto;
+    width: 1px;
+    height: auto;
+    transform-origin: center top;
+  }
+
+  .reveal-ready .route:not(.is-visible)::before {
+    scale: 1 0;
+  }
+
+  .route-stop {
+    flex-direction: row;
+    gap: 1.5rem;
+    text-align: left;
   }
 
   .footer-grid {
@@ -1533,6 +2214,14 @@ section[id] {
 @media (max-width: 640px) {
   .hide-sm {
     display: none !important;
+  }
+
+  /* Town carousel: controls move to the top so long town names have room */
+  .town-controls {
+    top: 0.75rem;
+    bottom: auto;
+    right: 0.75rem;
+    gap: 0.5rem;
   }
 
   .about-branch {

@@ -1,63 +1,85 @@
 {
   "meta": {
-    "title": "Aurea · Coaching for your next chapter",
-    "description": "Coaching for women who feel disconnected from themselves: discover what you truly want and consciously build your next chapter."
+    "title": "Aurea · Coaching & pilgrimage for women",
+    "description": "Coaching and walking pilgrimages for women who are ready to put down what is no longer theirs and return to themselves. With Elena Repka, Vienna."
   },
   "nav": {
     "skip": "Skip to content",
     "menu": "Menu",
     "close": "Close",
+    "home": "Home",
     "about": "About",
-    "programs": "Programs",
-    "testimonials": "Stories",
+    "way": "The way",
+    "offers": "Work with me",
+    "pilgrimage": "Pilgrimage",
+    "journey": "My journey",
+    "research": "Research",
     "contact": "Contact",
     "book": "Take the first step",
     "language": "Language"
   },
   "hero": {
-    "eyebrow": "Coaching for women in transition",
-    "title": "Your next chapter\n*starts* here",
-    "subtitle": "For women who built the life they were supposed to, and quietly realised it isn't theirs. Reconnect with yourself, discover what you truly want, and find the courage to live it.",
-    "cta": "Begin your next chapter",
-    "secondary": "Read my story"
+    "eyebrow": "Coaching & pilgrimage for women",
+    "title": "After years of\ncarrying everyone,\n*return* to yourself",
+    "subtitle": "Coaching and walking pilgrimages for women who are ready to put down what is no longer theirs.",
+    "cta": "Take the first step",
+    "secondary": "How I work"
   },
   "about": {
     "eyebrow": "About me",
     "title": "Hello, I'm *Elena*.",
-    "p1": "I grew up in Slovakia and built my career in Vienna. On paper, everything was in place. And yet for years, I didn't feel like myself.",
-    "p2": "Finding my way back changed everything. Today I walk beside women who are ready to stop living a version of life chosen by others, and to consciously build *their own* next chapter.",
-    "stats": [
+    "p1": "I grew up in Slovakia and have lived in Vienna for many years. I studied philosophy and the arts, raised three children, and walked pilgrim roads from Tamil Nadu to Assisi.",
+    "p2": "Along the way I learned something simple to say and hard to live: a whole life is not one where you carry more, but one where you *choose* what to carry. This is what I help women do.",
+    "more": "Read my journey"
+  },
+  "way": {
+    "eyebrow": "The way",
+    "title": "Four clearings to make *room* for your life",
+    "intro": "Decluttering is not only about drawers and calendars. It is about deciding, gently and honestly,\nwhat still deserves a place in your life. We work through four clearings, at your pace.",
+    "items": [
       {
-        "value": "Clarity",
-        "label": "on what you truly want"
+        "name": "Space",
+        "question": "What surrounds me?",
+        "line": "Your home and the things you live with every day."
       },
       {
-        "value": "Courage",
-        "label": "to stop staying where you don't fit"
+        "name": "Time",
+        "question": "What receives my life?",
+        "line": "Where your days, energy and attention really go."
       },
       {
-        "value": "Action",
-        "label": "turning clarity into real change"
+        "name": "Relationships",
+        "question": "Who and what has access to me?",
+        "line": "The people, roles and expectations you carry."
+      },
+      {
+        "name": "Inner life",
+        "question": "What am I devoted to?",
+        "line": "The values and longings beneath it all."
       }
     ]
   },
-  "programs": {
-    "eyebrow": "Programs",
-    "title": "Three steps into your *next chapter*",
-    "intro": "Whether it's a breakup, a career change, burnout, loss or a move, or simply a quiet sense that something isn't right, each program meets you where you are.",
-    "cta": "Find your starting point",
+  "offers": {
+    "eyebrow": "Work with me",
+    "title": "Three ways to *begin*",
     "items": [
       {
-        "name": "Come Back to Yourself",
-        "line": "Understand where you are and what you truly want."
+        "name": "1:1 Coaching",
+        "line": "We work through the four clearings together, one by one, at your own pace.",
+        "link": "Begin with a free call",
+        "href": "#contact"
       },
       {
-        "name": "Your Next Chapter",
-        "line": "Redefine who you are and build a life that feels like yours."
+        "name": "Women's circle",
+        "line": "Six to eight women meeting over a few months, clearing space together.",
+        "link": "Ask about the next circle",
+        "href": "#contact"
       },
       {
-        "name": "Become Her",
-        "line": "From knowing what you want to living it, every day."
+        "name": "La Via del Cuore",
+        "line": "A walking pilgrimage from Assisi to Spoleto for women in transition.",
+        "link": "Discover the pilgrimage",
+        "href": "/pilgrimage"
       }
     ]
   },
@@ -86,16 +108,16 @@
   },
   "contact": {
     "eyebrow": "Let's talk",
-    "title": "Your next chapter can begin with *one conversation*",
-    "intro": "Tell me a little about where you are right now, and I'll reply within two working days to arrange a free 20-minute introductory call.",
+    "title": "Your first step can be *one conversation*",
+    "intro": "Tell me a little about where you are right now, and I'll reply within two working days to arrange a free 20-minute call.",
     "name": "Name",
     "email": "Email",
-    "interest": "Which program are you curious about?",
+    "interest": "What are you curious about?",
     "interestOptions": [
       "Not sure yet",
-      "Come Back to Yourself",
-      "Your Next Chapter",
-      "Become Her"
+      "1:1 Coaching",
+      "Women's circle",
+      "La Via del Cuore pilgrimage"
     ],
     "message": "Your message",
     "submit": "Send message",
@@ -105,9 +127,143 @@
     "privacy": "Your details are only used to reply to you."
   },
   "footer": {
-    "tagline": "Coaching for your next chapter",
+    "tagline": "Coaching & pilgrimage for women",
+    "explore": "Explore",
     "privacy": "Privacy",
     "imprint": "Imprint",
     "rights": "All rights reserved."
+  },
+  "pageCta": {
+    "eyebrow": "Let's talk",
+    "title": "Your first step can be *one conversation*",
+    "button": "Take the first step"
+  },
+  "journeyPage": {
+    "meta": {
+      "title": "My journey · Aurea",
+      "description": "Philosophy, heritage, gender studies, Indian classical dance, Vedānta, contemplative prayer, pilgrimage and motherhood: the journey of Elena Repka."
+    },
+    "eyebrow": "My journey",
+    "title": "A life of crossing *boundaries*",
+    "intro": "I have spent my life investigating how human beings create meaning through body, culture, place, ritual, beauty and relationship. These are the places that question has taken me.",
+    "chapters": [
+      {
+        "title": "Philosophy & the arts",
+        "text": "I studied Philosophy, Arts and European Aesthetics, asking how beauty and meaning shape the way we live."
+      },
+      {
+        "title": "Heritage",
+        "text": "Further studies in heritage conservation management taught me how places hold memory, and how fragile that memory can be."
+      },
+      {
+        "title": "Gender & matrilineal cultures",
+        "text": "Gender studies, and a fellowship on the matrilineal culture of the Minangkabau in West Sumatra, where house, land and lineage pass through women."
+      },
+      {
+        "title": "Dance & the body",
+        "text": "Years of Indian classical dance, Bharatanatyam and Kuchipudi, taught me that knowledge lives in the body, not only in the mind."
+      },
+      {
+        "title": "Vedānta & Kashmir Śaivism",
+        "text": "Traditional Vedānta and Kashmir Śaivism, alongside Āyurveda, deepened my understanding of consciousness, discipline and care."
+      },
+      {
+        "title": "Pilgrimage",
+        "text": "I walked to sacred places in Tamil Nadu and on the Char Dham Yatra, along the way of Mary Magdalene in Provence, and in the footsteps of St Francis and St Clare through Assisi, Spoleto and Orvieto."
+      },
+      {
+        "title": "Silence",
+        "text": "I spent weeks in silence and the Jesus Prayer with the Benedictine monks of Sampor in Slovakia."
+      },
+      {
+        "title": "Motherhood",
+        "text": "I am also a mother of three adult children. Motherhood has been one of the deepest laboratories of my understanding of time, attachment, identity, responsibility and letting go."
+      },
+      {
+        "title": "Vienna, today",
+        "text": "Today I live and work in Vienna, where research, coaching and pilgrimage have become one way of working."
+      }
+    ],
+    "closing": "The point is not how many things I have studied. It is what they taught me about living a *whole* life, and what I can now share with the women I walk beside."
+  },
+  "pilgrimagePage": {
+    "meta": {
+      "title": "La Via del Cuore · Aurea",
+      "description": "A walking pilgrimage for women in transition, from Assisi to Spoleto through the green heart of Umbria."
+    },
+    "eyebrow": "La Via del Cuore",
+    "title": "Not escaping life.\n*Walking back* into it.",
+    "intro": "A walking pilgrimage for women in transition, from Assisi to Spoleto through the green heart of Umbria.",
+    "isTitle": "What it is",
+    "is": [
+      "A threshold for women in a season of change",
+      "Walking, silence and honest conversation",
+      "Simple meals, simple rooms, a small group of women",
+      "Time to reconsider what you carry"
+    ],
+    "notTitle": "What it is not",
+    "not": [
+      "A wellness holiday",
+      "A sightseeing tour",
+      "A hiking challenge"
+    ],
+    "routeTitle": "The way",
+    "routeIntro": "We walk in the footsteps of St Francis and St Clare, from one Umbrian town to the next.",
+    "stops": [
+      "Assisi",
+      "Spello",
+      "Foligno",
+      "Trevi",
+      "Campello",
+      "Spoleto"
+    ],
+    "roadTitle": "On the road",
+    "road": "You leave your ordinary life behind. You carry less. You walk, and you get tired. You sleep somewhere different and eat simply. You talk, and you become quiet. You meet other women. And slowly, you reconsider what you carry.",
+    "returnTitle": "The return home",
+    "returnText": "The pilgrimage does not end in Spoleto. Together we prepare the way back, so that what you found on the road has a place in your everyday life. The question is not only what you leave behind, but what you *carry home*.",
+    "dates": "Next pilgrimage: dates to be announced",
+    "cta": "Ask about the next pilgrimage",
+    "carousel": {
+      "pause": "Pause the slideshow",
+      "play": "Play the slideshow",
+      "show": "Show"
+    }
+  },
+  "researchPage": {
+    "meta": {
+      "title": "Research · Aurea",
+      "description": "Women on the threshold: embodied pilgrimage, Marian devotion and the reorganisation of women's lives. Research by Elena Repka."
+    },
+    "eyebrow": "Research",
+    "title": "Women on the *threshold*",
+    "subtitle": "Embodied pilgrimage, Marian devotion and the reorganisation of women's lives",
+    "intro": "My research grows out of my own life: years of walking, praying and studying sacred traditions across Europe and India. It asks what pilgrimage does to women, and what women do with pilgrimage when they return home.",
+    "questionsTitle": "Research questions",
+    "questions": [
+      "How do women negotiate the boundary between traditional Catholic devotion and contemporary forms of spirituality?",
+      "What happens to the meaning of pilgrimage after returning home?",
+      "What does a woman carry home, and what does she leave behind?"
+    ],
+    "fieldTitle": "Fieldwork: Mariazell",
+    "field": "Ethnographic research among women pilgrims to Mariazell, Austria's most important Marian shrine, and among the ageing communities along its pilgrim paths.",
+    "comparativeTitle": "A comparative perspective",
+    "comparative": "A dialogue between two traditions of embodied transformation: European Christian pilgrimage, with its walking, sacred landscapes and return, and Indian embodied traditions, with their attention to body, consciousness, ritual and Śakti.",
+    "themesTitle": "Themes",
+    "themes": [
+      "Pilgrimage",
+      "Sacred femininity",
+      "Embodiment",
+      "Marian devotion",
+      "Sacred landscapes",
+      "Contemporary spirituality",
+      "Matrilineal cultures",
+      "Śrīvidyā",
+      "Cultural memory",
+      "Gender"
+    ],
+    "positionality": "As both researcher and pilgrim, I make my own position transparent: this is reflexive ethnography, written from inside the experience it studies.",
+    "contactTitle": "Research collaboration",
+    "contactText": "For conferences, academic exchange and research collaboration, I'd be glad to hear from you.",
+    "contactButton": "Get in touch"
   }
 }

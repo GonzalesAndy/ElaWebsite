@@ -1,33 +1,46 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 import Flag from "./Flag";
 import MorphMenu from "./MorphMenu";
 import { localeLabels, locales, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
 
-type Props = { nav: Dictionary["nav"]; locale: Locale };
+type Props = {
+  nav: Dictionary["nav"];
+  locale: Locale;
+  /** True on the landing page, where the header floats over the hero video until you scroll. */
+  overlay?: boolean;
+};
 
-export default function Header({ nav, locale }: Props) {
-  const [solid, setSolid] = useState(false);
+export default function Header({ nav, locale, overlay = false }: Props) {
+  const [solid, setSolid] = useState(!overlay);
+  const pathname = usePathname();
+  // The current page without its locale, so switching language keeps you on the same page
+  const subpath = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "");
+  const home = `/${locale}`;
 
   useEffect(() => {
+    if (!overlay) return;
     const onScroll = () => setSolid(window.scrollY > window.innerHeight * 0.75);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [overlay]);
 
   const links = [
-    { href: "#about", label: nav.about },
-    { href: "#programs", label: nav.programs },
-    { href: "#stories", label: nav.testimonials },
-    { href: "#contact", label: nav.contact },
+    { href: `${home}#about`, label: nav.about },
+    { href: `${home}#the-way`, label: nav.way },
+    { href: `${home}#offers`, label: nav.offers },
+    { href: `${home}/pilgrimage`, label: nav.pilgrimage },
+    { href: `${home}/journey`, label: nav.journey },
+    { href: `${home}#contact`, label: nav.contact },
   ];
 
   return (
-    <header className={`site-header ${solid ? "is-solid" : ""}`}>
+    <header className={`site-header ${solid ? "is-solid" : ""} ${overlay ? "" : "site-header--page"}`}>
       <div className="header-side">
         <MorphMenu
           align="start"
@@ -57,7 +70,7 @@ export default function Header({ nav, locale }: Props) {
                   </li>
                 ))}
                 <li className="show-sm" style={{ "--i": links.length } as React.CSSProperties}>
-                  <a href="#contact" className="morph-accent" onClick={close}>
+                  <a href={`${home}#contact`} className="morph-accent" onClick={close}>
                     {nav.book} <span aria-hidden="true">+</span>
                   </a>
                 </li>
@@ -67,7 +80,7 @@ export default function Header({ nav, locale }: Props) {
         </MorphMenu>
       </div>
 
-      <a href="#top" className="header-logo" aria-label="Aurea">
+      <a href={overlay ? "#top" : home} className="header-logo" aria-label="Aurea">
         <Logo />
       </a>
 
@@ -90,7 +103,7 @@ export default function Header({ nav, locale }: Props) {
             <ul className="morph-list">
               {locales.map((l, i) => (
                 <li key={l} style={{ "--i": i } as React.CSSProperties}>
-                  <a href={`/${l}`} hrefLang={l} lang={l} aria-current={l === locale ? "true" : undefined}>
+                  <a href={`/${l}${subpath}`} hrefLang={l} lang={l} aria-current={l === locale ? "true" : undefined}>
                     <Flag locale={l} />
                     {localeLabels[l]}
                   </a>
@@ -99,7 +112,7 @@ export default function Header({ nav, locale }: Props) {
             </ul>
           )}
         </MorphMenu>
-        <a href="#contact" className="pill pill--accent hide-sm">
+        <a href={`${home}#contact`} className="pill pill--accent hide-sm">
           {nav.book}
           <span aria-hidden="true">+</span>
         </a>

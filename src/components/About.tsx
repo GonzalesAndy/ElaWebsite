@@ -1,7 +1,8 @@
 import Rich from "./Rich";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
 
-export default function About({ about }: { about: Dictionary["about"] }) {
+export default function About({ about, locale }: { about: Dictionary["about"]; locale: Locale }) {
   return (
     <section id="about" className="section about" aria-labelledby="about-title">
       <div className="container about-grid">
@@ -24,14 +25,12 @@ export default function About({ about }: { about: Dictionary["about"] }) {
           <p data-reveal>
             <Rich text={about.p2} />
           </p>
-          <dl className="stats" data-reveal>
-            {about.stats.map((stat) => (
-              <div key={stat.label} className="stat">
-                <dt>{stat.label}</dt>
-                <dd>{stat.value}</dd>
-              </div>
-            ))}
-          </dl>
+          <p className="about-more" data-reveal>
+            <a href={`/${locale}/journey`} className="text-link">
+              {about.more}
+              <span aria-hidden="true">→</span>
+            </a>
+          </p>
         </div>
       </div>
     </section>
