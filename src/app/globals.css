@@ -1324,95 +1324,191 @@ html:not([data-fonts="fraunces"]) .page-title em {
   line-height: 1.15;
 }
 
-/* Journey page: the story as a vertical path */
-.story-wrap {
-  max-width: 50rem;
+/* Journey page: a mosaic of places.
+   Tiles unveil like a curtain as they scroll in, photos drift (parallax), and the line slides up on hover. */
+.places-section {
+  padding-block: clamp(1rem, 3vw, 2rem) 0;
 }
 
-.story {
-  --marker: 11px;
-  position: relative;
+/* The closing line leads straight into the call to action */
+.places-section + .page-cta {
+  padding-top: clamp(4rem, 7vw, 6rem);
+}
+
+.places-wrap {
+  width: min(100% - 6rem, 1600px);
+}
+
+.places {
   display: grid;
-  gap: clamp(2.25rem, 4vw, 3rem);
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: clamp(15rem, 21vw, 21rem);
+  /* wide tiles for the landscapes (01, 02), tall tiles for the standing portraits (04, 08) */
+  grid-template-areas:
+    "p1 p1 p2 p2"
+    "p3 p4 p5 p8"
+    "p6 p4 p7 p8";
+  gap: clamp(0.75rem, 1.2vw, 1rem);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.story::before {
-  content: "";
-  position: absolute;
-  top: 0.75rem;
-  bottom: 1rem;
-  left: calc(var(--marker) / 2);
-  width: 1px;
-  background: var(--field-border);
-}
+.place--1 { grid-area: p1; }
+.place--2 { grid-area: p2; }
+.place--3 { grid-area: p3; }
+.place--4 { grid-area: p4; }
+.place--5 { grid-area: p5; }
+.place--6 { grid-area: p6; }
+.place--7 { grid-area: p7; }
+.place--8 { grid-area: p8; }
 
-.story-chapter {
+.place {
+  --shift: 0;
   position: relative;
-  padding-left: 2.75rem;
+  border-radius: 1.25rem;
 }
 
-.story-chapter:last-child::after {
+.place-inner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: inherit;
+  background: var(--cream-2);
+}
+
+.place:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+}
+
+/* The photo is a little taller than its tile so it can drift with the scroll */
+.place-photo {
+  position: absolute;
+  inset: -8% 0;
+  translate: 0 calc(var(--shift) * 6%);
+}
+
+.place-photo :is(img, .photo-placeholder) {
+  object-fit: cover;
+  transition: scale 1.2s var(--ease-calm);
+}
+
+.place-inner::after {
   content: "";
   position: absolute;
-  top: calc(0.75rem + var(--marker));
-  bottom: -1rem;
-  left: 0;
-  width: var(--marker);
-  background: var(--cream);
+  inset: 0;
+  background: linear-gradient(to top, rgba(36, 24, 18, 0.7) 0%, rgba(36, 24, 18, 0.15) 50%, transparent 75%);
+  opacity: 0.85;
+  transition: opacity 0.6s var(--ease-calm);
+  pointer-events: none;
 }
 
-.story-marker {
+.place-caption {
   position: absolute;
+  inset: auto 0 0 0;
   z-index: 1;
-  top: 0.75rem;
-  left: 0;
-  width: var(--marker);
-  height: var(--marker);
-  border: 1px solid var(--olive);
-  border-radius: 50%;
-  background: var(--cream);
-  box-shadow: 0 0 0 0.5rem var(--cream);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  color: #fff;
 }
 
-.story-chapter:last-child .story-marker {
-  border-color: var(--clay);
-  background: var(--clay);
+.place-num {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  opacity: 0.85;
 }
 
-.story-title {
+.place-name {
   font-family: var(--font-display);
-  font-size: calc(clamp(1.6rem, 2.3vw, 2.1rem) * var(--display-scale));
+  font-size: calc(clamp(1.5rem, 2vw, 2rem) * var(--display-scale));
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.05;
 }
 
-.story-text {
+/* The line stays tucked away until hover or focus */
+.place-line {
+  display: grid;
+  max-width: 26rem;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  opacity: 0;
+  translate: 0 0.5rem;
+  transition: max-height 0.6s var(--ease-calm), margin-top 0.6s var(--ease-calm), opacity 0.5s var(--ease-calm),
+    translate 0.6s var(--ease-calm);
+}
+
+.place:is(:hover, :focus-visible) .place-line {
+  max-height: 6rem;
+  margin-top: 0.5rem;
+  opacity: 1;
+  translate: 0 0;
+}
+
+.place:is(:hover, :focus-visible) .place-photo :is(img, .photo-placeholder) {
+  scale: 1.06;
+}
+
+.place:is(:hover, :focus-visible) .place-inner::after {
+  opacity: 1;
+}
+
+/* Touch screens have no hover: show the line all the time */
+@media (hover: none) {
+  .place-line {
+    max-height: none;
+    margin-top: 0.4rem;
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* Reveal: once the mosaic is in view it fades in softly while rising slightly, and the photos
+   settle from a gentle zoom. Hidden from the first paint only when scripts run, so the page
+   never flickers or stays blank. */
+.places {
+  transition: opacity 1.6s cubic-bezier(0.45, 0, 0.2, 1), translate 1.6s cubic-bezier(0.45, 0, 0.2, 1);
+}
+
+.place-inner .place-photo :is(img, .photo-placeholder) {
+  transition: scale 2.6s cubic-bezier(0.45, 0, 0.2, 1);
+}
+
+@media (scripting: enabled) {
+  .places:not(.is-revealed) {
+    opacity: 0;
+    translate: 0 2.5rem;
+  }
+
+  .places:not(.is-revealed) .place-photo :is(img, .photo-placeholder) {
+    scale: 1.1;
+  }
+}
+
+/* Hover zoom answers faster than the slow reveal */
+.places.is-revealed .place:is(:hover, :focus-visible) .place-photo :is(img, .photo-placeholder) {
+  transition-delay: 0s;
+  transition-duration: 1.2s;
+}
+
+.places-closing {
   max-width: 40rem;
-  margin-top: 0.6rem;
-  color: var(--ink-soft);
-}
-
-.story-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 2rem;
-  margin-top: 1.25rem;
-}
-
-.story-closing {
-  max-width: 44rem;
-  margin-top: clamp(4rem, 8vw, 6rem);
+  margin: clamp(4rem, 8vw, 6rem) auto 0;
   font-family: var(--font-display);
   font-style: italic;
   font-size: calc(clamp(1.5rem, 2.4vw, 2.1rem) * var(--display-scale));
   line-height: 1.35;
+  text-align: center;
   text-wrap: balance;
 }
 
-.story-closing em {
+.places-closing em {
   font-weight: 600;
   color: var(--clay);
 }
@@ -2171,6 +2267,22 @@ html:not([data-fonts="fraunces"]) .page-title em {
     margin-left: 0;
   }
 
+  .places-wrap {
+    width: min(100% - 2rem, 1200px);
+  }
+
+  .places {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: clamp(13rem, 40vw, 18rem);
+    grid-template-areas:
+      "p1 p1"
+      "p2 p2"
+      "p3 p4"
+      "p5 p4"
+      "p6 p8"
+      "p7 p8";
+  }
+
   .wide-photo {
     aspect-ratio: 4 / 3;
   }
@@ -2214,6 +2326,16 @@ html:not([data-fonts="fraunces"]) .page-title em {
 @media (max-width: 640px) {
   .hide-sm {
     display: none !important;
+  }
+
+  .places {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 15rem;
+    grid-template-areas: none;
+  }
+
+  .places .place {
+    grid-area: auto;
   }
 
   /* Town carousel: controls move to the top so long town names have room */

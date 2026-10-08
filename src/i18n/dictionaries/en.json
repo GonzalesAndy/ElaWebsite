@@ -145,46 +145,42 @@
     },
     "eyebrow": "My journey",
     "title": "A life of crossing *boundaries*",
-    "intro": "I have spent my life investigating how human beings create meaning through body, culture, place, ritual, beauty and relationship. These are the places that question has taken me.",
-    "chapters": [
+    "intro": "My life has been a long inquiry into how we create meaning through body, culture, place and ritual. These are the places it has taken me.",
+    "closing": "Not a collection of places, but one question: how to live a *whole* life.",
+    "places": [
       {
-        "title": "Philosophy & the arts",
-        "text": "I studied Philosophy, Arts and European Aesthetics, asking how beauty and meaning shape the way we live."
+        "place": "Slovakia",
+        "line": "Where it began: philosophy, art and European aesthetics."
       },
       {
-        "title": "Heritage",
-        "text": "Further studies in heritage conservation management taught me how places hold memory, and how fragile that memory can be."
+        "place": "West Sumatra",
+        "line": "Among the Minangkabau, where house, land and lineage pass through women."
       },
       {
-        "title": "Gender & matrilineal cultures",
-        "text": "Gender studies, and a fellowship on the matrilineal culture of the Minangkabau in West Sumatra, where house, land and lineage pass through women."
+        "place": "Tamil Nadu",
+        "line": "Classical dance, Vedānta and the sacred sites of the South."
       },
       {
-        "title": "Dance & the body",
-        "text": "Years of Indian classical dance, Bharatanatyam and Kuchipudi, taught me that knowledge lives in the body, not only in the mind."
+        "place": "Himalaya",
+        "line": "The Char Dham Yatra, high in the mountains."
       },
       {
-        "title": "Vedānta & Kashmir Śaivism",
-        "text": "Traditional Vedānta and Kashmir Śaivism, alongside Āyurveda, deepened my understanding of consciousness, discipline and care."
+        "place": "Provence",
+        "line": "On the way of Mary Magdalene."
       },
       {
-        "title": "Pilgrimage",
-        "text": "I walked to sacred places in Tamil Nadu and on the Char Dham Yatra, along the way of Mary Magdalene in Provence, and in the footsteps of St Francis and St Clare through Assisi, Spoleto and Orvieto."
+        "place": "Assisi",
+        "line": "In the footsteps of St Francis and St Clare."
       },
       {
-        "title": "Silence",
-        "text": "I spent weeks in silence and the Jesus Prayer with the Benedictine monks of Sampor in Slovakia."
+        "place": "Sampor",
+        "line": "Weeks of silence and prayer with Benedictine monks."
       },
       {
-        "title": "Motherhood",
-        "text": "I am also a mother of three adult children. Motherhood has been one of the deepest laboratories of my understanding of time, attachment, identity, responsibility and letting go."
-      },
-      {
-        "title": "Vienna, today",
-        "text": "Today I live and work in Vienna, where research, coaching and pilgrimage have become one way of working."
+        "place": "Vienna",
+        "line": "Today: research, coaching, and three grown children."
       }
-    ],
-    "closing": "The point is not how many things I have studied. It is what they taught me about living a *whole* life, and what I can now share with the women I walk beside."
+    ]
   },
   "pilgrimagePage": {
     "meta": {

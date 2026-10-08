@@ -5,7 +5,7 @@ import { getDictionary } from "@/i18n/getDictionary";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import PageCta from "@/components/PageCta";
-import Divider from "@/components/Divider";
+import PlacesMosaic from "@/components/PlacesMosaic";
 import Rich from "@/components/Rich";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -38,38 +38,15 @@ export default async function JourneyPage({ params }: Props) {
         }
       />
 
-      <section className="section story-section" aria-label={page.eyebrow}>
-        <div className="container story-wrap">
-          <ol className="story">
-            {page.chapters.map((chapter, i) => (
-              <li key={chapter.title} className="story-chapter" data-reveal>
-                <span className="story-marker" aria-hidden="true" />
-                <h2 className="story-title">{chapter.title}</h2>
-                <p className="story-text">{chapter.text}</p>
-                {i === page.chapters.length - 1 && (
-                  <p className="story-links">
-                    <a href={`/${locale}#the-way`} className="text-link">
-                      {dict.nav.way} <span aria-hidden="true">→</span>
-                    </a>
-                    <a href={`/${locale}/pilgrimage`} className="text-link">
-                      {dict.nav.pilgrimage} <span aria-hidden="true">→</span>
-                    </a>
-                    <a href={`/${locale}/research`} className="text-link">
-                      {dict.nav.research} <span aria-hidden="true">→</span>
-                    </a>
-                  </p>
-                )}
-              </li>
-            ))}
-          </ol>
-
-          <p className="story-closing" data-reveal>
+      <section className="places-section" aria-label={page.eyebrow}>
+        <div className="container places-wrap">
+          <PlacesMosaic places={page.places} />
+          <p className="places-closing" data-reveal>
             <Rich text={page.closing} />
           </p>
         </div>
       </section>
 
-      <Divider />
       <PageCta cta={dict.pageCta} locale={locale} />
     </PageShell>
   );
