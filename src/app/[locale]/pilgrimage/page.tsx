@@ -38,7 +38,7 @@ export default async function PilgrimagePage({ params }: Props) {
   const page = dict.pilgrimagePage;
 
   return (
-    <PageShell dict={dict} locale={locale} path="/pilgrimage">
+    <PageShell dict={dict} locale={locale} path="/pilgrimage/">
       <PageHero eyebrow={page.eyebrow} title={page.title} intro={page.intro} wide />
 
       <TownCarousel towns={page.stops} photos={townPhotos} labels={page.carousel} />

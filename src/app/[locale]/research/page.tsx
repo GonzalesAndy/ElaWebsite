@@ -24,7 +24,7 @@ export default async function ResearchPage({ params }: Props) {
   const page = dict.researchPage;
 
   return (
-    <PageShell dict={dict} locale={locale} path="/research">
+    <PageShell dict={dict} locale={locale} path="/research/">
       <PageHero eyebrow={page.eyebrow} title={page.title} subtitle={page.subtitle} intro={page.intro} />
 
       <section className="section research-questions" aria-labelledby="questions-title">

@@ -1,6 +1,7 @@
 import Rich from "./Rich";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
+import { withBase } from "@/lib/basePath";
 
 type Props = {
   cta: Dictionary["pageCta"];
@@ -27,7 +28,7 @@ export default function PageCta({ cta, locale, button, note }: Props) {
           </p>
         )}
         <p data-reveal>
-          <a href={`/${locale}#contact`} className="btn btn--primary">
+          <a href={withBase(`/${locale}/#contact`)} className="btn btn--primary">
             {button ?? cta.button}
           </a>
         </p>

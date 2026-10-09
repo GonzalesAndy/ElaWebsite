@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import { isLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { withBase } from "@/lib/basePath";
 import "../globals.css";
 
 /*
@@ -59,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: dict.meta.title,
     description: dict.meta.description,
     alternates: {
-      languages: Object.fromEntries(locales.map((l) => [l, `/${l}`])),
+      languages: Object.fromEntries(locales.map((l) => [l, withBase(`/${l}/`)])),
     },
   };
 }

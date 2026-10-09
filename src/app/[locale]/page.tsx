@@ -16,7 +16,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const dict = await getDictionary(locale);
 
   return (
-    <PageShell dict={dict} locale={locale} path="" overlayHeader>
+    <PageShell dict={dict} locale={locale} path="/" overlayHeader>
       <Hero hero={dict.hero} />
       <About about={dict.about} locale={locale} />
       <Divider />

@@ -24,7 +24,7 @@ export default async function JourneyPage({ params }: Props) {
   const page = dict.journeyPage;
 
   return (
-    <PageShell dict={dict} locale={locale} path="/journey">
+    <PageShell dict={dict} locale={locale} path="/journey/">
       <PageHero
         eyebrow={page.eyebrow}
         title={page.title}

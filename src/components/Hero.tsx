@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Rich from "./Rich";
 import type { Dictionary } from "@/i18n/getDictionary";
+import { withBase } from "@/lib/basePath";
 
 export default function Hero({ hero }: { hero: Dictionary["hero"] }) {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -48,8 +49,7 @@ export default function Hero({ hero }: { hero: Dictionary["hero"] }) {
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="hero-card" ref={cardRef}>
         <video ref={videoRef} className="hero-video" autoPlay muted loop playsInline preload="auto" aria-hidden="true">
-          <source src="/video/hero.webm" type="video/webm" />
-          <source src="/video/hero.mp4" type="video/mp4" />
+          <source src={withBase("/video/hero.mp4")} type="video/mp4" />
         </video>
         <div className="hero-scrim" aria-hidden="true" />
 

@@ -1,14 +1,53 @@
 "use client";
 
-import { useActionState } from "react";
+import { useState } from "react";
 import Rich from "./Rich";
-import { sendContact, type ContactState } from "@/app/actions";
 import type { Dictionary } from "@/i18n/getDictionary";
 
-const initialState: ContactState = { status: "idle" };
+/*
+ * The site is static (GitHub Pages), so there is no server to send mail.
+ * With NEXT_PUBLIC_FORM_ENDPOINT set (e.g. a Formspree form URL) messages are posted there;
+ * otherwise the visitor's email app opens with the message ready to send to CONTACT_EMAIL.
+ */
+const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@example.com";
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+type Status = "idle" | "sending" | "success" | "error";
 
 export default function Contact({ contact }: { contact: Dictionary["contact"] }) {
-  const [state, formAction, pending] = useActionState(sendContact, initialState);
+  const [status, setStatus] = useState<Status>("idle");
+  const pending = status === "sending";
+
+  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    if (data.get("company")) return setStatus("success"); // honeypot: bots fill this hidden field
+
+    const name = String(data.get("name") ?? "").trim();
+    const email = String(data.get("email") ?? "").trim();
+    const interest = String(data.get("interest") ?? "").trim();
+    const message = String(data.get("message") ?? "").trim();
+    if (!name || !emailPattern.test(email) || message.length < 2) return setStatus("error");
+
+    if (!FORM_ENDPOINT) {
+      const body = `${message}\n\n${interest}\n${name} <${email}>`;
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Aurea: ${interest}`)}&body=${encodeURIComponent(body)}`;
+      return setStatus("success");
+    }
+
+    setStatus("sending");
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: data,
+      });
+      setStatus(response.ok ? "success" : "error");
+    } catch {
+      setStatus("error");
+    }
+  }
 
   return (
     <section id="contact" className="section contact" aria-labelledby="contact-title">
@@ -25,8 +64,8 @@ export default function Contact({ contact }: { contact: Dictionary["contact"] })
           </p>
         </div>
 
-        <form className="contact-form" action={formAction} data-reveal>
-          {state.status === "success" ? (
+        <form className="contact-form" onSubmit={onSubmit} data-reveal>
+          {status === "success" ? (
             <p className="form-success" role="status">
               {contact.success}
             </p>
@@ -66,7 +105,7 @@ export default function Contact({ contact }: { contact: Dictionary["contact"] })
                 </button>
               </div>
               <p role="status" className="form-error">
-                {state.status === "error" ? contact.error : ""}
+                {status === "error" ? contact.error : ""}
               </p>
             </>
           )}

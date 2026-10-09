@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { withBase } from "@/lib/basePath";
 
 const INTERVAL = 6000;
 
@@ -43,7 +44,7 @@ export default function TownCarousel({ towns, photos, labels }: Props) {
       {photos.map((src, i) => (
         <Image
           key={src}
-          src={src}
+          src={withBase(src)}
           alt=""
           fill
           sizes="(max-width: 1600px) 100vw, 1600px"

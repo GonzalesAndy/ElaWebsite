@@ -7,7 +7,7 @@ import type { Dictionary } from "@/i18n/getDictionary";
 type Props = {
   dict: Dictionary;
   locale: Locale;
-  /** The page without its locale, e.g. "" for home or "/journey". */
+  /** The page without its locale, e.g. "/" for home or "/journey/". */
   path: string;
   /** Landing page only: the header floats over the hero video. */
   overlayHeader?: boolean;

@@ -1,6 +1,7 @@
 import Rich from "./Rich";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
+import { withBase } from "@/lib/basePath";
 
 export default function About({ about, locale }: { about: Dictionary["about"]; locale: Locale }) {
   return (
@@ -26,7 +27,7 @@ export default function About({ about, locale }: { about: Dictionary["about"]; l
             <Rich text={about.p2} />
           </p>
           <p className="about-more" data-reveal>
-            <a href={`/${locale}/journey`} className="text-link">
+            <a href={withBase(`/${locale}/journey/`)} className="text-link">
               {about.more}
               <span aria-hidden="true">→</span>
             </a>

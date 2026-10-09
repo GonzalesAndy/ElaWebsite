@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBase } from "@/lib/basePath";
 
 type Props = {
   /** Path under /public. Leave empty to show a soft placeholder until the photo is added. */
@@ -15,7 +16,7 @@ export default function Photo({ src, sizes, className, priority, focus }: Props)
   if (!src) return <span className={`photo-placeholder ${className ?? ""}`} aria-hidden="true" />;
   return (
     <Image
-      src={src}
+      src={withBase(src)}
       alt=""
       fill
       sizes={sizes}

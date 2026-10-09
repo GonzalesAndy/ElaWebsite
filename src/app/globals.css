@@ -381,16 +381,16 @@ section[id] {
   width: 3rem;
   aspect-ratio: 1446 / 1320;
   background: currentColor;
-  -webkit-mask: url("/images/logo-er.svg") center / contain no-repeat;
-  mask: url("/images/logo-er.svg") center / contain no-repeat;
+  -webkit-mask: url("../../public/images/logo-er.svg") center / contain no-repeat;
+  mask: url("../../public/images/logo-er.svg") center / contain no-repeat;
   transition: background-color 0.5s var(--ease-calm);
 }
 
 /* Header shows the logo small, so it uses the bolder trace */
 .header-logo .logo-mark {
   width: 4.25rem;
-  -webkit-mask-image: url("/images/logo-er-bold.svg");
-  mask-image: url("/images/logo-er-bold.svg");
+  -webkit-mask-image: url("../../public/images/logo-er-bold.svg");
+  mask-image: url("../../public/images/logo-er-bold.svg");
 }
 
 .site-header.is-solid .logo-mark {
@@ -811,7 +811,7 @@ section[id] {
   border-radius: 999px 999px 1.5rem 1.5rem;
   /* Replace /public/images/portrait.jpg with your photo; the gradient shows until then. */
   background:
-    url("/images/portrait.jpg") center / cover no-repeat,
+    url("../../public/images/portrait.jpg") center / cover no-repeat,
     radial-gradient(circle at 30% 25%, #f8d9b8 0%, transparent 55%),
     linear-gradient(170deg, #e7b08a 0%, #c9785f 55%, #8e5a48 100%);
   box-shadow: 0 40px 80px -40px rgba(46, 38, 34, 0.45);
@@ -850,8 +850,8 @@ section[id] {
   filter: drop-shadow(0 10px 14px rgba(46, 38, 34, 0.18));
   aspect-ratio: 510 / 457;
   background: var(--olive);
-  -webkit-mask: url("/images/olive-branch.svg") center / contain no-repeat;
-  mask: url("/images/olive-branch.svg") center / contain no-repeat;
+  -webkit-mask: url("../../public/images/olive-branch.svg") center / contain no-repeat;
+  mask: url("../../public/images/olive-branch.svg") center / contain no-repeat;
   transform-origin: 83% 84%; /* the stem end: rotation and sway pivot here */
   transform: rotate(var(--branch-angle));
   animation: sway 11s ease-in-out infinite;
@@ -943,8 +943,8 @@ section[id] {
   width: 3.5rem;
   aspect-ratio: 510 / 457;
   background: currentColor;
-  -webkit-mask: url("/images/olive-branch.svg") center / contain no-repeat;
-  mask: url("/images/olive-branch.svg") center / contain no-repeat;
+  -webkit-mask: url("../../public/images/olive-branch.svg") center / contain no-repeat;
+  mask: url("../../public/images/olive-branch.svg") center / contain no-repeat;
   rotate: -45deg; /* lies flat, pointing left */
 }
 
@@ -1158,8 +1158,8 @@ section[id] {
   aspect-ratio: 510 / 457;
   background: var(--cream);
   opacity: 0.45;
-  -webkit-mask: url("/images/olive-branch.svg") center / contain no-repeat;
-  mask: url("/images/olive-branch.svg") center / contain no-repeat;
+  -webkit-mask: url("../../public/images/olive-branch.svg") center / contain no-repeat;
+  mask: url("../../public/images/olive-branch.svg") center / contain no-repeat;
 }
 
 /* The Way: each clearing's guiding question */
