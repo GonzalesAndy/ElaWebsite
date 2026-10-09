@@ -1,12 +1,87 @@
 {
+  "meta": {
+    "title": "Aurea · Koučing a púte pre ženy",
+    "description": "Koučing a pešie púte pre ženy, ktoré sú pripravené odložiť to, čo už nie je ich, a vrátiť sa k sebe. Elena Repka, Viedeň."
+  },
   "nav": {
     "skip": "Preskočiť na obsah",
     "menu": "Menu",
     "close": "Zavrieť",
+    "home": "Domov",
     "about": "O mne",
+    "way": "Cesta",
+    "offers": "Spolupráca",
+    "pilgrimage": "Púť",
+    "journey": "Môj príbeh",
+    "research": "Výskum",
     "contact": "Kontakt",
     "book": "Urob prvý krok",
     "language": "Jazyk"
+  },
+  "hero": {
+    "eyebrow": "Koučing a púte pre ženy",
+    "title": "Po rokoch, keď si\nniesla všetkých,\n*vráť* sa k sebe",
+    "subtitle": "Koučing a pešie púte pre ženy, ktoré sú pripravené odložiť to, čo už nie je ich.",
+    "cta": "Urob prvý krok",
+    "secondary": "Ako pracujem"
+  },
+  "about": {
+    "eyebrow": "O mne",
+    "title": "Ahoj, som *Elena*.",
+    "p1": "Vyrastala som na Slovensku a už mnoho rokov žijem vo Viedni. Študovala som filozofiu a umenie, vychovala tri deti a prešla pútnické cesty od Tamilnádu po Assisi.",
+    "p2": "Na tej ceste som sa naučila niečo, čo sa ľahko povie a ťažko žije: celistvý život nie je ten, v ktorom nesieš viac, ale ten, v ktorom si *vyberáš*, čo nesieš. A práve v tom pomáham ženám.",
+    "more": "Prečítaj si môj príbeh"
+  },
+  "way": {
+    "eyebrow": "Cesta",
+    "title": "Štyri čistinky pre viac *priestoru* v tvojom živote",
+    "intro": "Upratovanie nie je len o zásuvkách a kalendároch. Je o tom, jemne a úprimne sa rozhodnúť,\nčo si v tvojom živote ešte zaslúži miesto. Štyrmi čistinkami prejdeme tvojím tempom.",
+    "items": [
+      {
+        "name": "Priestor",
+        "question": "Čo ma obklopuje?",
+        "line": "Tvoj domov a veci, s ktorými žiješ každý deň."
+      },
+      {
+        "name": "Čas",
+        "question": "Čomu dávam svoj život?",
+        "line": "Kam naozaj odchádzajú tvoje dni, energia a pozornosť."
+      },
+      {
+        "name": "Vzťahy",
+        "question": "Kto a čo má ku mne prístup?",
+        "line": "Ľudia, roly a očakávania, ktoré nesieš."
+      },
+      {
+        "name": "Vnútorný život",
+        "question": "Čomu som oddaná?",
+        "line": "Hodnoty a túžby pod tým všetkým."
+      }
+    ]
+  },
+  "offers": {
+    "eyebrow": "Spolupráca",
+    "title": "Tri spôsoby, ako *začať*",
+    "items": [
+      {
+        "name": "Koučing 1:1",
+        "line": "Spolu prejdeme štyri čistinky, jednu po druhej, tvojím tempom.",
+        "link": "Začni bezplatným rozhovorom",
+        "href": "#contact"
+      },
+      {
+        "name": "Ženský kruh",
+        "line": "Šesť až osem žien, ktoré sa stretávajú niekoľko mesiacov a spolu si robia priestor.",
+        "link": "Opýtaj sa na ďalší kruh",
+        "href": "#contact"
+      },
+      {
+        "name": "La Via del Cuore",
+        "line": "Pešia púť z Assisi do Spoleta pre ženy v období zmeny.",
+        "link": "Objav púť",
+        "href": "/pilgrimage"
+      }
+    ]
   },
   "testimonials": {
     "eyebrow": "Príbehy",
@@ -40,11 +115,151 @@
     "sending": "Odosiela sa…",
     "success": "Ďakujem! Tvoja správa dorazila. Čoskoro sa ozvem.",
     "error": "Niečo sa pokazilo. Skús to znova alebo napíš na hello@example.com",
-    "privacy": "Tvoje údaje použijem len na to, aby som ti odpovedala."
+    "privacy": "Tvoje údaje použijem len na to, aby som ti odpovedala.",
+    "title": "Tvoj prvý krok môže byť *jeden rozhovor*",
+    "intro": "Napíš mi niečo o tom, kde sa práve nachádzaš. Ozvem sa do dvoch pracovných dní a dohodneme si bezplatný 20-minútový hovor.",
+    "interest": "Čo ťa zaujíma?",
+    "interestOptions": [
+      "Ešte neviem",
+      "Koučing 1:1",
+      "Ženský kruh",
+      "Púť La Via del Cuore"
+    ]
   },
   "footer": {
     "privacy": "Ochrana súkromia",
     "imprint": "Impresum",
-    "rights": "Všetky práva vyhradené."
+    "rights": "Všetky práva vyhradené.",
+    "tagline": "Koučing a púte pre ženy",
+    "explore": "Objavuj"
+  },
+  "pageCta": {
+    "eyebrow": "Porozprávajme sa",
+    "title": "Tvoj prvý krok môže byť *jeden rozhovor*",
+    "button": "Urob prvý krok"
+  },
+  "journeyPage": {
+    "meta": {
+      "title": "Môj príbeh · Aurea",
+      "description": "Filozofia, ochrana pamiatok, rodové štúdiá, indický klasický tanec, védánta, kontemplatívna modlitba, púte a materstvo: príbeh Eleny Repka."
+    },
+    "eyebrow": "Môj príbeh",
+    "title": "Život cez *hranice*",
+    "intro": "Môj život bol dlhým hľadaním toho, ako vytvárame zmysel cez telo, kultúru, miesto a rituál. Na tieto miesta ma priviedol.",
+    "closing": "Nie zbierka miest, ale jedna otázka: ako žiť *celistvý* život.",
+    "places": [
+      {
+        "place": "Slovensko",
+        "line": "Kde to začalo: filozofia, umenie a európska estetika."
+      },
+      {
+        "place": "Západná Sumatra",
+        "line": "Medzi Minangkabau, kde dom, pôda a rod prechádzajú cez ženy."
+      },
+      {
+        "place": "Tamilnádu",
+        "line": "Klasický tanec, védánta a posvätné miesta juhu."
+      },
+      {
+        "place": "Himaláje",
+        "line": "Púť Čár Dhám, vysoko v horách."
+      },
+      {
+        "place": "Provensalsko",
+        "line": "Na ceste Márie Magdalény."
+      },
+      {
+        "place": "Assisi",
+        "line": "V stopách svätého Františka a svätej Kláry."
+      },
+      {
+        "place": "Sampor",
+        "line": "Týždne ticha a modlitby s benediktínskymi mníchmi."
+      },
+      {
+        "place": "Viedeň",
+        "line": "Dnes: výskum, koučing a tri dospelé deti."
+      }
+    ]
+  },
+  "pilgrimagePage": {
+    "meta": {
+      "title": "La Via del Cuore · Aurea",
+      "description": "Pešia púť pre ženy v období zmeny, z Assisi do Spoleta cez zelené srdce Umbrie."
+    },
+    "eyebrow": "La Via del Cuore",
+    "title": "Neutekať pred životom,\nale *vrátiť sa* doň.",
+    "intro": "Pešia púť pre ženy v období zmeny, z Assisi do Spoleta cez zelené srdce Umbrie.",
+    "isTitle": "Čo to je",
+    "is": [
+      "Prah pre ženy v období zmeny",
+      "Chôdza, ticho a úprimné rozhovory",
+      "Jednoduché jedlá, jednoduché izby, malá skupina žien",
+      "Čas zamyslieť sa, čo nesieš"
+    ],
+    "notTitle": "Čo to nie je",
+    "not": [
+      "Wellness dovolenka",
+      "Poznávací zájazd",
+      "Turistická výzva"
+    ],
+    "routeTitle": "Cesta",
+    "routeIntro": "Kráčame v stopách svätého Františka a svätej Kláry, z jedného umbrijského mestečka do druhého.",
+    "roadTitle": "Na ceste",
+    "road": "Necháš svoj bežný život za sebou. Nesieš menej. Kráčaš a si unavená. Spíš niekde inde a ješ jednoducho. Rozprávaš sa a stíchneš. Stretneš iné ženy. A pomaly prehodnocuješ, čo nesieš.",
+    "returnTitle": "Návrat domov",
+    "returnText": "Púť sa nekončí v Spolete. Spolu pripravíme cestu späť, aby to, čo si našla na ceste, malo miesto v tvojom každodennom živote. Otázkou nie je len to, čo necháš za sebou, ale čo si *odnesieš domov*.",
+    "dates": "Ďalšia púť: termíny čoskoro oznámime",
+    "cta": "Opýtaj sa na ďalšiu púť",
+    "carousel": {
+      "pause": "Pozastaviť prezentáciu",
+      "play": "Spustiť prezentáciu",
+      "show": "Zobraziť"
+    },
+    "stops": [
+      "Assisi",
+      "Spello",
+      "Foligno",
+      "Trevi",
+      "Campello",
+      "Spoleto"
+    ]
+  },
+  "researchPage": {
+    "meta": {
+      "title": "Výskum · Aurea",
+      "description": "Ženy na prahu: stelesnené pútnictvo, mariánska zbožnosť a premena životov žien. Výskum Eleny Repka."
+    },
+    "eyebrow": "Výskum",
+    "title": "Ženy na *prahu*",
+    "subtitle": "Stelesnené pútnictvo, mariánska zbožnosť a premena životov žien",
+    "intro": "Môj výskum vyrastá z môjho vlastného života: z rokov chôdze, modlitby a štúdia posvätných tradícií v Európe a Indii. Pýta sa, čo púť robí so ženami a čo ženy robia s púťou, keď sa vrátia domov.",
+    "questionsTitle": "Výskumné otázky",
+    "questions": [
+      "Ako ženy vyjednávajú hranicu medzi tradičnou katolíckou zbožnosťou a súčasnými formami spirituality?",
+      "Čo sa deje s významom púte po návrate domov?",
+      "Čo si žena odnáša domov a čo necháva za sebou?"
+    ],
+    "fieldTitle": "Terénny výskum: Mariazell",
+    "field": "Etnografický výskum medzi pútničkami do Mariazellu, najvýznamnejšieho mariánskeho pútnického miesta Rakúska, a v starnúcich komunitách pozdĺž jeho pútnických ciest.",
+    "comparativeTitle": "Porovnávacia perspektíva",
+    "comparative": "Dialóg medzi dvoma tradíciami stelesnenej premeny: európskym kresťanským pútnictvom s jeho chôdzou, posvätnou krajinou a návratom a indickými stelesnenými tradíciami s ich pozornosťou k telu, vedomiu, rituálu a Śakti.",
+    "themesTitle": "Témy",
+    "themes": [
+      "Pútnictvo",
+      "Posvätná ženskosť",
+      "Stelesnenie",
+      "Mariánska zbožnosť",
+      "Posvätná krajina",
+      "Súčasná spiritualita",
+      "Matrilineárne kultúry",
+      "Śrīvidyā",
+      "Kultúrna pamäť",
+      "Gender"
+    ],
+    "positionality": "Ako výskumníčka aj pútnička otvorene priznávam svoju pozíciu: ide o reflexívnu etnografiu, písanú zvnútra skúsenosti, ktorú skúma.",
+    "contactTitle": "Výskumná spolupráca",
+    "contactText": "Pri konferenciách, akademickej výmene a výskumnej spolupráci sa teším na vašu správu.",
+    "contactButton": "Kontaktovať"
   }
 }

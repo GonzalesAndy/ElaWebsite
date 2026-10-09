@@ -1,12 +1,87 @@
 {
+  "meta": {
+    "title": "Aurea · Coaching e pellegrinaggi per donne",
+    "description": "Coaching e pellegrinaggi a piedi per donne pronte a lasciare ciò che non è più loro e a tornare a se stesse. Con Elena Repka, Vienna."
+  },
   "nav": {
     "skip": "Vai al contenuto",
     "menu": "Menu",
     "close": "Chiudi",
+    "home": "Home",
     "about": "Chi sono",
+    "way": "Il cammino",
+    "offers": "Lavora con me",
+    "pilgrimage": "Pellegrinaggio",
+    "journey": "Il mio viaggio",
+    "research": "Ricerca",
     "contact": "Contatti",
     "book": "Fai il primo passo",
     "language": "Lingua"
+  },
+  "hero": {
+    "eyebrow": "Coaching e pellegrinaggi per donne",
+    "title": "Dopo anni passati\na portare tutti,\n*torna* a te stessa",
+    "subtitle": "Coaching e pellegrinaggi a piedi per donne pronte a lasciare ciò che non è più loro.",
+    "cta": "Fai il primo passo",
+    "secondary": "Come lavoro"
+  },
+  "about": {
+    "eyebrow": "Chi sono",
+    "title": "Ciao, sono *Elena*.",
+    "p1": "Sono cresciuta in Slovacchia e vivo a Vienna da molti anni. Ho studiato filosofia e arte, ho cresciuto tre figli e ho percorso cammini di pellegrinaggio dal Tamil Nadu ad Assisi.",
+    "p2": "Lungo la strada ho imparato una cosa semplice da dire e difficile da vivere: una vita piena non è quella in cui porti di più, ma quella in cui *scegli* cosa portare. È questo che aiuto le donne a fare.",
+    "more": "Leggi il mio viaggio"
+  },
+  "way": {
+    "eyebrow": "Il cammino",
+    "title": "Quattro radure per fare *spazio* alla tua vita",
+    "intro": "Fare ordine non riguarda solo cassetti e calendari. Significa decidere, con delicatezza e sincerità,\ncosa merita ancora un posto nella tua vita. Attraversiamo quattro radure, al tuo ritmo.",
+    "items": [
+      {
+        "name": "Spazio",
+        "question": "Che cosa mi circonda?",
+        "line": "La tua casa e le cose con cui vivi ogni giorno."
+      },
+      {
+        "name": "Tempo",
+        "question": "A che cosa dedico la mia vita?",
+        "line": "Dove vanno davvero i tuoi giorni, la tua energia e la tua attenzione."
+      },
+      {
+        "name": "Relazioni",
+        "question": "Chi e che cosa ha accesso a me?",
+        "line": "Le persone, i ruoli e le aspettative che porti."
+      },
+      {
+        "name": "Vita interiore",
+        "question": "A che cosa sono devota?",
+        "line": "I valori e i desideri sotto a tutto."
+      }
+    ]
+  },
+  "offers": {
+    "eyebrow": "Lavora con me",
+    "title": "Tre modi per *iniziare*",
+    "items": [
+      {
+        "name": "Coaching 1:1",
+        "line": "Attraversiamo insieme le quattro radure, una alla volta, al tuo ritmo.",
+        "link": "Inizia con una chiamata gratuita",
+        "href": "#contact"
+      },
+      {
+        "name": "Cerchio di donne",
+        "line": "Da sei a otto donne che si incontrano per alcuni mesi e fanno spazio insieme.",
+        "link": "Chiedi del prossimo cerchio",
+        "href": "#contact"
+      },
+      {
+        "name": "La Via del Cuore",
+        "line": "Un pellegrinaggio a piedi da Assisi a Spoleto per donne in transizione.",
+        "link": "Scopri il pellegrinaggio",
+        "href": "/pilgrimage"
+      }
+    ]
   },
   "testimonials": {
     "eyebrow": "Storie",
@@ -40,11 +115,151 @@
     "sending": "Invio in corso…",
     "success": "Grazie! Il tuo messaggio è arrivato. Ti risponderò presto.",
     "error": "Qualcosa è andato storto. Riprova o scrivi a hello@example.com",
-    "privacy": "I tuoi dati verranno usati solo per risponderti."
+    "privacy": "I tuoi dati verranno usati solo per risponderti.",
+    "title": "Il tuo primo passo può essere *una conversazione*",
+    "intro": "Raccontami qualcosa di dove ti trovi adesso: ti risponderò entro due giorni lavorativi per fissare una chiamata gratuita di 20 minuti.",
+    "interest": "Che cosa ti incuriosisce?",
+    "interestOptions": [
+      "Non lo so ancora",
+      "Coaching 1:1",
+      "Cerchio di donne",
+      "Pellegrinaggio La Via del Cuore"
+    ]
   },
   "footer": {
     "privacy": "Privacy",
     "imprint": "Note legali",
-    "rights": "Tutti i diritti riservati."
+    "rights": "Tutti i diritti riservati.",
+    "tagline": "Coaching e pellegrinaggi per donne",
+    "explore": "Esplora"
+  },
+  "pageCta": {
+    "eyebrow": "Parliamone",
+    "title": "Il tuo primo passo può essere *una conversazione*",
+    "button": "Fai il primo passo"
+  },
+  "journeyPage": {
+    "meta": {
+      "title": "Il mio viaggio · Aurea",
+      "description": "Filosofia, tutela del patrimonio, studi di genere, danza classica indiana, Vedānta, preghiera contemplativa, pellegrinaggio e maternità: il viaggio di Elena Repka."
+    },
+    "eyebrow": "Il mio viaggio",
+    "title": "Una vita oltre i *confini*",
+    "intro": "La mia vita è stata una lunga ricerca su come creiamo significato attraverso il corpo, la cultura, i luoghi e il rito. Questi sono i luoghi in cui mi ha portata.",
+    "closing": "Non una collezione di luoghi, ma una domanda: come vivere una vita *intera*.",
+    "places": [
+      {
+        "place": "Slovacchia",
+        "line": "Dove tutto è iniziato: filosofia, arte ed estetica europea."
+      },
+      {
+        "place": "Sumatra Occidentale",
+        "line": "Tra i Minangkabau, dove la casa, la terra e la discendenza passano attraverso le donne."
+      },
+      {
+        "place": "Tamil Nadu",
+        "line": "Danza classica, Vedānta e i luoghi sacri del Sud."
+      },
+      {
+        "place": "Himalaya",
+        "line": "Il Char Dham Yatra, in alto tra le montagne."
+      },
+      {
+        "place": "Provenza",
+        "line": "Sul cammino di Maria Maddalena."
+      },
+      {
+        "place": "Assisi",
+        "line": "Sulle orme di San Francesco e Santa Chiara."
+      },
+      {
+        "place": "Sampor",
+        "line": "Settimane di silenzio e preghiera con i monaci benedettini."
+      },
+      {
+        "place": "Vienna",
+        "line": "Oggi: ricerca, coaching e tre figli ormai adulti."
+      }
+    ]
+  },
+  "pilgrimagePage": {
+    "meta": {
+      "title": "La Via del Cuore · Aurea",
+      "description": "Un pellegrinaggio a piedi per donne in transizione, da Assisi a Spoleto attraverso il cuore verde dell'Umbria."
+    },
+    "eyebrow": "La Via del Cuore",
+    "title": "Non fuggire dalla vita.\nMa *tornare* a viverla.",
+    "intro": "Un pellegrinaggio a piedi per donne in transizione, da Assisi a Spoleto attraverso il cuore verde dell'Umbria.",
+    "isTitle": "Che cos'è",
+    "is": [
+      "Una soglia per donne in una stagione di cambiamento",
+      "Cammino, silenzio e conversazioni sincere",
+      "Pasti semplici, stanze semplici, un piccolo gruppo di donne",
+      "Tempo per ripensare a ciò che porti"
+    ],
+    "notTitle": "Che cosa non è",
+    "not": [
+      "Una vacanza benessere",
+      "Un tour turistico",
+      "Una sfida di trekking"
+    ],
+    "routeTitle": "Il cammino",
+    "routeIntro": "Camminiamo sulle orme di San Francesco e Santa Chiara, da un borgo umbro all'altro.",
+    "roadTitle": "Lungo la strada",
+    "road": "Lasci alle spalle la tua vita di tutti i giorni. Porti meno peso. Cammini e ti stanchi. Dormi in un luogo diverso e mangi in modo semplice. Parli, e diventi silenziosa. Incontri altre donne. E lentamente ripensi a ciò che porti.",
+    "returnTitle": "Il ritorno a casa",
+    "returnText": "Il pellegrinaggio non finisce a Spoleto. Insieme prepariamo la strada del ritorno, perché ciò che hai trovato lungo il cammino trovi posto nella tua vita di ogni giorno. La domanda non è solo che cosa lasci, ma che cosa *porti a casa*.",
+    "dates": "Prossimo pellegrinaggio: date in arrivo",
+    "cta": "Chiedi del prossimo pellegrinaggio",
+    "carousel": {
+      "pause": "Metti in pausa la presentazione",
+      "play": "Avvia la presentazione",
+      "show": "Mostra"
+    },
+    "stops": [
+      "Assisi",
+      "Spello",
+      "Foligno",
+      "Trevi",
+      "Campello",
+      "Spoleto"
+    ]
+  },
+  "researchPage": {
+    "meta": {
+      "title": "Ricerca · Aurea",
+      "description": "Donne sulla soglia: pellegrinaggio incarnato, devozione mariana e riorganizzazione della vita delle donne. Ricerca di Elena Repka."
+    },
+    "eyebrow": "Ricerca",
+    "title": "Donne sulla *soglia*",
+    "subtitle": "Pellegrinaggio incarnato, devozione mariana e riorganizzazione della vita delle donne",
+    "intro": "La mia ricerca nasce dalla mia stessa vita: anni di cammino, preghiera e studio delle tradizioni sacre in Europa e in India. Si chiede che cosa fa il pellegrinaggio alle donne, e che cosa fanno le donne del pellegrinaggio quando tornano a casa.",
+    "questionsTitle": "Domande di ricerca",
+    "questions": [
+      "Come negoziano le donne il confine tra la devozione cattolica tradizionale e le forme contemporanee di spiritualità?",
+      "Che cosa accade al significato del pellegrinaggio dopo il ritorno a casa?",
+      "Che cosa porta a casa una donna, e che cosa lascia indietro?"
+    ],
+    "fieldTitle": "Ricerca sul campo: Mariazell",
+    "field": "Ricerca etnografica tra le pellegrine dirette a Mariazell, il più importante santuario mariano d'Austria, e nelle comunità che invecchiano lungo i suoi cammini.",
+    "comparativeTitle": "Una prospettiva comparativa",
+    "comparative": "Un dialogo tra due tradizioni di trasformazione incarnata: il pellegrinaggio cristiano europeo, con il suo camminare, i suoi paesaggi sacri e il ritorno, e le tradizioni incarnate indiane, con la loro attenzione al corpo, alla coscienza, al rito e alla Śakti.",
+    "themesTitle": "Temi",
+    "themes": [
+      "Pellegrinaggio",
+      "Femminilità sacra",
+      "Incarnazione",
+      "Devozione mariana",
+      "Paesaggi sacri",
+      "Spiritualità contemporanea",
+      "Culture matrilineari",
+      "Śrīvidyā",
+      "Memoria culturale",
+      "Genere"
+    ],
+    "positionality": "Come ricercatrice e pellegrina rendo trasparente la mia posizione: si tratta di etnografia riflessiva, scritta dall'interno dell'esperienza che studia.",
+    "contactTitle": "Collaborazione di ricerca",
+    "contactText": "Per conferenze, scambi accademici e collaborazioni di ricerca, sarò lieta di ricevere un vostro messaggio.",
+    "contactButton": "Contattami"
   }
 }

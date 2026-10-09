@@ -1,12 +1,87 @@
 {
+  "meta": {
+    "title": "Aurea · Coaching & Pilgerreisen für Frauen",
+    "description": "Coaching und Pilgerwege zu Fuß für Frauen, die bereit sind abzulegen, was nicht mehr ihres ist, und zu sich selbst zurückzukehren. Mit Elena Repka, Wien."
+  },
   "nav": {
     "skip": "Zum Inhalt springen",
     "menu": "Menü",
     "close": "Schließen",
+    "home": "Startseite",
     "about": "Über mich",
+    "way": "Der Weg",
+    "offers": "Mit mir arbeiten",
+    "pilgrimage": "Pilgerreise",
+    "journey": "Meine Reise",
+    "research": "Forschung",
     "contact": "Kontakt",
     "book": "Mach den ersten Schritt",
     "language": "Sprache"
+  },
+  "hero": {
+    "eyebrow": "Coaching & Pilgerreisen für Frauen",
+    "title": "Du hast lange\nalle getragen.\n*Kehr* zu dir zurück.",
+    "subtitle": "Coaching und Pilgerwege zu Fuß für Frauen, die bereit sind abzulegen, was nicht mehr ihres ist.",
+    "cta": "Mach den ersten Schritt",
+    "secondary": "Wie ich arbeite"
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "title": "Hallo, ich bin *Elena*.",
+    "p1": "Ich bin in der Slowakei aufgewachsen und lebe seit vielen Jahren in Wien. Ich habe Philosophie und Kunst studiert, drei Kinder großgezogen und bin Pilgerwege von Tamil Nadu bis Assisi gegangen.",
+    "p2": "Unterwegs habe ich etwas gelernt, das leicht zu sagen und schwer zu leben ist: Ein ganzes Leben ist keines, in dem man mehr trägt, sondern eines, in dem man *wählt*, was man trägt. Genau dabei begleite ich Frauen.",
+    "more": "Mehr über meinen Weg"
+  },
+  "way": {
+    "eyebrow": "Der Weg",
+    "title": "Vier Lichtungen, um *Raum* für dein Leben zu schaffen",
+    "intro": "Entrümpeln heißt nicht nur, Schubladen und Kalender aufzuräumen. Es heißt, sanft und ehrlich zu entscheiden,\nwas in deinem Leben noch einen Platz verdient. Wir gehen vier Lichtungen durch, in deinem Tempo.",
+    "items": [
+      {
+        "name": "Raum",
+        "question": "Was umgibt mich?",
+        "line": "Dein Zuhause und die Dinge, mit denen du jeden Tag lebst."
+      },
+      {
+        "name": "Zeit",
+        "question": "Wem schenke ich mein Leben?",
+        "line": "Wohin deine Tage, deine Energie und deine Aufmerksamkeit wirklich gehen."
+      },
+      {
+        "name": "Beziehungen",
+        "question": "Wer und was hat Zugang zu mir?",
+        "line": "Die Menschen, Rollen und Erwartungen, die du trägst."
+      },
+      {
+        "name": "Innenleben",
+        "question": "Wofür schlägt mein Herz?",
+        "line": "Die Werte und die Sehnsucht unter allem."
+      }
+    ]
+  },
+  "offers": {
+    "eyebrow": "Mit mir arbeiten",
+    "title": "Drei Wege, um zu *beginnen*",
+    "items": [
+      {
+        "name": "1:1 Coaching",
+        "line": "Wir gehen die vier Lichtungen gemeinsam durch, eine nach der anderen, in deinem Tempo.",
+        "link": "Mit einem kostenlosen Gespräch beginnen",
+        "href": "#contact"
+      },
+      {
+        "name": "Frauenkreis",
+        "line": "Sechs bis acht Frauen, die sich über einige Monate treffen und gemeinsam Raum schaffen.",
+        "link": "Nach dem nächsten Kreis fragen",
+        "href": "#contact"
+      },
+      {
+        "name": "La Via del Cuore",
+        "line": "Eine Pilgerreise zu Fuß von Assisi nach Spoleto für Frauen im Wandel.",
+        "link": "Die Pilgerreise entdecken",
+        "href": "/pilgrimage"
+      }
+    ]
   },
   "testimonials": {
     "eyebrow": "Stimmen",
@@ -40,11 +115,151 @@
     "sending": "Wird gesendet…",
     "success": "Danke! Deine Nachricht ist angekommen. Ich melde mich bald.",
     "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreib an hello@example.com",
-    "privacy": "Deine Daten werden nur verwendet, um dir zu antworten."
+    "privacy": "Deine Daten werden nur verwendet, um dir zu antworten.",
+    "title": "Dein erster Schritt kann *ein Gespräch* sein",
+    "intro": "Erzähl mir ein wenig, wo du gerade stehst. Ich melde mich innerhalb von zwei Werktagen, um ein kostenloses 20-minütiges Gespräch zu vereinbaren.",
+    "interest": "Was interessiert dich?",
+    "interestOptions": [
+      "Ich weiß es noch nicht",
+      "1:1 Coaching",
+      "Frauenkreis",
+      "Pilgerreise La Via del Cuore"
+    ]
   },
   "footer": {
     "privacy": "Datenschutz",
     "imprint": "Impressum",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "tagline": "Coaching & Pilgerreisen für Frauen",
+    "explore": "Entdecken"
+  },
+  "pageCta": {
+    "eyebrow": "Lass uns sprechen",
+    "title": "Dein erster Schritt kann *ein Gespräch* sein",
+    "button": "Mach den ersten Schritt"
+  },
+  "journeyPage": {
+    "meta": {
+      "title": "Meine Reise · Aurea",
+      "description": "Philosophie, Denkmalpflege, Gender Studies, indischer klassischer Tanz, Vedānta, kontemplatives Gebet, Pilgerwege und Mutterschaft: die Reise von Elena Repka."
+    },
+    "eyebrow": "Meine Reise",
+    "title": "Ein Leben über *Grenzen* hinweg",
+    "intro": "Mein Leben war eine lange Suche danach, wie wir Sinn schaffen: durch Körper, Kultur, Ort und Ritual. An diese Orte hat sie mich geführt.",
+    "closing": "Keine Sammlung von Orten, sondern eine Frage: wie man ein *ganzes* Leben lebt.",
+    "places": [
+      {
+        "place": "Slowakei",
+        "line": "Wo alles begann: Philosophie, Kunst und europäische Ästhetik."
+      },
+      {
+        "place": "Westsumatra",
+        "line": "Bei den Minangkabau, wo Haus, Land und Abstammung über die Frauen weitergegeben werden."
+      },
+      {
+        "place": "Tamil Nadu",
+        "line": "Klassischer Tanz, Vedānta und die heiligen Orte des Südens."
+      },
+      {
+        "place": "Himalaya",
+        "line": "Die Char-Dham-Yatra, hoch in den Bergen."
+      },
+      {
+        "place": "Provence",
+        "line": "Auf dem Weg der Maria Magdalena."
+      },
+      {
+        "place": "Assisi",
+        "line": "Auf den Spuren des heiligen Franziskus und der heiligen Klara."
+      },
+      {
+        "place": "Sampor",
+        "line": "Wochen der Stille und des Gebets mit Benediktinermönchen."
+      },
+      {
+        "place": "Wien",
+        "line": "Heute: Forschung, Coaching und drei erwachsene Kinder."
+      }
+    ]
+  },
+  "pilgrimagePage": {
+    "meta": {
+      "title": "La Via del Cuore · Aurea",
+      "description": "Eine Pilgerreise zu Fuß für Frauen im Wandel, von Assisi nach Spoleto durch das grüne Herz Umbriens."
+    },
+    "eyebrow": "La Via del Cuore",
+    "title": "Nicht vor dem Leben fliehen.\n*Zurück* ins Leben gehen.",
+    "intro": "Eine Pilgerreise zu Fuß für Frauen im Wandel, von Assisi nach Spoleto durch das grüne Herz Umbriens.",
+    "isTitle": "Was es ist",
+    "is": [
+      "Eine Schwelle für Frauen in einer Zeit des Wandels",
+      "Gehen, Stille und ehrliche Gespräche",
+      "Einfache Mahlzeiten, einfache Zimmer, eine kleine Gruppe von Frauen",
+      "Zeit, neu zu bedenken, was du trägst"
+    ],
+    "notTitle": "Was es nicht ist",
+    "not": [
+      "Ein Wellnessurlaub",
+      "Eine Besichtigungstour",
+      "Eine sportliche Herausforderung"
+    ],
+    "routeTitle": "Der Weg",
+    "routeIntro": "Wir gehen auf den Spuren des heiligen Franziskus und der heiligen Klara, von einer umbrischen Stadt zur nächsten.",
+    "roadTitle": "Unterwegs",
+    "road": "Du lässt deinen Alltag hinter dir. Du trägst weniger. Du gehst, und du wirst müde. Du schläfst an einem anderen Ort und isst einfach. Du sprichst, und du wirst still. Du begegnest anderen Frauen. Und langsam bedenkst du neu, was du trägst.",
+    "returnTitle": "Die Heimkehr",
+    "returnText": "Die Pilgerreise endet nicht in Spoleto. Gemeinsam bereiten wir den Rückweg vor, damit das, was du unterwegs gefunden hast, einen Platz in deinem Alltag bekommt. Die Frage ist nicht nur, was du zurücklässt, sondern was du *mit nach Hause nimmst*.",
+    "dates": "Nächste Pilgerreise: Termine folgen",
+    "cta": "Nach der nächsten Pilgerreise fragen",
+    "carousel": {
+      "pause": "Diashow anhalten",
+      "play": "Diashow abspielen",
+      "show": "Zeigen"
+    },
+    "stops": [
+      "Assisi",
+      "Spello",
+      "Foligno",
+      "Trevi",
+      "Campello",
+      "Spoleto"
+    ]
+  },
+  "researchPage": {
+    "meta": {
+      "title": "Forschung · Aurea",
+      "description": "Frauen an der Schwelle: verkörperte Pilgerschaft, Marienfrömmigkeit und die Neuordnung weiblicher Lebenswege. Forschung von Elena Repka."
+    },
+    "eyebrow": "Forschung",
+    "title": "Frauen an der *Schwelle*",
+    "subtitle": "Verkörperte Pilgerschaft, Marienfrömmigkeit und die Neuordnung weiblicher Lebenswege",
+    "intro": "Meine Forschung wächst aus meinem eigenen Leben: aus Jahren des Gehens, Betens und Studierens heiliger Traditionen in Europa und Indien. Sie fragt, was das Pilgern mit Frauen macht und was Frauen mit dem Pilgern machen, wenn sie nach Hause zurückkehren.",
+    "questionsTitle": "Forschungsfragen",
+    "questions": [
+      "Wie verhandeln Frauen die Grenze zwischen traditioneller katholischer Frömmigkeit und zeitgenössischen Formen von Spiritualität?",
+      "Was geschieht mit der Bedeutung der Pilgerreise nach der Heimkehr?",
+      "Was nimmt eine Frau mit nach Hause, und was lässt sie zurück?"
+    ],
+    "fieldTitle": "Feldforschung: Mariazell",
+    "field": "Ethnografische Forschung unter Pilgerinnen nach Mariazell, dem bedeutendsten Marienwallfahrtsort Österreichs, und in den alternden Gemeinden entlang seiner Pilgerwege.",
+    "comparativeTitle": "Eine vergleichende Perspektive",
+    "comparative": "Ein Dialog zwischen zwei Traditionen verkörperter Verwandlung: der europäischen christlichen Pilgerschaft mit ihrem Gehen, ihren heiligen Landschaften und ihrer Rückkehr, und indischen verkörperten Traditionen mit ihrer Aufmerksamkeit für Körper, Bewusstsein, Ritual und Śakti.",
+    "themesTitle": "Themen",
+    "themes": [
+      "Pilgerschaft",
+      "Heilige Weiblichkeit",
+      "Verkörperung",
+      "Marienfrömmigkeit",
+      "Heilige Landschaften",
+      "Zeitgenössische Spiritualität",
+      "Matrilineare Kulturen",
+      "Śrīvidyā",
+      "Kulturelles Gedächtnis",
+      "Gender"
+    ],
+    "positionality": "Als Forscherin und Pilgerin lege ich meine eigene Position offen: Dies ist reflexive Ethnografie, geschrieben aus dem Inneren der Erfahrung, die sie untersucht.",
+    "contactTitle": "Forschungskooperation",
+    "contactText": "Für Konferenzen, akademischen Austausch und Forschungskooperationen freue ich mich über Ihre Nachricht.",
+    "contactButton": "Kontakt aufnehmen"
   }
 }
