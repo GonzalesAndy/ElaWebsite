@@ -61,25 +61,31 @@
   },
   "offers": {
     "eyebrow": "Work with me",
-    "title": "Three ways to *begin*",
+    "title": "Four ways to *begin*",
     "items": [
       {
-        "name": "1:1 Coaching",
-        "line": "We work through the four clearings together, one by one, at your own pace.",
-        "link": "Begin with a free call",
-        "href": "#contact"
+        "name": "Individual sessions",
+        "line": "Life coaching, yoga, and therapeutic or creative work.",
+        "link": "Learn more",
+        "href": "/journey/#offering-1"
       },
       {
-        "name": "Women's circle",
-        "line": "Six to eight women meeting over a few months, clearing space together.",
-        "link": "Ask about the next circle",
-        "href": "#contact"
+        "name": "Group sessions",
+        "line": "Shared practice, reflection, and exploration.",
+        "link": "Learn more",
+        "href": "/journey/#offering-2"
       },
       {
-        "name": "La Via del Cuore",
-        "line": "A walking pilgrimage from Assisi to Spoleto for women in transition.",
-        "link": "Discover the pilgrimage",
-        "href": "/pilgrimage"
+        "name": "Workshops",
+        "line": "Themed experiences combining movement, reflection, and creativity.",
+        "link": "Learn more",
+        "href": "/journey/#offering-3"
+      },
+      {
+        "name": "Retreats",
+        "line": "A space for change, embodied awareness, and creative exploration.",
+        "link": "Learn more",
+        "href": "/journey/#offering-4"
       }
     ]
   },
@@ -180,7 +186,95 @@
         "place": "Vienna",
         "line": "Today: research, coaching, and three grown children."
       }
-    ]
+    ],
+    "approach": {
+      "title": "My *Approach*",
+      "paragraphs": [
+        "My work brings together solution-focused coaching, psychology, yoga, movement, creative exploration, and contemplative practices. Drawing on my interdisciplinary background, I offer individual sessions, group experiences, workshops, and retreats designed to support self-awareness, personal development, and meaningful change.",
+        "I believe that each person carries resources, strengths, and possibilities that can be discovered and developed. My approach combines attentive listening, curiosity, and practical exploration with an appreciation for the relationship between mind, body, creativity, and our wider cultural experience."
+      ]
+    },
+    "offerings": {
+      "title": "My *Offerings*",
+      "groups": [
+        {
+          "name": "Individual Sessions",
+          "items": [
+            {
+              "name": "Solution-Focused Life Coaching",
+              "text": "I offer individual coaching sessions informed by Solution-Focused Brief Therapy (SFBT). This approach focuses on your desired future, existing strengths, and the small, meaningful steps that can help you move forward. Together, we explore possibilities and develop practical ways to create change in your life."
+            },
+            {
+              "name": "Yoga & Embodied Practice",
+              "text": "My yoga sessions draw on my training as a certified Hatha Yoga teacher and my experience as a Bikram Hot Yoga practitioner. The practice can support body awareness, movement, concentration, and a more attentive relationship with yourself."
+            },
+            {
+              "name": "Therapeutic & Creative Exploration",
+              "text": "Drawing on my background in art therapy, art education, and movement, I offer space for reflection and creative exploration. The precise format and focus of these sessions can be tailored to your practice and professional scope."
+            }
+          ]
+        },
+        {
+          "name": "Group Sessions",
+          "text": "Group sessions offer opportunities to explore shared themes, exchange perspectives, and learn through collective experience. Depending on the format, sessions may incorporate solution-focused approaches, movement, yoga, reflection, or creative practices."
+        },
+        {
+          "name": "Workshops",
+          "text": "My workshops bring together different aspects of my work, creating space for focused exploration, embodied learning, creativity, and personal development. Each workshop can be built around a particular theme, practice, or group of participants."
+        },
+        {
+          "name": "Retreats",
+          "text": "I organise retreats that offer time and space to step away from everyday routines, reconnect with yourself, and explore new perspectives. Through thoughtfully combined practices and shared experiences, retreats invite participants to slow down, reflect, and nurture a deeper sense of connection."
+        }
+      ]
+    },
+    "education": {
+      "title": "Education & Professional *Training*",
+      "groups": [
+        {
+          "name": "Solution-Focused Practice",
+          "items": [
+            "Certified by the Brief organisation in the UK.",
+            "Training with Evan George, Chris Iveson, and Elliott Connie."
+          ]
+        },
+        {
+          "name": "Psychology",
+          "items": [
+            "Studies at the Modern School of Psychology with lecturer Barbara Grace."
+          ]
+        },
+        {
+          "name": "Yoga & Dance",
+          "items": [
+            "Certified Hatha Yoga teacher.",
+            "Bikram Hot Yoga practitioner.",
+            "Certified dance teacher."
+          ]
+        },
+        {
+          "name": "Traditional Knowledge & Contemplative Practices",
+          "items": [
+            "Studies in Ayurveda and Shaivite Tantra with Dr. Sumit Kesarkar and Kavitha Chinayan, MD."
+          ]
+        },
+        {
+          "name": "Academic & Cultural Studies",
+          "items": [
+            "Philosophy and Art History at university in Bratislava.",
+            "Gender Studies at the University of Sussex.",
+            "Studies of matrilineal cultures in Padang Panjang, Indonesia."
+          ]
+        }
+      ]
+    },
+    "background": {
+      "title": "Professional *Background*",
+      "paragraphs": [
+        "My professional experience spans art curation, art education, art therapy, tourism, and the luxury fashion business. These diverse fields have shaped my interest in creativity, human relationships, cultural diversity, identity, and personal transformation.",
+        "Today, I bring these perspectives together in a practice that values individual experience, embodied awareness, and the discovery of new possibilities."
+      ]
+    }
   },
   "pilgrimagePage": {
     "meta": {

@@ -3,7 +3,7 @@ import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
 import { withBase } from "@/lib/basePath";
 
-/** Three quiet columns: the ways to work with Elena. */
+/** Quiet columns: the ways to work with Elena, each leading to its details on the journey page. */
 export default function Offers({ offers, locale }: { offers: Dictionary["offers"]; locale: Locale }) {
   return (
     <section id="offers" className="section offers" aria-labelledby="offers-title">
@@ -22,7 +22,7 @@ export default function Offers({ offers, locale }: { offers: Dictionary["offers"
             <li key={offer.name} className="offer" data-reveal style={{ "--i": i } as React.CSSProperties}>
               <h3 className="offer-name">{offer.name}</h3>
               <p className="offer-line">{offer.line}</p>
-              <a href={offer.href.startsWith("#") ? offer.href : withBase(`/${locale}${offer.href}/`)} className="text-link">
+              <a href={offer.href.startsWith("#") ? offer.href : withBase(`/${locale}${offer.href}`)} className="text-link">
                 {offer.link}
                 <span aria-hidden="true">→</span>
               </a>

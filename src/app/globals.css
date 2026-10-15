@@ -177,9 +177,9 @@ section[id] {
 /* ==========================================================================
    Typography
    ========================================================================== */
-/* Long compound words (German) may hyphenate instead of running off narrow screens */
+/* Headings never hyphenate; words only break as a last resort if one is wider than the screen */
 :is(h1, h2, h3) {
-  hyphens: auto;
+  hyphens: manual;
   overflow-wrap: break-word;
 }
 
@@ -1183,16 +1183,20 @@ section[id] {
 
 .offer-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(1.5rem, 4vw, 3.5rem);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* Cards share the list's rows, so names, lines and links align even when a name wraps */
 .offer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+  align-items: start;
   padding-top: 1.75rem;
   border-top: 1px solid var(--field-border);
 }
@@ -1212,7 +1216,7 @@ section[id] {
 }
 
 .offer .text-link {
-  margin-top: auto;
+  justify-self: start;
 }
 
 /* Photo frames on the pilgrimage page */
@@ -1830,6 +1834,121 @@ html:not([data-fonts="fraunces"]) .page-title em {
   color: var(--ink-soft);
 }
 
+/* Journey page: approach, offerings, training, background */
+.places-section + .divider {
+  margin-top: clamp(5rem, 10vw, 8rem);
+}
+
+/* Heading on the left, text on the right */
+.split-text {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.split-text-body {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 44rem;
+}
+
+.split-text-body p:not(.lead) {
+  color: var(--ink-soft);
+}
+
+.offerings,
+.offerings + .section {
+  padding-top: 0;
+}
+
+.offerings-title {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+/* Offerings: one row per format, name on the left */
+.ledger {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ledger-row {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: clamp(1rem, 6vw, 6rem);
+  padding-block: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--field-border);
+}
+
+.ledger-row {
+  scroll-margin-top: 4.5rem; /* clear the fixed header when linked from the home page */
+}
+
+.ledger-row:last-child {
+  border-bottom: 1px solid var(--field-border);
+}
+
+.ledger-name {
+  font-family: var(--font-display);
+  font-size: calc(clamp(1.6rem, 2.2vw, 2rem) * var(--display-scale));
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: var(--display-tracking);
+}
+
+.ledger-text,
+.ledger-items p {
+  max-width: 44rem;
+  color: var(--ink-soft);
+}
+
+.ledger-items {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2.25rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ledger-item-name {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: calc(1.35rem * var(--display-scale));
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--clay);
+}
+
+/* Education & training */
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 4vw, 3.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.training {
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--field-border);
+}
+
+.training-name {
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  font-size: calc(clamp(1.4rem, 1.9vw, 1.65rem) * var(--display-scale));
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.training .plain-list {
+  gap: 0.6rem;
+  color: var(--ink-soft);
+}
+
 /* Stories */
 .stories-inner {
   max-width: 56rem;
@@ -2255,12 +2374,22 @@ html:not([data-fonts="fraunces"]) .page-title em {
     margin-top: 0;
   }
 
-  .offer-list,
   .page-hero--split .page-hero-grid,
   .is-not-grid,
   .road-grid,
-  .research-columns {
+  .research-columns,
+  .split-text,
+  .ledger-row {
     grid-template-columns: 1fr;
+  }
+
+  .split-text {
+    gap: 1.5rem;
+  }
+
+  .training-grid,
+  .offer-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .page-hero-aside .about-visual {
@@ -2382,7 +2511,9 @@ html:not([data-fonts="fraunces"]) .page-title em {
     padding-bottom: 5rem;
   }
 
-  .field-row {
+  .field-row,
+  .training-grid,
+  .offer-list {
     grid-template-columns: 1fr;
   }
 

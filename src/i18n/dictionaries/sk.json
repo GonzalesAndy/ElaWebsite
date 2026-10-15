@@ -61,25 +61,31 @@
   },
   "offers": {
     "eyebrow": "Spolupráca",
-    "title": "Tri spôsoby, ako *začať*",
+    "title": "Štyri spôsoby, ako *začať*",
     "items": [
       {
-        "name": "Koučing 1:1",
-        "line": "Spolu prejdeme štyri čistinky, jednu po druhej, tvojím tempom.",
-        "link": "Začni bezplatným rozhovorom",
-        "href": "#contact"
+        "name": "Individuálne stretnutia",
+        "line": "Life koučing, joga a terapeutická či tvorivá práca.",
+        "link": "Zistiť viac",
+        "href": "/journey/#offering-1"
       },
       {
-        "name": "Ženský kruh",
-        "line": "Šesť až osem žien, ktoré sa stretávajú niekoľko mesiacov a spolu si robia priestor.",
-        "link": "Opýtaj sa na ďalší kruh",
-        "href": "#contact"
+        "name": "Skupinové stretnutia",
+        "line": "Spoločná prax, reflexia a objavovanie.",
+        "link": "Zistiť viac",
+        "href": "/journey/#offering-2"
       },
       {
-        "name": "La Via del Cuore",
-        "line": "Pešia púť z Assisi do Spoleta pre ženy v období zmeny.",
-        "link": "Objav púť",
-        "href": "/pilgrimage"
+        "name": "Workshopy",
+        "line": "Tematické zážitky, ktoré spájajú pohyb, reflexiu a tvorivosť.",
+        "link": "Zistiť viac",
+        "href": "/journey/#offering-3"
+      },
+      {
+        "name": "Retreaty",
+        "line": "Priestor pre zmenu, telesné uvedomenie a tvorivé objavovanie.",
+        "link": "Zistiť viac",
+        "href": "/journey/#offering-4"
       }
     ]
   },
@@ -180,7 +186,95 @@
         "place": "Viedeň",
         "line": "Dnes: výskum, koučing a tri dospelé deti."
       }
-    ]
+    ],
+    "approach": {
+      "title": "Môj *prístup*",
+      "paragraphs": [
+        "Moja práca spája koučing zameraný na riešenia, psychológiu, jogu, pohyb, tvorivé objavovanie a kontemplatívne praktiky. Vychádzajúc zo svojho interdisciplinárneho zázemia ponúkam individuálne stretnutia, skupinové zážitky, workshopy a retreaty, ktoré podporujú sebapoznanie, osobný rozvoj a zmysluplnú zmenu.",
+        "Verím, že každý človek v sebe nosí zdroje, silné stránky a možnosti, ktoré možno objaviť a rozvíjať. Môj prístup spája pozorné počúvanie, zvedavosť a praktické skúmanie s citlivosťou pre vzťah medzi mysľou, telom, tvorivosťou a našou širšou kultúrnou skúsenosťou."
+      ]
+    },
+    "offerings": {
+      "title": "Moja *ponuka*",
+      "groups": [
+        {
+          "name": "Individuálne stretnutia",
+          "items": [
+            {
+              "name": "Life koučing zameraný na riešenia",
+              "text": "Ponúkam individuálne koučingové stretnutia, ktoré vychádzajú z krátkej terapie zameranej na riešenia (Solution-Focused Brief Therapy, SFBT). Tento prístup sa sústreďuje na tvoju vytúženú budúcnosť, silné stránky, ktoré už máš, a malé, zmysluplné kroky, ktoré ti môžu pomôcť pohnúť sa ďalej. Spoločne skúmame možnosti a hľadáme praktické spôsoby, ako vo svojom živote vytvoriť zmenu."
+            },
+            {
+              "name": "Joga a práca s telom",
+              "text": "Moje hodiny jogy vychádzajú z môjho vzdelania certifikovanej lektorky hatha jogy a zo skúsenosti praktizujúcej bikram hot jogy. Prax môže podporiť vnímanie tela, pohyb, sústredenie a pozornejší vzťah k sebe."
+            },
+            {
+              "name": "Terapeutické a tvorivé objavovanie",
+              "text": "Vychádzajúc zo svojho zázemia v arteterapii, umeleckom vzdelávaní a pohybe ponúkam priestor na reflexiu a tvorivé objavovanie. Presný formát a zameranie týchto stretnutí možno prispôsobiť tvojej praxi a profesijnému rámcu."
+            }
+          ]
+        },
+        {
+          "name": "Skupinové stretnutia",
+          "text": "Skupinové stretnutia ponúkajú príležitosť skúmať spoločné témy, vymieňať si pohľady a učiť sa prostredníctvom spoločnej skúsenosti. V závislosti od formátu môžu zahŕňať prístupy zamerané na riešenia, pohyb, jogu, reflexiu alebo tvorivé praktiky."
+        },
+        {
+          "name": "Workshopy",
+          "text": "Moje workshopy spájajú rôzne aspekty mojej práce a vytvárajú priestor na sústredené skúmanie, učenie sa cez telo, tvorivosť a osobný rozvoj. Každý workshop môže byť postavený na konkrétnej téme, praxi alebo skupine účastníkov."
+        },
+        {
+          "name": "Retreaty",
+          "text": "Organizujem retreaty, ktoré ponúkajú čas a priestor vystúpiť z každodennej rutiny, znovu sa spojiť so sebou a objaviť nové perspektívy. Prostredníctvom starostlivo prepojených praktík a spoločných zážitkov retreaty pozývajú spomaliť, zamyslieť sa a pestovať hlbší pocit prepojenia."
+        }
+      ]
+    },
+    "education": {
+      "title": "Vzdelanie a odborná *príprava*",
+      "groups": [
+        {
+          "name": "Prax zameraná na riešenia",
+          "items": [
+            "Certifikácia od organizácie Brief vo Veľkej Británii.",
+            "Výcvik u Evana Georgea, Chrisa Ivesona a Elliotta Connieho."
+          ]
+        },
+        {
+          "name": "Psychológia",
+          "items": [
+            "Štúdium na Modern School of Psychology u lektorky Barbary Grace."
+          ]
+        },
+        {
+          "name": "Joga a tanec",
+          "items": [
+            "Certifikovaná lektorka hatha jogy.",
+            "Praktizujúca bikram hot jogy.",
+            "Certifikovaná tanečná pedagogička."
+          ]
+        },
+        {
+          "name": "Tradičné poznanie a kontemplatívne praktiky",
+          "items": [
+            "Štúdium ájurvédy a šivaistickej tantry u Dr. Sumita Kesarkara a Kavithy Chinayan, MD."
+          ]
+        },
+        {
+          "name": "Akademické a kultúrne štúdiá",
+          "items": [
+            "Filozofia a dejiny umenia na univerzite v Bratislave.",
+            "Rodové štúdiá na University of Sussex.",
+            "Štúdium matrilineárnych kultúr v Padang Panjang v Indonézii."
+          ]
+        }
+      ]
+    },
+    "background": {
+      "title": "Profesijné *zázemie*",
+      "paragraphs": [
+        "Moja profesijná skúsenosť zahŕňa kurátorstvo umenia, umelecké vzdelávanie, arteterapiu, cestovný ruch a obchod s luxusnou módou. Tieto rozmanité oblasti formovali môj záujem o tvorivosť, medziľudské vzťahy, kultúrnu rozmanitosť, identitu a osobnú premenu.",
+        "Dnes tieto pohľady spájam v praxi, ktorá si cení individuálnu skúsenosť, telesné uvedomenie a objavovanie nových možností."
+      ]
+    }
   },
   "pilgrimagePage": {
     "meta": {

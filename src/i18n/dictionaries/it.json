@@ -61,25 +61,31 @@
   },
   "offers": {
     "eyebrow": "Lavora con me",
-    "title": "Tre modi per *iniziare*",
+    "title": "Quattro modi per *iniziare*",
     "items": [
       {
-        "name": "Coaching 1:1",
-        "line": "Attraversiamo insieme le quattro radure, una alla volta, al tuo ritmo.",
-        "link": "Inizia con una chiamata gratuita",
-        "href": "#contact"
+        "name": "Sessioni individuali",
+        "line": "Life coaching, yoga e lavoro terapeutico o creativo.",
+        "link": "Scopri di più",
+        "href": "/journey/#offering-1"
       },
       {
-        "name": "Cerchio di donne",
-        "line": "Da sei a otto donne che si incontrano per alcuni mesi e fanno spazio insieme.",
-        "link": "Chiedi del prossimo cerchio",
-        "href": "#contact"
+        "name": "Sessioni di gruppo",
+        "line": "Pratica condivisa, riflessione ed esplorazione.",
+        "link": "Scopri di più",
+        "href": "/journey/#offering-2"
       },
       {
-        "name": "La Via del Cuore",
-        "line": "Un pellegrinaggio a piedi da Assisi a Spoleto per donne in transizione.",
-        "link": "Scopri il pellegrinaggio",
-        "href": "/pilgrimage"
+        "name": "Workshop",
+        "line": "Esperienze tematiche che uniscono movimento, riflessione e creatività.",
+        "link": "Scopri di più",
+        "href": "/journey/#offering-3"
+      },
+      {
+        "name": "Ritiri",
+        "line": "Uno spazio per il cambiamento, la consapevolezza corporea e l'esplorazione creativa.",
+        "link": "Scopri di più",
+        "href": "/journey/#offering-4"
       }
     ]
   },
@@ -180,7 +186,95 @@
         "place": "Vienna",
         "line": "Oggi: ricerca, coaching e tre figli ormai adulti."
       }
-    ]
+    ],
+    "approach": {
+      "title": "Il mio *approccio*",
+      "paragraphs": [
+        "Il mio lavoro unisce coaching orientato alle soluzioni, psicologia, yoga, movimento, esplorazione creativa e pratiche contemplative. Attingendo al mio percorso interdisciplinare, offro sessioni individuali, esperienze di gruppo, workshop e ritiri pensati per sostenere la consapevolezza di sé, la crescita personale e un cambiamento significativo.",
+        "Credo che ogni persona porti in sé risorse, punti di forza e possibilità che possono essere scoperti e sviluppati. Il mio approccio unisce ascolto attento, curiosità ed esplorazione pratica a una sensibilità per la relazione tra mente, corpo, creatività e la nostra più ampia esperienza culturale."
+      ]
+    },
+    "offerings": {
+      "title": "Le mie *proposte*",
+      "groups": [
+        {
+          "name": "Sessioni individuali",
+          "items": [
+            {
+              "name": "Life coaching orientato alle soluzioni",
+              "text": "Offro sessioni di coaching individuali ispirate alla Terapia Breve Centrata sulla Soluzione (Solution-Focused Brief Therapy, SFBT). Questo approccio si concentra sul futuro che desideri, sui punti di forza che già possiedi e sui piccoli passi significativi che possono aiutarti ad andare avanti. Insieme esploriamo le possibilità e sviluppiamo modi concreti per creare un cambiamento nella tua vita."
+            },
+            {
+              "name": "Yoga e pratica corporea",
+              "text": "Le mie sessioni di yoga attingono alla mia formazione come insegnante certificata di Hatha Yoga e alla mia esperienza come praticante di Bikram Hot Yoga. La pratica può sostenere la consapevolezza del corpo, il movimento, la concentrazione e una relazione più attenta con te."
+            },
+            {
+              "name": "Esplorazione terapeutica e creativa",
+              "text": "Attingendo al mio percorso in arteterapia, educazione artistica e movimento, offro uno spazio di riflessione ed esplorazione creativa. Il formato e il focus di queste sessioni possono essere adattati alla tua pratica e al tuo ambito professionale."
+            }
+          ]
+        },
+        {
+          "name": "Sessioni di gruppo",
+          "text": "Le sessioni di gruppo offrono l'opportunità di esplorare temi comuni, scambiare prospettive e imparare attraverso l'esperienza collettiva. A seconda del formato, possono includere approcci orientati alle soluzioni, movimento, yoga, riflessione o pratiche creative."
+        },
+        {
+          "name": "Workshop",
+          "text": "I miei workshop riuniscono diversi aspetti del mio lavoro, creando spazio per un'esplorazione mirata, un apprendimento attraverso il corpo, la creatività e la crescita personale. Ogni workshop può essere costruito attorno a un tema, a una pratica o a un gruppo specifico di partecipanti."
+        },
+        {
+          "name": "Ritiri",
+          "text": "Organizzo ritiri che offrono tempo e spazio per allontanarsi dalla routine quotidiana, ritrovare il contatto con sé e scoprire nuove prospettive. Attraverso pratiche combinate con cura ed esperienze condivise, i ritiri invitano a rallentare, riflettere e coltivare un senso più profondo di connessione."
+        }
+      ]
+    },
+    "education": {
+      "title": "Formazione e aggiornamento *professionale*",
+      "groups": [
+        {
+          "name": "Pratica orientata alle soluzioni",
+          "items": [
+            "Certificata dall'organizzazione Brief nel Regno Unito.",
+            "Formazione con Evan George, Chris Iveson ed Elliott Connie."
+          ]
+        },
+        {
+          "name": "Psicologia",
+          "items": [
+            "Studi presso la Modern School of Psychology con la docente Barbara Grace."
+          ]
+        },
+        {
+          "name": "Yoga e danza",
+          "items": [
+            "Insegnante certificata di Hatha Yoga.",
+            "Praticante di Bikram Hot Yoga.",
+            "Insegnante di danza certificata."
+          ]
+        },
+        {
+          "name": "Saperi tradizionali e pratiche contemplative",
+          "items": [
+            "Studi di Ayurveda e Tantra shivaita con il Dr. Sumit Kesarkar e Kavitha Chinayan, MD."
+          ]
+        },
+        {
+          "name": "Studi accademici e culturali",
+          "items": [
+            "Filosofia e Storia dell'arte all'università di Bratislava.",
+            "Gender Studies presso la University of Sussex.",
+            "Studi sulle culture matrilineari a Padang Panjang, in Indonesia."
+          ]
+        }
+      ]
+    },
+    "background": {
+      "title": "Percorso *professionale*",
+      "paragraphs": [
+        "La mia esperienza professionale spazia dalla curatela d'arte all'educazione artistica, dall'arteterapia al turismo, fino al settore della moda di lusso. Questi ambiti così diversi hanno plasmato il mio interesse per la creatività, le relazioni umane, la diversità culturale, l'identità e la trasformazione personale.",
+        "Oggi riunisco queste prospettive in una pratica che valorizza l'esperienza individuale, la consapevolezza corporea e la scoperta di nuove possibilità."
+      ]
+    }
   },
   "pilgrimagePage": {
     "meta": {

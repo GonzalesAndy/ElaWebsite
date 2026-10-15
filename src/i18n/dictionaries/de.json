@@ -61,25 +61,31 @@
   },
   "offers": {
     "eyebrow": "Mit mir arbeiten",
-    "title": "Drei Wege, um zu *beginnen*",
+    "title": "Vier Wege, um zu *beginnen*",
     "items": [
       {
-        "name": "1:1 Coaching",
-        "line": "Wir gehen die vier Lichtungen gemeinsam durch, eine nach der anderen, in deinem Tempo.",
-        "link": "Mit einem kostenlosen Gespräch beginnen",
-        "href": "#contact"
+        "name": "Einzelsitzungen",
+        "line": "Life Coaching, Yoga sowie therapeutische oder kreative Arbeit.",
+        "link": "Mehr erfahren",
+        "href": "/journey/#offering-1"
       },
       {
-        "name": "Frauenkreis",
-        "line": "Sechs bis acht Frauen, die sich über einige Monate treffen und gemeinsam Raum schaffen.",
-        "link": "Nach dem nächsten Kreis fragen",
-        "href": "#contact"
+        "name": "Gruppensitzungen",
+        "line": "Gemeinsame Praxis, Reflexion und Erforschung.",
+        "link": "Mehr erfahren",
+        "href": "/journey/#offering-2"
       },
       {
-        "name": "La Via del Cuore",
-        "line": "Eine Pilgerreise zu Fuß von Assisi nach Spoleto für Frauen im Wandel.",
-        "link": "Die Pilgerreise entdecken",
-        "href": "/pilgrimage"
+        "name": "Workshops",
+        "line": "Thematische Erfahrungen, die Bewegung, Reflexion und Kreativität verbinden.",
+        "link": "Mehr erfahren",
+        "href": "/journey/#offering-3"
+      },
+      {
+        "name": "Retreats",
+        "line": "Ein Raum für Veränderung, verkörpertes Bewusstsein und kreatives Erforschen.",
+        "link": "Mehr erfahren",
+        "href": "/journey/#offering-4"
       }
     ]
   },
@@ -180,7 +186,95 @@
         "place": "Wien",
         "line": "Heute: Forschung, Coaching und drei erwachsene Kinder."
       }
-    ]
+    ],
+    "approach": {
+      "title": "Mein *Ansatz*",
+      "paragraphs": [
+        "Meine Arbeit verbindet lösungsfokussiertes Coaching, Psychologie, Yoga, Bewegung, kreatives Erforschen und kontemplative Praktiken. Aus meinem interdisziplinären Hintergrund heraus biete ich Einzelsitzungen, Gruppenerfahrungen, Workshops und Retreats an, die Selbstwahrnehmung, persönliche Entwicklung und bedeutsame Veränderung unterstützen.",
+        "Ich glaube, dass jeder Mensch Ressourcen, Stärken und Möglichkeiten in sich trägt, die entdeckt und entfaltet werden können. Mein Ansatz verbindet aufmerksames Zuhören, Neugier und praktisches Erforschen mit einem Gespür für die Beziehung zwischen Geist, Körper, Kreativität und unserer umfassenderen kulturellen Erfahrung."
+      ]
+    },
+    "offerings": {
+      "title": "Meine *Angebote*",
+      "groups": [
+        {
+          "name": "Einzelsitzungen",
+          "items": [
+            {
+              "name": "Lösungsfokussiertes Life Coaching",
+              "text": "Ich biete Einzelcoachings an, die sich an der lösungsfokussierten Kurzzeittherapie (Solution-Focused Brief Therapy, SFBT) orientieren. Dieser Ansatz richtet den Blick auf deine gewünschte Zukunft, deine vorhandenen Stärken und die kleinen, bedeutsamen Schritte, die dir helfen können, weiterzugehen. Gemeinsam erkunden wir Möglichkeiten und entwickeln praktische Wege, um Veränderung in deinem Leben zu gestalten."
+            },
+            {
+              "name": "Yoga & verkörperte Praxis",
+              "text": "Meine Yogastunden schöpfen aus meiner Ausbildung als zertifizierte Hatha-Yoga-Lehrerin und meiner Erfahrung als Bikram-Hot-Yoga-Praktizierende. Die Praxis kann Körperwahrnehmung, Bewegung, Konzentration und einen aufmerksameren Umgang mit dir selbst unterstützen."
+            },
+            {
+              "name": "Therapeutisches & kreatives Erforschen",
+              "text": "Aus meinem Hintergrund in Kunsttherapie, Kunstvermittlung und Bewegung heraus biete ich Raum für Reflexion und kreatives Erforschen. Format und Schwerpunkt dieser Sitzungen können auf deine Praxis und deinen beruflichen Rahmen abgestimmt werden."
+            }
+          ]
+        },
+        {
+          "name": "Gruppensitzungen",
+          "text": "Gruppensitzungen bieten die Möglichkeit, gemeinsame Themen zu erkunden, Perspektiven auszutauschen und durch gemeinsame Erfahrung zu lernen. Je nach Format können lösungsfokussierte Ansätze, Bewegung, Yoga, Reflexion oder kreative Praktiken einfließen."
+        },
+        {
+          "name": "Workshops",
+          "text": "Meine Workshops verbinden verschiedene Aspekte meiner Arbeit und schaffen Raum für konzentriertes Erforschen, verkörpertes Lernen, Kreativität und persönliche Entwicklung. Jeder Workshop kann um ein bestimmtes Thema, eine Praxis oder eine bestimmte Gruppe von Teilnehmenden herum gestaltet werden."
+        },
+        {
+          "name": "Retreats",
+          "text": "Ich organisiere Retreats, die Zeit und Raum bieten, um aus dem Alltag herauszutreten, wieder mit dir selbst in Verbindung zu kommen und neue Perspektiven zu entdecken. Durch sorgfältig kombinierte Praktiken und gemeinsame Erfahrungen laden Retreats dazu ein, langsamer zu werden, zu reflektieren und ein tieferes Gefühl der Verbundenheit zu nähren."
+        }
+      ]
+    },
+    "education": {
+      "title": "Ausbildung & berufliche *Weiterbildung*",
+      "groups": [
+        {
+          "name": "Lösungsfokussierte Praxis",
+          "items": [
+            "Zertifiziert durch die Organisation Brief in Großbritannien.",
+            "Ausbildung bei Evan George, Chris Iveson und Elliott Connie."
+          ]
+        },
+        {
+          "name": "Psychologie",
+          "items": [
+            "Studium an der Modern School of Psychology bei der Dozentin Barbara Grace."
+          ]
+        },
+        {
+          "name": "Yoga & Tanz",
+          "items": [
+            "Zertifizierte Hatha-Yoga-Lehrerin.",
+            "Bikram-Hot-Yoga-Praktizierende.",
+            "Zertifizierte Tanzlehrerin."
+          ]
+        },
+        {
+          "name": "Traditionelles Wissen & kontemplative Praktiken",
+          "items": [
+            "Studien in Ayurveda und shivaitischem Tantra bei Dr. Sumit Kesarkar und Kavitha Chinayan, MD."
+          ]
+        },
+        {
+          "name": "Akademische & kulturelle Studien",
+          "items": [
+            "Philosophie und Kunstgeschichte an der Universität in Bratislava.",
+            "Gender Studies an der University of Sussex.",
+            "Studien matrilinearer Kulturen in Padang Panjang, Indonesien."
+          ]
+        }
+      ]
+    },
+    "background": {
+      "title": "Beruflicher *Werdegang*",
+      "paragraphs": [
+        "Meine berufliche Erfahrung reicht von Kunstkuratierung, Kunstvermittlung und Kunsttherapie über den Tourismus bis hin zur Luxusmodebranche. Diese vielfältigen Bereiche haben mein Interesse an Kreativität, menschlichen Beziehungen, kultureller Vielfalt, Identität und persönlicher Transformation geprägt.",
+        "Heute verbinde ich diese Perspektiven in einer Praxis, die individuelle Erfahrung, verkörpertes Bewusstsein und das Entdecken neuer Möglichkeiten wertschätzt."
+      ]
+    }
   },
   "pilgrimagePage": {
     "meta": {
@@ -258,7 +352,7 @@
       "Gender"
     ],
     "positionality": "Als Forscherin und Pilgerin lege ich meine eigene Position offen: Dies ist reflexive Ethnografie, geschrieben aus dem Inneren der Erfahrung, die sie untersucht.",
-    "contactTitle": "Forschungskooperation",
+    "contactTitle": "Zusammenarbeit in der Forschung",
     "contactText": "Für Konferenzen, akademischen Austausch und Forschungskooperationen freue ich mich über Ihre Nachricht.",
     "contactButton": "Kontakt aufnehmen"
   }
