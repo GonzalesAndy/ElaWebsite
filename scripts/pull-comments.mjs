@@ -41,7 +41,7 @@ for (const [group, list] of [...groups].sort()) {
   for (const c of list) {
     const about = c.quote ? `"${c.quote}"` : c.snippet || c.src || c.selector;
     console.log(`  #${c.id} <${c.tag}> ${about.slice(0, 90)}`);
-    console.log(`    ${c.author || "Anonymous"}: ${c.text.replace(/\n/g, "\n    ")}`);
+    console.log(`    ${c.text.replace(/\n/g, "\n    ")}`);
   }
   console.log();
 }

@@ -18,7 +18,6 @@ import "./review.css";
 /** What a click in comment mode attaches to: the closest of these, else the element itself. */
 const TARGETS =
   "img, video, svg, picture, [role=img], h1, h2, h3, h4, h5, h6, p, li, blockquote, figcaption, dt, dd, a, button, label, input, textarea, select";
-const AUTHOR_STORAGE = "review-author";
 
 type Draft = { el: Element; x: number; y: number; quote: string };
 
@@ -73,14 +72,6 @@ function describe(el: Element) {
 function currentPage() {
   const path = location.pathname.slice(BASE_PATH.length);
   return path.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
-}
-
-function read(key: string) {
-  try {
-    return localStorage.getItem(key) ?? "";
-  } catch {
-    return "";
-  }
 }
 
 function formatDate(iso: string) {
@@ -201,13 +192,9 @@ export default function ReviewMode() {
     setTimeout(() => reveal(target), 400);
   }, [comments, reveal]);
 
-  const save = async (text: string, author: string) => {
+  const save = async (text: string) => {
     if (!draft) return;
-    try {
-      localStorage.setItem(AUTHOR_STORAGE, author);
-    } catch {}
     const created = await addComment({
-      author,
       text,
       locale,
       page,
@@ -250,7 +237,7 @@ export default function ReviewMode() {
               type="button"
               className={`rv-pin${c.locale === locale ? "" : " rv-pin-other"}`}
               style={{ top: r.top + window.scrollY - 10, left: r.right + window.scrollX - 10 }}
-              title={`${c.author || "Anonymous"} (${c.locale.toUpperCase()}): ${c.text}`}
+              title={`(${c.locale.toUpperCase()}) ${c.text}`}
               onClick={() => setPanelOpen(true)}
             >
               {c.n}
@@ -343,10 +330,9 @@ function Popover({
   draft: Draft;
   locale: string;
   onCancel: () => void;
-  onSave: (text: string, author: string) => Promise<void>;
+  onSave: (text: string) => Promise<void>;
 }) {
   const [text, setText] = useState("");
-  const [author, setAuthor] = useState(() => read(AUTHOR_STORAGE));
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const { snippet, src } = describe(draft.el);
@@ -361,7 +347,7 @@ function Popover({
     if (!text.trim() || busy) return;
     setBusy(true);
     try {
-      await onSave(text.trim(), author.trim());
+      await onSave(text.trim());
     } catch (err) {
       setError((err as Error).message);
       setBusy(false);
@@ -390,12 +376,6 @@ function Popover({
         onKeyDown={(e) => {
           if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) submit();
         }}
-      />
-      <input
-        type="text"
-        placeholder="Your name"
-        value={author}
-        onChange={(e) => setAuthor(e.target.value)}
       />
       {error && <p className="rv-pop-error">{error}</p>}
       <div className="rv-pop-actions">
@@ -487,7 +467,7 @@ function Panel({
               </span>
               <span className="rv-page">{c.page}</span>
               <span className="rv-meta">
-                {c.author || "Anonymous"} · {formatDate(c.createdAt)}
+                {formatDate(c.createdAt)}
               </span>
             </div>
             <p className="rv-text">{c.text}</p>

@@ -6,7 +6,6 @@
 export type ReviewComment = {
   id: string;
   createdAt: string;
-  author: string;
   text: string;
   status: "open" | "resolved";
   /** Language the page was shown in when the comment was written: en, de, sk, it. */

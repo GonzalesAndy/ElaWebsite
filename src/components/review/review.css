@@ -140,7 +140,6 @@
 }
 
 .rv-popover textarea,
-.rv-popover input,
 .rv-filters select {
   width: 100%;
   padding: 8px 10px;
@@ -155,8 +154,7 @@
   resize: vertical;
 }
 
-.rv-popover textarea:focus,
-.rv-popover input:focus {
+.rv-popover textarea:focus {
   outline: 2px solid var(--rv-accent);
   outline-offset: -1px;
 }

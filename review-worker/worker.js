@@ -10,7 +10,7 @@
  * Every request needs `Authorization: Bearer <REVIEW_KEY>` (the key in the client's review link).
  */
 const KEY = "comments";
-const FIELDS = ["author", "text", "locale", "page", "url", "selector", "tag", "snippet", "quote", "src", "viewport"];
+const FIELDS = ["text", "locale", "page", "url", "selector", "tag", "snippet", "quote", "src", "viewport"];
 
 export default {
   async fetch(request, env) {
