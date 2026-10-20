@@ -1,0 +1,378 @@
+/* Review mode (only loaded with ?review=…). Deliberately not in the site's palette, so it reads as a tool. */
+[data-review-ui] {
+  --rv-accent: #2563eb;
+  --rv-accent-soft: rgba(37, 99, 235, 0.12);
+  --rv-other: #9333ea;
+  --rv-ink: #1f2328;
+  --rv-muted: #59636e;
+  --rv-bg: #ffffff;
+  --rv-line: #d1d9e0;
+  font: 400 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--rv-ink);
+}
+
+[data-review-ui] *,
+[data-review-ui] *::before,
+[data-review-ui] *::after {
+  box-sizing: border-box;
+}
+
+.rv-hover,
+.rv-flash {
+  position: fixed;
+  z-index: 2147483000;
+  pointer-events: none;
+  border: 2px solid var(--rv-accent);
+  border-radius: 6px;
+  background: var(--rv-accent-soft);
+  transition: all 80ms ease-out;
+}
+
+.rv-selected {
+  border-style: solid;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25);
+}
+
+.rv-flash {
+  animation: rv-flash 2.2s ease-out forwards;
+}
+
+@keyframes rv-flash {
+  0%, 60% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.rv-pin {
+  position: absolute;
+  z-index: 2147482000;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border: 2px solid #fff;
+  border-radius: 11px 11px 11px 2px;
+  background: var(--rv-accent);
+  color: #fff;
+  font: 600 11px/18px system-ui, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Written while the page was shown in another language */
+.rv-pin-other {
+  background: var(--rv-other);
+}
+
+.rv-toolbar {
+  position: fixed;
+  z-index: 2147483100;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--rv-ink);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.rv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font: 500 13px/1 system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.rv-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.rv-btn-icon {
+  padding: 0 10px;
+}
+
+.rv-btn-on {
+  background: var(--rv-accent);
+}
+
+.rv-btn-on:hover {
+  background: var(--rv-accent);
+}
+
+.rv-count {
+  min-width: 20px;
+  padding: 3px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 11px;
+}
+
+.rv-error {
+  position: fixed;
+  z-index: 2147483100;
+  left: 50%;
+  bottom: 64px;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #b42318;
+  color: #fff;
+}
+
+.rv-popover {
+  position: fixed;
+  z-index: 2147483200;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--rv-line);
+  border-radius: 12px;
+  background: var(--rv-bg);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+.rv-popover textarea,
+.rv-popover input,
+.rv-filters select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--rv-line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--rv-ink);
+  font: inherit;
+}
+
+.rv-popover textarea {
+  resize: vertical;
+}
+
+.rv-popover textarea:focus,
+.rv-popover input:focus {
+  outline: 2px solid var(--rv-accent);
+  outline-offset: -1px;
+}
+
+.rv-pop-head,
+.rv-pop-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rv-pop-actions {
+  justify-content: flex-end;
+}
+
+.rv-pop-error {
+  margin: 0;
+  color: #b42318;
+}
+
+.rv-btn-ghost {
+  color: var(--rv-ink);
+}
+
+.rv-btn-ghost:hover {
+  background: #f0f2f4;
+}
+
+.rv-btn-primary {
+  background: var(--rv-accent);
+}
+
+.rv-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.rv-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.rv-tag {
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #f0f2f4;
+  color: var(--rv-muted);
+  font: 500 11px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.rv-badge {
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--rv-accent-soft);
+  color: var(--rv-accent);
+  font: 700 11px/1.6 system-ui, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.rv-snippet,
+.rv-quote {
+  margin: 0;
+  color: var(--rv-muted);
+  font-size: 12.5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rv-quote {
+  padding-left: 8px;
+  border-left: 3px solid var(--rv-accent);
+  font-style: italic;
+}
+
+.rv-panel {
+  position: fixed;
+  z-index: 2147483150;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: min(380px, 100vw);
+  border-left: 1px solid var(--rv-line);
+  background: var(--rv-bg);
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.15);
+}
+
+.rv-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 12px 12px 16px;
+  border-bottom: 1px solid var(--rv-line);
+  font-size: 15px;
+}
+
+.rv-panel-head .rv-btn {
+  color: var(--rv-ink);
+}
+
+.rv-panel-head .rv-btn:hover {
+  background: #f0f2f4;
+}
+
+.rv-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--rv-line);
+}
+
+.rv-filters label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--rv-muted);
+  cursor: pointer;
+}
+
+.rv-note {
+  margin: 0;
+  padding: 8px 16px;
+  background: #fff8c5;
+  color: #6b5900;
+  font-size: 12.5px;
+}
+
+.rv-list {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.rv-empty {
+  padding: 24px 16px;
+  color: var(--rv-muted);
+}
+
+.rv-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--rv-line);
+}
+
+.rv-item-done {
+  opacity: 0.55;
+}
+
+.rv-item-done .rv-text {
+  text-decoration: line-through;
+}
+
+.rv-item-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.rv-num {
+  min-width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background: var(--rv-ink);
+  color: #fff;
+  font: 600 11px/22px system-ui, sans-serif;
+  text-align: center;
+}
+
+.rv-page {
+  font: 500 12px ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.rv-meta {
+  width: 100%;
+  color: var(--rv-muted);
+  font-size: 12px;
+}
+
+.rv-text {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.rv-item-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.rv-item-actions button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--rv-accent);
+  font: 500 12.5px system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.rv-item-actions button:hover {
+  text-decoration: underline;
+}
+
+/* Phones: the popup becomes a bottom sheet */
+@media (max-width: 600px) {
+  .rv-popover {
+    top: auto !important;
+    left: 8px !important;
+    right: 8px;
+    bottom: 8px;
+    width: auto !important;
+  }
+}

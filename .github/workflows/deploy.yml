@@ -30,6 +30,8 @@ jobs:
         env:
           # The site is served from https://<user>.github.io/<repo>/
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          # Review mode backend (review-worker/). Repo variable; leave unset to keep comments local.
+          NEXT_PUBLIC_REVIEW_ENDPOINT: ${{ vars.REVIEW_ENDPOINT }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

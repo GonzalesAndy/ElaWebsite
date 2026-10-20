@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import RevealObserver from "./RevealObserver";
+import ReviewLoader from "./review/ReviewLoader";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
 
@@ -27,6 +28,7 @@ export default function PageShell({ dict, locale, path, overlayHeader, children 
       </main>
       <Footer footer={dict.footer} nav={dict.nav} locale={locale} path={path} />
       <RevealObserver />
+      <ReviewLoader />
     </>
   );
 }

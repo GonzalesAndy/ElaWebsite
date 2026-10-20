@@ -1,0 +1,16 @@
+# Review comments API (see README "Client review mode").
+# Setup once:
+#   npx wrangler kv namespace create REVIEW      → paste the id below
+#   npx wrangler secret put REVIEW_KEY           → any long random string; it goes in the review link
+#   npx wrangler deploy
+name = "aurea-review"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[[kv_namespaces]]
+binding = "REVIEW"
+id = "c81642e8c40e4cf78f690e6aa9540721"
+
+[vars]
+# Lock the API to the site, e.g. "https://gonzalesandy.github.io". "*" allows any origin (the key still protects it).
+ALLOWED_ORIGIN = "*"

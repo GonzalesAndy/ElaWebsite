@@ -46,6 +46,34 @@ The site is static, so the form can't send mail itself. Set one of these as repo
 - `NEXT_PUBLIC_CONTACT_EMAIL`: without an endpoint, the form opens the visitor's email app addressed
   to this email (currently a placeholder, `hello@example.com`).
 
+## Client review mode
+
+The client can comment directly on the site: open any page with `?review=<key>`
+(e.g. `https://<user>.github.io/ElaWebsite/en/?review=<key>`). The key is remembered in that
+browser; `?review=off` turns it off. Regular visitors never load the review code.
+
+- **＋ Comment** (or the C key): hover highlights an element, click opens a popup to comment on it.
+  Highlighting text inside the element first quotes that text in the comment.
+- **Comments**: list of all comments, filterable by language and page, with Show / Resolve / Delete.
+  Each comment records the language the page was shown in (EN/DE/SK/IT), the page, the element and
+  its text at the time. Pins mark commented elements (purple = written in another language).
+
+Without a backend (local `npm run dev`, any key), comments stay in that browser's localStorage.
+To share them, deploy the small Cloudflare Worker in `review-worker/` (free plan is enough):
+
+```bash
+cd review-worker
+npx wrangler kv namespace create REVIEW   # paste the id into wrangler.toml
+npx wrangler secret put REVIEW_KEY        # a long random string: the key in the review link
+npx wrangler deploy                       # prints https://aurea-review.<you>.workers.dev
+```
+
+Then set the repository variable `REVIEW_ENDPOINT` to that URL (Settings → Secrets and variables →
+Actions → Variables) and redeploy. Send the client `…/en/?review=<REVIEW_KEY>`.
+
+To read the comments locally, put `REVIEW_ENDPOINT` and `REVIEW_KEY` in `.env.local` and run
+`npm run comments`. It writes `feedback/comments.json` and prints the open comments by page and language.
+
 ## Before launch
 
 - Replace the placeholder testimonials with real ones (or remove the section).
