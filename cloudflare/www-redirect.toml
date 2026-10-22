@@ -1,0 +1,5 @@
+# Redirects www.elarepka.com to elarepka.com. Deploy: npx wrangler deploy -c cloudflare/www-redirect.toml
+name = "elarepka-www"
+main = "www-redirect.js"
+compatibility_date = "2026-10-01"
+routes = [{ pattern = "www.elarepka.com", custom_domain = true }]

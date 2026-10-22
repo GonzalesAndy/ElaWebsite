@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { pageMetadata } from "@/lib/seo";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import PageCta from "@/components/PageCta";
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const { journeyPage } = await getDictionary(locale);
-  return { title: journeyPage.meta.title, description: journeyPage.meta.description };
+  return pageMetadata(locale, "/journey/", journeyPage.meta);
 }
 
 export default async function JourneyPage({ params }: Props) {

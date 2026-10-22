@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "comments": "node scripts/pull-comments.mjs",
-    "deploy": "next build && npx wrangler deploy"
+    "deploy": "next build && npx wrangler deploy && npx wrangler deploy -c cloudflare/www-redirect.toml"
   },
   "dependencies": {
     "next": "^16.4.0",

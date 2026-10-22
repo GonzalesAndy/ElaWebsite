@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import { isLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
-import { withBase } from "@/lib/basePath";
+import { pageMetadata } from "@/lib/seo";
 import "../globals.css";
 
 /*
@@ -56,13 +56,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
-  return {
-    title: dict.meta.title,
-    description: dict.meta.description,
-    alternates: {
-      languages: Object.fromEntries(locales.map((l) => [l, withBase(`/${l}/`)])),
-    },
-  };
+  // The home page's tags; the other pages replace them with their own.
+  return pageMetadata(locale, "/", dict.meta);
 }
 
 export const viewport: Viewport = {

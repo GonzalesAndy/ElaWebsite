@@ -1834,6 +1834,84 @@ html:not([data-fonts="fraunces"]) .page-title em {
   color: var(--ink-soft);
 }
 
+/* Imprint and privacy policy: plain reading text */
+.legal {
+  padding-top: 0;
+}
+
+.legal-text {
+  max-width: 44rem;
+}
+
+.legal-text h2 {
+  margin: 2.75rem 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: calc(1.6rem * var(--display-scale));
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.legal-text h2:first-child {
+  margin-top: 0;
+}
+
+.legal-text h3 {
+  margin: 2rem 0 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clay);
+}
+
+.legal-text p {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+}
+
+.legal-text strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.legal-text a {
+  color: var(--clay);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  overflow-wrap: anywhere;
+}
+
+.legal-note,
+.legal-updated {
+  font-size: 0.9375rem;
+  font-style: italic;
+}
+
+.legal-note {
+  margin-bottom: 2.5rem !important;
+}
+
+.legal-updated {
+  margin-top: 3rem !important;
+}
+
+.legal-missing {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border: 1px dashed var(--clay);
+  border-radius: 0.4rem;
+  color: var(--clay) !important;
+  font-family: ui-monospace, monospace;
+  font-size: 0.875rem;
+}
+
+.form-note a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 /* Journey page: approach, offerings, training, background */
 .places-section + .divider {
   margin-top: clamp(5rem, 10vw, 8rem);

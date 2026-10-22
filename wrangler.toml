@@ -1,14 +1,23 @@
 # The site on Cloudflare (static assets on Workers, Cloudflare's successor to Pages; free).
 # Deploy: npm run deploy  (builds, then uploads /out)
 name = "elarepka"
+main = "cloudflare/site-worker.js"
 compatibility_date = "2026-10-01"
 
-routes = [
-  { pattern = "elarepka.com", custom_domain = true },
-  { pattern = "www.elarepka.com", custom_domain = true },
-]
+# www.elarepka.com is served by cloudflare/www-redirect.toml (redirects here)
+routes = [{ pattern = "elarepka.com", custom_domain = true }]
 
 [assets]
 directory = "./out"
+binding = "ASSETS"
 html_handling = "auto-trailing-slash" # /en/journey → /en/journey/index.html
 not_found_handling = "404-page"
+run_worker_first = ["/", "/api/*"]    # language redirect + contact form; files are served directly
+
+# Contact form mail (Email Routing). Can only send to a verified destination address.
+[[send_email]]
+name = "MAIL"
+destination_address = "erepka.er@gmail.com"
+
+[vars]
+CONTACT_TO = "erepka.er@gmail.com"

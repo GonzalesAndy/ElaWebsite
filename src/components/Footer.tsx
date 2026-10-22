@@ -44,7 +44,8 @@ export default function Footer({ footer, nav, locale, path = "/" }: Props) {
           © {new Date().getFullYear()} Aurea · Elena Repka. {footer.rights}
         </p>
         <p>
-          <a href="#">{footer.privacy}</a> · <a href="#">{footer.imprint}</a>
+          <a href={withBase(`/${locale}/privacy/`)}>{footer.privacy}</a> ·{" "}
+          <a href={withBase(`/${locale}/imprint/`)}>{footer.imprint}</a>
         </p>
       </div>
     </footer>

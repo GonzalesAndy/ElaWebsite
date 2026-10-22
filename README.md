@@ -35,16 +35,38 @@ npm run deploy   # next build, then wrangler uploads out/ (config: wrangler.toml
 ```
 
 Served as static assets on Cloudflare Workers (the successor to Cloudflare Pages, free for static
-sites) on `elarepka.com` and `www.elarepka.com`. The first `wrangler` run asks you to log in.
+sites) on `elarepka.com`. The first `wrangler` run asks you to log in.
+
+- `cloudflare/site-worker.js` runs only for `/` and redirects to the visitor's language.
+- `cloudflare/www-redirect.*` is a second tiny Worker: `www.elarepka.com/*` → `elarepka.com/*` (301).
+
+### SEO
+
+- `src/lib/seo.ts`: site URL, list of pages, and `pageMetadata()` (title, description, canonical,
+  hreflang for all four languages + x-default, Open Graph / Twitter card). Add new pages to `pages`.
+- `src/app/sitemap.ts` → `/sitemap.xml`, `src/app/robots.ts` → `/robots.txt`.
+- `public/og.jpg`: the 1200×630 image shown when a link is shared.
+- Structured data (schema.org Person + ProfessionalService) on the home page.
 
 ### Contact form
 
-The site is static, so the form can't send mail itself. Set one of these in `.env.production`
-(read at build time):
+The form posts to `/api/contact` (`cloudflare/site-worker.js`), which emails the message from
+`website@elarepka.com` to `erepka.er@gmail.com` through Cloudflare Email Routing (`send_email` binding
+in `wrangler.toml`). Reply-To is the visitor, so answering in Gmail replies to them directly.
 
-- `NEXT_PUBLIC_FORM_ENDPOINT`: a form service URL (e.g. Formspree). Messages are posted there.
-- `NEXT_PUBLIC_CONTACT_EMAIL`: without an endpoint, the form opens the visitor's email app addressed
-  to this email (currently a placeholder, `hello@example.com`).
+Email Routing also forwards `hello@elarepka.com` (the public address) to the same Gmail inbox.
+The Worker can only send to a *verified* destination address, so if the inbox changes, add and verify
+the new address first (`npx wrangler email routing addresses create <email>`).
+
+Under `next dev` there is no Worker: the form opens the visitor's email app instead.
+
+### Legal pages (Austria / Germany)
+
+`/<locale>/imprint/` (Impressum) and `/<locale>/privacy/` (Datenschutzerklärung): German on `/de/`,
+English elsewhere, the German text being binding. All facts live in `src/legal/owner.ts`: fill in the
+postal address, and the trade licence / VAT / chamber fields once the business is registered (they
+appear automatically). If the site starts using cookies, analytics or third-party embeds, update
+`src/legal/Privacy.tsx` first.
 
 ## Client review mode
 
@@ -77,6 +99,5 @@ To read the comments locally, put `REVIEW_ENDPOINT` and `REVIEW_KEY` in `.env.lo
 ## Before launch
 
 - Replace the placeholder testimonials with real ones (or remove the section).
-- Set Elena's real contact email or a form endpoint.
-- Add real Privacy and Imprint pages (an Impressum is legally required in Austria and Germany).
+- Add Elena's postal address in `src/legal/owner.ts` (required for the Impressum).
 - Have native speakers review DE, SK and IT.

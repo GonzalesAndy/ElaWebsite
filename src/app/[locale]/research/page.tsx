@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { pageMetadata } from "@/lib/seo";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import PageCta from "@/components/PageCta";
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const { researchPage } = await getDictionary(locale);
-  return { title: researchPage.meta.title, description: researchPage.meta.description };
+  return pageMetadata(locale, "/research/", researchPage.meta);
 }
 
 /** A sober, typographic page: research questions, fieldwork, themes. */

@@ -2,20 +2,21 @@
 
 import { useState } from "react";
 import Rich from "./Rich";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
+import { withBase } from "@/lib/basePath";
 
 /*
- * The site is static, so there is no server to send mail.
- * With NEXT_PUBLIC_FORM_ENDPOINT set (e.g. a Formspree form URL) messages are posted there;
- * otherwise the visitor's email app opens with the message ready to send to CONTACT_EMAIL.
+ * In production NEXT_PUBLIC_FORM_ENDPOINT is /api/contact (cloudflare/site-worker.js), which emails
+ * the message to Elena. Without it (next dev) the visitor's email app opens, addressed to CONTACT_EMAIL.
  */
 const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT;
-const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@example.com";
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@elarepka.com";
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type Status = "idle" | "sending" | "success" | "error";
 
-export default function Contact({ contact }: { contact: Dictionary["contact"] }) {
+export default function Contact({ contact, locale }: { contact: Dictionary["contact"]; locale: Locale }) {
   const [status, setStatus] = useState<Status>("idle");
   const pending = status === "sending";
 
@@ -29,6 +30,7 @@ export default function Contact({ contact }: { contact: Dictionary["contact"] })
     const interest = String(data.get("interest") ?? "").trim();
     const message = String(data.get("message") ?? "").trim();
     if (!name || !emailPattern.test(email) || message.length < 2) return setStatus("error");
+    data.set("locale", locale);
 
     if (!FORM_ENDPOINT) {
       const body = `${message}\n\n${interest}\n${name} <${email}>`;
@@ -99,7 +101,9 @@ export default function Contact({ contact }: { contact: Dictionary["contact"] })
               </div>
 
               <div className="form-footer">
-                <p className="form-note">{contact.privacy}</p>
+                <p className="form-note">
+                  <a href={withBase(`/${locale}/privacy/`)}>{contact.privacy}</a>
+                </p>
                 <button type="submit" className="btn btn--primary" disabled={pending}>
                   {pending ? contact.sending : contact.submit}
                 </button>
