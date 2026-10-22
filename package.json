@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "comments": "node scripts/pull-comments.mjs"
+    "comments": "node scripts/pull-comments.mjs",
+    "deploy": "next build && npx wrangler deploy"
   },
   "dependencies": {
     "next": "^16.4.0",

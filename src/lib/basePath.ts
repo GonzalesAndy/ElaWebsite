@@ -1,5 +1,5 @@
 /**
- * The site can be served from a sub-folder (GitHub Pages: /ElaWebsite). Plain <a> links, <video>
+ * The site can be served from a sub-folder (e.g. /ElaWebsite on GitHub Pages; empty on elarepka.com). Plain <a> links, <video>
  * sources and unoptimised images don't get that prefix automatically, so internal paths go through
  * withBase(). Locally the base path is empty and nothing changes.
  */

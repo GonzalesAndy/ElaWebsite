@@ -5,7 +5,7 @@ import Rich from "./Rich";
 import type { Dictionary } from "@/i18n/getDictionary";
 
 /*
- * The site is static (GitHub Pages), so there is no server to send mail.
+ * The site is static, so there is no server to send mail.
  * With NEXT_PUBLIC_FORM_ENDPOINT set (e.g. a Formspree form URL) messages are posted there;
  * otherwise the visitor's email app opens with the message ready to send to CONTACT_EMAIL.
  */

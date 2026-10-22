@@ -1,0 +1,14 @@
+# The site on Cloudflare (static assets on Workers, Cloudflare's successor to Pages; free).
+# Deploy: npm run deploy  (builds, then uploads /out)
+name = "elarepka"
+compatibility_date = "2026-10-01"
+
+routes = [
+  { pattern = "elarepka.com", custom_domain = true },
+  { pattern = "www.elarepka.com", custom_domain = true },
+]
+
+[assets]
+directory = "./out"
+html_handling = "auto-trailing-slash" # /en/journey → /en/journey/index.html
+not_found_handling = "404-page"
