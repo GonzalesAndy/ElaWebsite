@@ -8,7 +8,7 @@
     "menu": "Menu",
     "close": "Close",
     "home": "Home",
-    "about": "About",
+    "about": "Ecology of Clarity",
     "way": "The way",
     "offers": "Work with me",
     "pilgrimage": "Pilgrimage",
@@ -20,44 +20,49 @@
   },
   "hero": {
     "eyebrow": "Coaching & pilgrimage for women",
-    "title": "After years of\ncarrying everyone,\n*return* to yourself",
+    "title": "Back to inner *clarity*\nin a hurried world",
     "subtitle": "Coaching and walking pilgrimages for women who are ready to put down what is no longer theirs.",
-    "cta": "Take the first step",
-    "secondary": "How I work"
+    "cta": "Take the first step"
   },
   "about": {
-    "eyebrow": "About me",
-    "title": "Hello, I'm *Elena*.",
-    "p1": "I grew up in Slovakia and have lived in Vienna for many years. I studied philosophy and the arts, raised three children, and walked pilgrim roads from Tamil Nadu to Assisi.",
-    "p2": "Along the way I learned something simple to say and hard to live: a whole life is not one where you carry more, but one where you *choose* what to carry. This is what I help women do.",
-    "more": "Read my journey"
+    "eyebrow": "What I offer",
+    "title": "Ecology of *Clarity*",
+    "p1": "A complete recalibration of your inner and outer world, by clearing your space, your time and your relationships.",
+    "bubbleTitle": "Creating space for what *truly matters*.",
+    "bubble": [
+      "A gentle yet profound transformation of your life, starting with your home, your time and your relationships.",
+      "Together, we clear away what no longer serves you, simplify what feels overwhelming and make room for what brings you peace, meaning and joy.",
+      "Because when your outer world becomes clearer, your inner world can breathe, too."
+    ],
+    "more": "Meet Ela: read my journey"
   },
   "way": {
     "eyebrow": "The way",
-    "title": "Four clearings to make *room* for your life",
-    "intro": "Decluttering is not only about drawers and calendars. It is about deciding, gently and honestly,\nwhat still deserves a place in your life. We work through four clearings, at your pace.",
+    "title": "Clear your space. Reclaim your time. Live *authentically*.",
+    "intro": "Imagine a home that supports you instead of overwhelming you, routines that give you structure without taking your freedom, and relationships that nourish rather than drain you. The result is more than a tidy home. It is a life that feels like your own again. Less overwhelm, more clarity, more life.",
     "items": [
       {
         "name": "Space",
         "question": "What surrounds me?",
-        "line": "Your home and the things you live with every day."
+        "line": "Your home, your objects, your everyday surroundings."
       },
       {
         "name": "Time",
         "question": "What receives my life?",
-        "line": "Where your days, energy and attention really go."
+        "line": "Your days, energy and attention, your rhythms and commitments."
       },
       {
         "name": "Relationships",
         "question": "Who and what has access to me?",
-        "line": "The people, roles and expectations you carry."
+        "line": "The people, roles, expectations and emotional responsibilities you carry."
       },
       {
         "name": "Inner life",
         "question": "What am I devoted to?",
-        "line": "The values and longings beneath it all."
+        "line": "The values, longings and deeper commitments beneath it all."
       }
-    ]
+    ],
+    "more": "Discover the Four Clearings masterclass"
   },
   "offers": {
     "eyebrow": "Work with me",
@@ -65,27 +70,27 @@
     "items": [
       {
         "name": "Individual sessions",
-        "line": "Life coaching, yoga, and therapeutic or creative work.",
+        "line": "Personal guidance through life coaching, yoga, and therapeutic or creative work.",
         "link": "Learn more",
         "href": "/journey/#offering-1"
       },
       {
-        "name": "Group sessions",
-        "line": "Shared practice, reflection, and exploration.",
-        "link": "Learn more",
-        "href": "/journey/#offering-2"
+        "name": "Four Clearings Masterclass",
+        "line": "A 4-week guided journey through your space, time, relationships and inner life. €89.",
+        "link": "Discover the masterclass",
+        "href": "/masterclass/"
       },
       {
-        "name": "Workshops",
-        "line": "Themed experiences combining movement, reflection, and creativity.",
+        "name": "Workshops & group sessions",
+        "line": "Shared experiences combining movement, reflection, creativity and conversation.",
         "link": "Learn more",
         "href": "/journey/#offering-3"
       },
       {
-        "name": "Retreats",
-        "line": "A space for change, embodied awareness, and creative exploration.",
-        "link": "Learn more",
-        "href": "/journey/#offering-4"
+        "name": "Retreats & walks",
+        "line": "Time for change, rest and embodied awareness, including guided walks in Umbria, Lazio and Provence.",
+        "link": "See the dates",
+        "href": "/pilgrimage/#walks"
       }
     ]
   },
@@ -121,9 +126,10 @@
     "interest": "What are you curious about?",
     "interestOptions": [
       "Not sure yet",
-      "1:1 Coaching",
-      "Women's circle",
-      "La Via del Cuore pilgrimage"
+      "Individual sessions",
+      "Four Clearings masterclass",
+      "Workshops & group sessions",
+      "Retreats & walks"
     ],
     "message": "Your message",
     "submit": "Send message",
@@ -151,7 +157,7 @@
     },
     "eyebrow": "My journey",
     "title": "A life of crossing *boundaries*",
-    "intro": "My life has been a long inquiry into how we create meaning through body, culture, place and ritual. These are the places it has taken me.",
+    "intro": "Fashion, women's networks, cultural work, dance and retreats: my path has been a wide one. These are the places that shaped it.",
     "closing": "Not a collection of places, but one question: how to live a *whole* life.",
     "places": [
       {
@@ -172,7 +178,7 @@
       },
       {
         "place": "Provence",
-        "line": "On the way of Mary Magdalene."
+        "line": "With my daughters, on the way of Mary Magdalene."
       },
       {
         "place": "Assisi",
@@ -215,16 +221,16 @@
           ]
         },
         {
-          "name": "Group Sessions",
-          "text": "Group sessions offer opportunities to explore shared themes, exchange perspectives, and learn through collective experience. Depending on the format, sessions may incorporate solution-focused approaches, movement, yoga, reflection, or creative practices."
+          "name": "Four Clearings Masterclass",
+          "text": "Four Clearings is a 4-week guided masterclass for women at midlife who are ready to make room for the life that is truly theirs now: in their space, time, relationships and inner life."
         },
         {
-          "name": "Workshops",
-          "text": "My workshops bring together different aspects of my work, creating space for focused exploration, embodied learning, creativity, and personal development. Each workshop can be built around a particular theme, practice, or group of participants."
+          "name": "Workshops & Group Sessions",
+          "text": "Workshops and group sessions bring women together around a shared theme. Depending on the format, they combine solution-focused approaches, movement, yoga, reflection, creative practice and conversation."
         },
         {
-          "name": "Retreats",
-          "text": "I organise retreats that offer time and space to step away from everyday routines, reconnect with yourself, and explore new perspectives. Through thoughtfully combined practices and shared experiences, retreats invite participants to slow down, reflect, and nurture a deeper sense of connection."
+          "name": "Retreats & Walks",
+          "text": "Retreats and guided walks offer time away from everyday routines, in Umbria, Lazio and Provence. Walking slowly through these landscapes leaves room to rest, reflect and listen more deeply."
         }
       ]
     },
@@ -271,53 +277,90 @@
     "background": {
       "title": "Professional *Background*",
       "paragraphs": [
-        "My professional experience spans art curation, art education, art therapy, tourism, and the luxury fashion business. These diverse fields have shaped my interest in creativity, human relationships, cultural diversity, identity, and personal transformation.",
-        "Today, I bring these perspectives together in a practice that values individual experience, embodied awareness, and the discovery of new possibilities."
+        "My professional experience spans art curation and education, art therapy, tourism and high-end fashion. I curated Slovak fashion, worked in women's business networks and cultural associations, founded and led a folk dance ensemble in Vienna, and organised retreats and workshops across Slovakia and Italy.",
+        "All of this taught me how to create spaces of beauty, trust, movement and reflection. Today I bring it into my work with women who are ready to step into the next chapter of their lives with more clarity, vitality and presence."
       ]
     }
   },
   "pilgrimagePage": {
     "meta": {
       "title": "La Via del Cuore · Aurea",
-      "description": "A walking pilgrimage for women in transition, from Assisi to Spoleto through the green heart of Umbria."
+      "description": "A 3 to 5 day retreat for women in Spoleto, Umbria: yoga, breathwork, meditation, Ayurvedic meals, personal conversations and a pilgrimage walk to Assisi."
     },
     "eyebrow": "La Via del Cuore",
-    "title": "Not escaping life.\n*Walking back* into it.",
-    "intro": "A walking pilgrimage for women in transition, from Assisi to Spoleto through the green heart of Umbria.",
-    "isTitle": "What it is",
-    "is": [
-      "A threshold for women in a season of change",
-      "Walking, silence and honest conversation",
-      "Simple meals, simple rooms, a small group of women",
-      "Time to reconsider what you carry"
-    ],
-    "notTitle": "What it is not",
-    "not": [
-      "A wellness holiday",
-      "A sightseeing tour",
-      "A hiking challenge"
-    ],
-    "routeTitle": "The way",
-    "routeIntro": "We walk in the footsteps of St Francis and St Clare, from one Umbrian town to the next.",
-    "stops": [
-      "Assisi",
-      "Spello",
-      "Foligno",
-      "Trevi",
-      "Campello",
-      "Spoleto"
-    ],
-    "roadTitle": "On the road",
-    "road": "You leave your ordinary life behind. You carry less. You walk, and you get tired. You sleep somewhere different and eat simply. You talk, and you become quiet. You meet other women. And slowly, you reconsider what you carry.",
-    "returnTitle": "The return home",
-    "returnText": "The pilgrimage does not end in Spoleto. Together we prepare the way back, so that what you found on the road has a place in your everyday life. The question is not only what you leave behind, but what you *carry home*.",
-    "dates": "Next pilgrimage: dates to be announced",
-    "cta": "Ask about the next pilgrimage",
+    "title": "A pilgrimage to *clarity*.\nComing home to yourself in the heart of Umbria.",
+    "intro": "Sometimes you don't need another plan. You need time and space to find out what you really want.",
     "carousel": {
       "pause": "Pause the slideshow",
       "play": "Play the slideshow",
       "show": "Show"
-    }
+    },
+    "stops": [
+      "Spoleto",
+      "Campello",
+      "Trevi",
+      "Foligno",
+      "Spello",
+      "Assisi"
+    ],
+    "retreat": {
+      "title": "Time that is *yours*",
+      "paragraphs": [
+        "I invite you to spend 3 to 5 days in Umbria, Italy. Stop, slow down and step out of the everyday rush for a while.",
+        "In the quiet town of Spoleto I make room for women who need to recharge, sort out their thoughts and rediscover what truly matters to them."
+      ],
+      "listTitle": "During your stay I accompany you with",
+      "items": [
+        "Yoga and movement, to release your body and feel good in it again",
+        "Breathwork and meditation, to calm your mind and hear yourself",
+        "Gentle Ayurvedic guidance, to support your body's natural balance",
+        "Personal conversations, to look at where you are, name what you want to change and find concrete next steps"
+      ],
+      "closing": "So that you go home rested, clearer and with a better sense of where you want your life to go."
+    },
+    "routeTitle": "Walking the land, and back to *yourself*",
+    "routeIntro": "Part of the stay is a walk through the Umbrian countryside to Assisi, home of St Francis and St Clare. Choose the shorter walk from Spello to Assisi (about 11 km), or the whole way from Spoleto to Assisi (about 65 km) over five days.",
+    "includedTitle": "You will be taken care of",
+    "included": [
+      "A room in the historic centre of Spoleto",
+      "Ayurvedic breakfasts and dinners",
+      "Personal guidance throughout your stay",
+      "Yoga, movement, breathwork, meditation and spiritual practice",
+      "Personal conversations to find your own direction",
+      "Travel can be arranged on request"
+    ],
+    "takeTitle": "What you take home",
+    "take": [
+      "More peace of mind",
+      "Closer contact with your body",
+      "A clearer idea of what you want, and what you no longer need",
+      "Perhaps the courage to take a first step in a new direction"
+    ],
+    "takeLine": "It doesn't matter how fast you walk. What matters is where the path *leads you*.",
+    "galleryTitle": "Spoleto",
+    "walks": {
+      "title": "Let's walk *together*",
+      "intro": "For women who have the courage to slow down, deepen the silence and give themselves time. A small group. Five days. One shared path.",
+      "items": [
+        {
+          "region": "Umbria · Lazio",
+          "route": "Orvieto to Lake Bolsena, ending in Rome on Palm Sunday",
+          "dates": "18–21 March 2027"
+        },
+        {
+          "region": "Umbria",
+          "route": "La Via del Cuore, from Spoleto to Assisi",
+          "dates": "15–19 April and 12–17 May 2027"
+        },
+        {
+          "region": "Provence",
+          "route": "Aix-en-Provence, Saint-Maximin-la-Sainte-Baume and the Verdon Valley",
+          "dates": "16–20 June 2027"
+        }
+      ]
+    },
+    "dates": "Next pilgrimages in Umbria: 15–19 April and 12–17 May 2027",
+    "cta": "Ask about the next pilgrimage"
   },
   "researchPage": {
     "meta": {
@@ -355,5 +398,68 @@
     "contactTitle": "Research collaboration",
     "contactText": "For conferences, academic exchange and research collaboration, I'd be glad to hear from you.",
     "contactButton": "Get in touch"
+  },
+  "masterclassPage": {
+    "meta": {
+      "title": "Four Clearings masterclass · Aurea",
+      "description": "A 4-week guided masterclass for women at midlife: make room in your space, time, relationships and inner life. €89."
+    },
+    "eyebrow": "Masterclass · 4 weeks · €89",
+    "title": "Four Clearings to make *room* for your life",
+    "intro": "A guided masterclass for women at midlife who have carried many roles and cared for many people, and now feel ready for more space, clarity and vitality in their own lives.",
+    "why": {
+      "title": "Why *now*",
+      "paragraphs": [
+        "Around fifty, you know that a life is more than a job title, a relationship status or a list of achievements. You may have been the woman who wanted to belong, who tried to get everything right, who cared for others, who chased success.",
+        "Now quieter questions arrive. What is truly mine? What wants to come alive through me now? This masterclass is not about becoming a different woman, or a minimalist. It is about returning to a life that supports who you are today."
+      ]
+    },
+    "how": {
+      "title": "How it *works*",
+      "paragraphs": [
+        "Each week we look, with kindness and precision, at one area of your life. Nothing is rushed, and nothing from your past has to be thrown away. You notice what supports your next chapter, what drains you, and what no longer belongs.",
+        "The work is practical and personal, and follows an Ayurvedic protocol to support your energy and vitality. You clear not only what is visible, but also what quietly takes up your attention."
+      ]
+    },
+    "clearings": {
+      "title": "The four *clearings*",
+      "prompts": [
+        [
+          "What in my space supports the woman I am becoming?",
+          "What am I keeping out of habit, guilt or an old identity?"
+        ],
+        [
+          "What takes my time without nourishing my life?",
+          "Which commitments belong to an older version of me?"
+        ],
+        [
+          "Which relationships feel mutual and alive?",
+          "Who am I when I no longer need to be everything for everyone?"
+        ],
+        [
+          "What matters to me now?",
+          "What have I postponed for too long?"
+        ]
+      ]
+    },
+    "receive": {
+      "title": "What you *receive*",
+      "items": [
+        "Four weeks of guidance through the four clearings",
+        "An Ayurvedic protocol to support the process",
+        "Reflection prompts and practical exercises for each week",
+        "Space to work at your own pace"
+      ]
+    },
+    "facts": [
+      "4 weeks",
+      "Guided masterclass",
+      "€89"
+    ],
+    "cta": {
+      "title": "One drawer. One hour. One boundary. One *truth*.",
+      "note": "A life can begin to change from there.",
+      "button": "Join Four Clearings for €89"
+    }
   }
 }

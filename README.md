@@ -98,6 +98,7 @@ To read the comments locally, put `REVIEW_ENDPOINT` and `REVIEW_KEY` in `.env.lo
 
 ## Before launch
 
-- Replace the placeholder testimonials with real ones (or remove the section).
+- Testimonials are switched off (`testimonials: false` in `src/lib/features.ts`). Put real quotes in
+  `testimonials` in each dictionary, then set it to `true`.
 - Add Elena's postal address in `src/legal/owner.ts` (required for the Impressum).
 - Have native speakers review DE, SK and IT.

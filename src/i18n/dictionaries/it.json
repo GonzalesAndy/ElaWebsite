@@ -8,7 +8,7 @@
     "menu": "Menu",
     "close": "Chiudi",
     "home": "Home",
-    "about": "Chi sono",
+    "about": "Ecologia della chiarezza",
     "way": "Il cammino",
     "offers": "Lavora con me",
     "pilgrimage": "Pellegrinaggio",
@@ -20,44 +20,49 @@
   },
   "hero": {
     "eyebrow": "Coaching e pellegrinaggi per donne",
-    "title": "Dopo anni passati\na portare tutti,\n*torna* a te stessa",
+    "title": "Ritorno alla *chiarezza* interiore\nin un mondo frenetico",
     "subtitle": "Coaching e pellegrinaggi a piedi per donne pronte a lasciare ciò che non è più loro.",
-    "cta": "Fai il primo passo",
-    "secondary": "Come lavoro"
+    "cta": "Fai il primo passo"
   },
   "about": {
-    "eyebrow": "Chi sono",
-    "title": "Ciao, sono *Elena*.",
-    "p1": "Sono cresciuta in Slovacchia e vivo a Vienna da molti anni. Ho studiato filosofia e arte, ho cresciuto tre figli e ho percorso cammini di pellegrinaggio dal Tamil Nadu ad Assisi.",
-    "p2": "Lungo la strada ho imparato una cosa semplice da dire e difficile da vivere: una vita piena non è quella in cui porti di più, ma quella in cui *scegli* cosa portare. È questo che aiuto le donne a fare.",
-    "more": "Leggi il mio viaggio"
+    "eyebrow": "Cosa offro",
+    "title": "Ecologia della *chiarezza*",
+    "p1": "Una completa ricalibrazione del tuo mondo interiore ed esteriore, liberando il tuo spazio, il tuo tempo e le tue relazioni.",
+    "bubbleTitle": "Creare spazio per ciò che *conta davvero*.",
+    "bubble": [
+      "Una trasformazione delicata ma profonda della tua vita, che parte dalla tua casa, dal tuo tempo e dalle tue relazioni.",
+      "Insieme eliminiamo ciò che non ti serve più, semplifichiamo ciò che ti sopraffà e facciamo spazio a ciò che ti porta pace, senso e gioia.",
+      "Perché quando il tuo mondo esteriore diventa più chiaro, anche il tuo mondo interiore può respirare."
+    ],
+    "more": "Conosci Ela: il mio percorso"
   },
   "way": {
     "eyebrow": "Il cammino",
-    "title": "Quattro radure per fare *spazio* alla tua vita",
-    "intro": "Fare ordine non riguarda solo cassetti e calendari. Significa decidere, con delicatezza e sincerità,\ncosa merita ancora un posto nella tua vita. Attraversiamo quattro radure, al tuo ritmo.",
+    "title": "Libera il tuo spazio. Riprenditi il tuo tempo. Vivi in modo *autentico*.",
+    "intro": "Immagina una casa che ti sostiene invece di sopraffarti, abitudini che ti danno struttura senza toglierti la libertà, e relazioni che ti nutrono invece di svuotarti. Il risultato è più di una casa in ordine. È una vita che senti di nuovo tua. Meno affanno, più chiarezza, più vita.",
     "items": [
       {
         "name": "Spazio",
         "question": "Che cosa mi circonda?",
-        "line": "La tua casa e le cose con cui vivi ogni giorno."
+        "line": "La tua casa, i tuoi oggetti, l'ambiente di ogni giorno."
       },
       {
         "name": "Tempo",
         "question": "A che cosa dedico la mia vita?",
-        "line": "Dove vanno davvero i tuoi giorni, la tua energia e la tua attenzione."
+        "line": "Le tue giornate, la tua energia e attenzione, i tuoi ritmi e impegni."
       },
       {
         "name": "Relazioni",
         "question": "Chi e che cosa ha accesso a me?",
-        "line": "Le persone, i ruoli e le aspettative che porti."
+        "line": "Le persone, i ruoli, le aspettative e le responsabilità emotive che porti."
       },
       {
         "name": "Vita interiore",
         "question": "A che cosa sono devota?",
-        "line": "I valori e i desideri sotto a tutto."
+        "line": "I valori, i desideri e gli impegni più profondi sotto a tutto."
       }
-    ]
+    ],
+    "more": "Scopri la masterclass Quattro radure"
   },
   "offers": {
     "eyebrow": "Lavora con me",
@@ -65,27 +70,27 @@
     "items": [
       {
         "name": "Sessioni individuali",
-        "line": "Life coaching, yoga e lavoro terapeutico o creativo.",
+        "line": "Accompagnamento personale con life coaching, yoga e lavoro terapeutico o creativo.",
         "link": "Scopri di più",
         "href": "/journey/#offering-1"
       },
       {
-        "name": "Sessioni di gruppo",
-        "line": "Pratica condivisa, riflessione ed esplorazione.",
-        "link": "Scopri di più",
-        "href": "/journey/#offering-2"
+        "name": "Masterclass Quattro radure",
+        "line": "Un percorso guidato di 4 settimane attraverso spazio, tempo, relazioni e vita interiore. 89 €.",
+        "link": "Scopri la masterclass",
+        "href": "/masterclass/"
       },
       {
-        "name": "Workshop",
-        "line": "Esperienze tematiche che uniscono movimento, riflessione e creatività.",
+        "name": "Workshop e gruppi",
+        "line": "Esperienze condivise che uniscono movimento, riflessione, creatività e conversazione.",
         "link": "Scopri di più",
         "href": "/journey/#offering-3"
       },
       {
-        "name": "Ritiri",
-        "line": "Uno spazio per il cambiamento, la consapevolezza corporea e l'esplorazione creativa.",
-        "link": "Scopri di più",
-        "href": "/journey/#offering-4"
+        "name": "Ritiri e cammini",
+        "line": "Tempo per il cambiamento, il riposo e la consapevolezza corporea, anche con cammini guidati in Umbria, Lazio e Provenza.",
+        "link": "Vedi le date",
+        "href": "/pilgrimage/#walks"
       }
     ]
   },
@@ -127,9 +132,10 @@
     "interest": "Che cosa ti incuriosisce?",
     "interestOptions": [
       "Non lo so ancora",
-      "Coaching 1:1",
-      "Cerchio di donne",
-      "Pellegrinaggio La Via del Cuore"
+      "Sessioni individuali",
+      "Masterclass Quattro radure",
+      "Workshop e gruppi",
+      "Ritiri e cammini"
     ]
   },
   "footer": {
@@ -151,7 +157,7 @@
     },
     "eyebrow": "Il mio viaggio",
     "title": "Una vita oltre i *confini*",
-    "intro": "La mia vita è stata una lunga ricerca su come creiamo significato attraverso il corpo, la cultura, i luoghi e il rito. Questi sono i luoghi in cui mi ha portata.",
+    "intro": "Moda, reti di donne, lavoro culturale, danza e ritiri: il mio percorso è stato ampio. Questi sono i luoghi che lo hanno formato.",
     "closing": "Non una collezione di luoghi, ma una domanda: come vivere una vita *intera*.",
     "places": [
       {
@@ -172,7 +178,7 @@
       },
       {
         "place": "Provenza",
-        "line": "Sul cammino di Maria Maddalena."
+        "line": "Con le mie figlie, sul cammino di Maria Maddalena."
       },
       {
         "place": "Assisi",
@@ -215,16 +221,16 @@
           ]
         },
         {
-          "name": "Sessioni di gruppo",
-          "text": "Le sessioni di gruppo offrono l'opportunità di esplorare temi comuni, scambiare prospettive e imparare attraverso l'esperienza collettiva. A seconda del formato, possono includere approcci orientati alle soluzioni, movimento, yoga, riflessione o pratiche creative."
+          "name": "Masterclass Quattro radure",
+          "text": "Quattro radure è una masterclass guidata di 4 settimane per donne nella mezza età, pronte a fare spazio alla vita che ora è davvero loro: nello spazio, nel tempo, nelle relazioni e nella vita interiore."
         },
         {
-          "name": "Workshop",
-          "text": "I miei workshop riuniscono diversi aspetti del mio lavoro, creando spazio per un'esplorazione mirata, un apprendimento attraverso il corpo, la creatività e la crescita personale. Ogni workshop può essere costruito attorno a un tema, a una pratica o a un gruppo specifico di partecipanti."
+          "name": "Workshop e sessioni di gruppo",
+          "text": "Workshop e sessioni di gruppo riuniscono donne attorno a un tema comune. A seconda del formato, uniscono approcci orientati alle soluzioni, movimento, yoga, riflessione, pratica creativa e conversazione."
         },
         {
-          "name": "Ritiri",
-          "text": "Organizzo ritiri che offrono tempo e spazio per allontanarsi dalla routine quotidiana, ritrovare il contatto con sé e scoprire nuove prospettive. Attraverso pratiche combinate con cura ed esperienze condivise, i ritiri invitano a rallentare, riflettere e coltivare un senso più profondo di connessione."
+          "name": "Ritiri e cammini",
+          "text": "Ritiri e cammini guidati offrono tempo lontano dalla routine, in Umbria, Lazio e Provenza. Camminando lentamente in questi paesaggi si trova spazio per riposare, riflettere e ascoltare più a fondo."
         }
       ]
     },
@@ -271,53 +277,90 @@
     "background": {
       "title": "Percorso *professionale*",
       "paragraphs": [
-        "La mia esperienza professionale spazia dalla curatela d'arte all'educazione artistica, dall'arteterapia al turismo, fino al settore della moda di lusso. Questi ambiti così diversi hanno plasmato il mio interesse per la creatività, le relazioni umane, la diversità culturale, l'identità e la trasformazione personale.",
-        "Oggi riunisco queste prospettive in una pratica che valorizza l'esperienza individuale, la consapevolezza corporea e la scoperta di nuove possibilità."
+        "La mia esperienza professionale spazia dalla curatela e dall'educazione artistica all'arteterapia, dal turismo alla moda di alta gamma. Ho curato moda slovacca, ho lavorato in reti di donne imprenditrici e associazioni culturali, ho fondato e diretto un gruppo di danza popolare a Vienna e ho organizzato ritiri e workshop in Slovacchia e in Italia.",
+        "Così ho imparato a creare spazi di bellezza, fiducia, movimento e riflessione. Oggi porto tutto questo nel mio lavoro con donne pronte a entrare nel prossimo capitolo della loro vita con più chiarezza, vitalità e presenza."
       ]
     }
   },
   "pilgrimagePage": {
     "meta": {
       "title": "La Via del Cuore · Aurea",
-      "description": "Un pellegrinaggio a piedi per donne in transizione, da Assisi a Spoleto attraverso il cuore verde dell'Umbria."
+      "description": "Un ritiro per donne di 3-5 giorni a Spoleto, in Umbria: yoga, respirazione, meditazione, cucina ayurvedica, colloqui personali e un cammino a piedi fino ad Assisi."
     },
     "eyebrow": "La Via del Cuore",
-    "title": "Non fuggire dalla vita.\nMa *tornare* a viverla.",
-    "intro": "Un pellegrinaggio a piedi per donne in transizione, da Assisi a Spoleto attraverso il cuore verde dell'Umbria.",
-    "isTitle": "Che cos'è",
-    "is": [
-      "Una soglia per donne in una stagione di cambiamento",
-      "Cammino, silenzio e conversazioni sincere",
-      "Pasti semplici, stanze semplici, un piccolo gruppo di donne",
-      "Tempo per ripensare a ciò che porti"
-    ],
-    "notTitle": "Che cosa non è",
-    "not": [
-      "Una vacanza benessere",
-      "Un tour turistico",
-      "Una sfida di trekking"
-    ],
-    "routeTitle": "Il cammino",
-    "routeIntro": "Camminiamo sulle orme di San Francesco e Santa Chiara, da un borgo umbro all'altro.",
-    "roadTitle": "Lungo la strada",
-    "road": "Lasci alle spalle la tua vita di tutti i giorni. Porti meno peso. Cammini e ti stanchi. Dormi in un luogo diverso e mangi in modo semplice. Parli, e diventi silenziosa. Incontri altre donne. E lentamente ripensi a ciò che porti.",
-    "returnTitle": "Il ritorno a casa",
-    "returnText": "Il pellegrinaggio non finisce a Spoleto. Insieme prepariamo la strada del ritorno, perché ciò che hai trovato lungo il cammino trovi posto nella tua vita di ogni giorno. La domanda non è solo che cosa lasci, ma che cosa *porti a casa*.",
-    "dates": "Prossimo pellegrinaggio: date in arrivo",
-    "cta": "Chiedi del prossimo pellegrinaggio",
+    "title": "Un pellegrinaggio verso la *chiarezza*.\nTornare a te nel cuore dell'Umbria.",
+    "intro": "A volte non ti serve un altro piano. Ti servono tempo e spazio per scoprire cosa vuoi davvero.",
     "carousel": {
       "pause": "Metti in pausa la presentazione",
       "play": "Avvia la presentazione",
       "show": "Mostra"
     },
     "stops": [
-      "Assisi",
-      "Spello",
-      "Foligno",
-      "Trevi",
+      "Spoleto",
       "Campello",
-      "Spoleto"
-    ]
+      "Trevi",
+      "Foligno",
+      "Spello",
+      "Assisi"
+    ],
+    "retreat": {
+      "title": "Un tempo tutto *tuo*",
+      "paragraphs": [
+        "Ti invito a trascorrere da 3 a 5 giorni nella splendida Umbria. Fermati, rallenta ed esci per un po' dalla corsa di ogni giorno.",
+        "Nella quiete di Spoleto creo uno spazio per le donne che hanno bisogno di ritrovare energia, mettere ordine nei pensieri e riscoprire ciò che conta davvero per loro."
+      ],
+      "listTitle": "Durante il soggiorno ti accompagno con",
+      "items": [
+        "Yoga e movimento, per sciogliere il corpo e sentirti di nuovo bene in esso",
+        "Respirazione e meditazione, per calmare la mente e ascoltare te stessa",
+        "Delicati consigli ayurvedici, per sostenere l'equilibrio naturale del tuo corpo",
+        "Colloqui personali, per guardare la tua situazione, dare un nome a ciò che vuoi cambiare e trovare passi concreti per andare avanti"
+      ],
+      "closing": "Così tornerai a casa riposata, con la mente più chiara e un'idea migliore di dove vuoi andare nella tua vita."
+    },
+    "routeTitle": "Camminare nel paesaggio, e verso *te stessa*",
+    "routeIntro": "Il soggiorno comprende un cammino a piedi nella campagna umbra fino ad Assisi, città di San Francesco e Santa Chiara. Puoi scegliere il percorso breve da Spello ad Assisi (circa 11 km) o l'intero cammino da Spoleto ad Assisi (circa 65 km) in cinque giorni.",
+    "includedTitle": "Ci prendiamo cura di te",
+    "included": [
+      "Alloggio nel centro storico di Spoleto",
+      "Colazioni e cene di ispirazione ayurvedica",
+      "Accompagnamento personale per tutto il soggiorno",
+      "Yoga, movimento, respirazione, meditazione e pratiche spirituali",
+      "Colloqui personali per trovare la tua direzione",
+      "Il viaggio può essere organizzato su richiesta"
+    ],
+    "takeTitle": "Cosa porti a casa",
+    "take": [
+      "Più pace nella mente",
+      "Un contatto più profondo con il tuo corpo",
+      "Un'idea più chiara di ciò che vuoi e di ciò di cui non hai più bisogno",
+      "Forse il coraggio di fare un primo passo in una nuova direzione"
+    ],
+    "takeLine": "Non importa quanto velocemente cammini. Importa dove ti *porta* il cammino.",
+    "galleryTitle": "Spoleto",
+    "walks": {
+      "title": "Camminiamo *insieme*",
+      "intro": "Per le donne che hanno il coraggio di rallentare, approfondire il silenzio e concedersi tempo. Un piccolo gruppo. Cinque giorni. Un cammino condiviso.",
+      "items": [
+        {
+          "region": "Umbria · Lazio",
+          "route": "Da Orvieto al lago di Bolsena, con la Domenica delle Palme a Roma",
+          "dates": "18–21 marzo 2027"
+        },
+        {
+          "region": "Umbria",
+          "route": "La Via del Cuore, da Spoleto ad Assisi",
+          "dates": "15–19 aprile e 12–17 maggio 2027"
+        },
+        {
+          "region": "Provenza",
+          "route": "Aix-en-Provence, Saint-Maximin-la-Sainte-Baume e la valle del Verdon",
+          "dates": "16–20 giugno 2027"
+        }
+      ]
+    },
+    "dates": "Prossimi pellegrinaggi in Umbria: 15–19 aprile e 12–17 maggio 2027",
+    "cta": "Chiedi del prossimo pellegrinaggio"
   },
   "researchPage": {
     "meta": {
@@ -355,5 +398,68 @@
     "contactTitle": "Collaborazione di ricerca",
     "contactText": "Per conferenze, scambi accademici e collaborazioni di ricerca, sarò lieta di ricevere un vostro messaggio.",
     "contactButton": "Contattami"
+  },
+  "masterclassPage": {
+    "meta": {
+      "title": "Masterclass Quattro radure · Aurea",
+      "description": "Una masterclass guidata di 4 settimane per donne nella mezza età: fai spazio nella casa, nel tempo, nelle relazioni e nella vita interiore. 89 €."
+    },
+    "eyebrow": "Masterclass · 4 settimane · 89 €",
+    "title": "Quattro radure per fare *spazio* alla tua vita",
+    "intro": "Una masterclass guidata per donne nella mezza età che hanno portato molti ruoli e si sono prese cura di molte persone, e ora si sentono pronte per più spazio, chiarezza e vitalità nella propria vita.",
+    "why": {
+      "title": "Perché *ora*",
+      "paragraphs": [
+        "Intorno ai cinquant'anni sai che una vita è più di un titolo di lavoro, di uno stato civile o di un elenco di traguardi. Forse sei stata la donna che voleva appartenere, che cercava di fare tutto bene, che si prendeva cura degli altri, che inseguiva il successo.",
+        "Ora arrivano domande più silenziose. Che cosa è davvero mio? Che cosa vuole prendere vita attraverso di me adesso? Questa masterclass non serve a diventare un'altra donna, né una minimalista. Serve a tornare a una vita che sostiene chi sei oggi."
+      ]
+    },
+    "how": {
+      "title": "Come *funziona*",
+      "paragraphs": [
+        "Ogni settimana guardiamo con gentilezza e precisione un'area della tua vita. Niente è affrettato e niente del tuo passato va buttato via. Noti ciò che sostiene il tuo prossimo capitolo, ciò che ti toglie energia e ciò che non ti appartiene più.",
+        "Il lavoro è pratico e personale e segue un protocollo ayurvedico che sostiene la tua energia e vitalità. Fai ordine non solo in ciò che si vede, ma anche in ciò che occupa in silenzio la tua attenzione."
+      ]
+    },
+    "clearings": {
+      "title": "Le quattro *radure*",
+      "prompts": [
+        [
+          "Che cosa nel mio spazio sostiene la donna che sto diventando?",
+          "Che cosa tengo per abitudine, senso di colpa o una vecchia identità?"
+        ],
+        [
+          "Che cosa mi prende tempo senza nutrire la mia vita?",
+          "Quali impegni appartengono a una versione più vecchia di me?"
+        ],
+        [
+          "Quali relazioni sono reciproche e vive?",
+          "Chi sono quando non devo più essere tutto per tutti?"
+        ],
+        [
+          "Che cosa conta per me adesso?",
+          "Che cosa ho rimandato troppo a lungo?"
+        ]
+      ]
+    },
+    "receive": {
+      "title": "Che cosa *ricevi*",
+      "items": [
+        "Quattro settimane di accompagnamento attraverso le quattro radure",
+        "Un protocollo ayurvedico a sostegno del percorso",
+        "Spunti di riflessione ed esercizi pratici per ogni settimana",
+        "Spazio per lavorare al tuo ritmo"
+      ]
+    },
+    "facts": [
+      "4 settimane",
+      "Masterclass guidata",
+      "89 €"
+    ],
+    "cta": {
+      "title": "Un cassetto. Un'ora. Un confine. Una *verità*.",
+      "note": "Da lì una vita può cominciare a cambiare.",
+      "button": "Partecipa per 89 €"
+    }
   }
 }

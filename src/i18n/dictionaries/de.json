@@ -8,7 +8,7 @@
     "menu": "Menü",
     "close": "Schließen",
     "home": "Startseite",
-    "about": "Über mich",
+    "about": "Ökologie der Klarheit",
     "way": "Der Weg",
     "offers": "Mit mir arbeiten",
     "pilgrimage": "Pilgerreise",
@@ -20,44 +20,49 @@
   },
   "hero": {
     "eyebrow": "Coaching & Pilgerreisen für Frauen",
-    "title": "Du hast lange\nalle getragen.\n*Kehr* zu dir zurück.",
+    "title": "Zurück zur inneren *Klarheit*\nin einer hektischen Welt",
     "subtitle": "Coaching und Pilgerwege zu Fuß für Frauen, die bereit sind abzulegen, was nicht mehr ihres ist.",
-    "cta": "Mach den ersten Schritt",
-    "secondary": "Wie ich arbeite"
+    "cta": "Mach den ersten Schritt"
   },
   "about": {
-    "eyebrow": "Über mich",
-    "title": "Hallo, ich bin *Elena*.",
-    "p1": "Ich bin in der Slowakei aufgewachsen und lebe seit vielen Jahren in Wien. Ich habe Philosophie und Kunst studiert, drei Kinder großgezogen und bin Pilgerwege von Tamil Nadu bis Assisi gegangen.",
-    "p2": "Unterwegs habe ich etwas gelernt, das leicht zu sagen und schwer zu leben ist: Ein ganzes Leben ist keines, in dem man mehr trägt, sondern eines, in dem man *wählt*, was man trägt. Genau dabei begleite ich Frauen.",
-    "more": "Mehr über meinen Weg"
+    "eyebrow": "Was ich anbiete",
+    "title": "Ökologie der *Klarheit*",
+    "p1": "Eine umfassende Neuausrichtung deiner inneren und äußeren Welt, indem du deinen Raum, deine Zeit und deine Beziehungen entrümpelst.",
+    "bubbleTitle": "Raum schaffen für das, was *wirklich zählt*.",
+    "bubble": [
+      "Eine sanfte und zugleich tiefgreifende Veränderung deines Lebens, beginnend bei deinem Zuhause, deiner Zeit und deinen Beziehungen.",
+      "Gemeinsam räumen wir weg, was dir nicht mehr dient, vereinfachen, was dich überfordert, und schaffen Platz für das, was dir Frieden, Sinn und Freude schenkt.",
+      "Denn wenn deine äußere Welt klarer wird, kann auch deine innere Welt aufatmen."
+    ],
+    "more": "Lerne Ela kennen: mein Weg"
   },
   "way": {
     "eyebrow": "Der Weg",
-    "title": "Vier Lichtungen, um *Raum* für dein Leben zu schaffen",
-    "intro": "Entrümpeln heißt nicht nur, Schubladen und Kalender aufzuräumen. Es heißt, sanft und ehrlich zu entscheiden,\nwas in deinem Leben noch einen Platz verdient. Wir gehen vier Lichtungen durch, in deinem Tempo.",
+    "title": "Räume deinen Raum frei. Hol dir deine Zeit zurück. Lebe *authentisch*.",
+    "intro": "Stell dir ein Zuhause vor, das dich trägt statt überfordert, Routinen, die dir Halt geben, ohne dir die Freiheit zu nehmen, und Beziehungen, die dich nähren statt erschöpfen. Das Ergebnis ist mehr als eine aufgeräumte Wohnung. Es ist ein Leben, das sich wieder wie deines anfühlt. Weniger Überforderung, mehr Klarheit, mehr Leben.",
     "items": [
       {
         "name": "Raum",
         "question": "Was umgibt mich?",
-        "line": "Dein Zuhause und die Dinge, mit denen du jeden Tag lebst."
+        "line": "Dein Zuhause, deine Dinge, deine alltägliche Umgebung."
       },
       {
         "name": "Zeit",
         "question": "Wem schenke ich mein Leben?",
-        "line": "Wohin deine Tage, deine Energie und deine Aufmerksamkeit wirklich gehen."
+        "line": "Deine Tage, deine Energie und Aufmerksamkeit, deine Rhythmen und Verpflichtungen."
       },
       {
         "name": "Beziehungen",
         "question": "Wer und was hat Zugang zu mir?",
-        "line": "Die Menschen, Rollen und Erwartungen, die du trägst."
+        "line": "Die Menschen, Rollen, Erwartungen und die emotionale Verantwortung, die du trägst."
       },
       {
         "name": "Innenleben",
         "question": "Wofür schlägt mein Herz?",
-        "line": "Die Werte und die Sehnsucht unter allem."
+        "line": "Die Werte, Sehnsüchte und tieferen Verpflichtungen unter allem."
       }
-    ]
+    ],
+    "more": "Zur Masterclass Vier Lichtungen"
   },
   "offers": {
     "eyebrow": "Mit mir arbeiten",
@@ -65,27 +70,27 @@
     "items": [
       {
         "name": "Einzelsitzungen",
-        "line": "Life Coaching, Yoga sowie therapeutische oder kreative Arbeit.",
+        "line": "Persönliche Begleitung durch Life Coaching, Yoga und therapeutische oder kreative Arbeit.",
         "link": "Mehr erfahren",
         "href": "/journey/#offering-1"
       },
       {
-        "name": "Gruppensitzungen",
-        "line": "Gemeinsame Praxis, Reflexion und Erforschung.",
-        "link": "Mehr erfahren",
-        "href": "/journey/#offering-2"
+        "name": "Masterclass Vier Lichtungen",
+        "line": "Eine vierwöchige begleitete Reise durch Raum, Zeit, Beziehungen und Innenleben. 89 €.",
+        "link": "Zur Masterclass",
+        "href": "/masterclass/"
       },
       {
-        "name": "Workshops",
-        "line": "Thematische Erfahrungen, die Bewegung, Reflexion und Kreativität verbinden.",
+        "name": "Workshops & Gruppen",
+        "line": "Gemeinsame Erfahrungen mit Bewegung, Reflexion, Kreativität und Gespräch.",
         "link": "Mehr erfahren",
         "href": "/journey/#offering-3"
       },
       {
-        "name": "Retreats",
-        "line": "Ein Raum für Veränderung, verkörpertes Bewusstsein und kreatives Erforschen.",
-        "link": "Mehr erfahren",
-        "href": "/journey/#offering-4"
+        "name": "Retreats & Pilgerwege",
+        "line": "Zeit für Veränderung, Ruhe und Körperbewusstsein, auch auf begleiteten Wegen in Umbrien, Latium und der Provence.",
+        "link": "Zu den Terminen",
+        "href": "/pilgrimage/#walks"
       }
     ]
   },
@@ -127,9 +132,10 @@
     "interest": "Was interessiert dich?",
     "interestOptions": [
       "Ich weiß es noch nicht",
-      "1:1 Coaching",
-      "Frauenkreis",
-      "Pilgerreise La Via del Cuore"
+      "Einzelsitzungen",
+      "Masterclass Vier Lichtungen",
+      "Workshops & Gruppen",
+      "Retreats & Pilgerwege"
     ]
   },
   "footer": {
@@ -151,7 +157,7 @@
     },
     "eyebrow": "Meine Reise",
     "title": "Ein Leben über *Grenzen* hinweg",
-    "intro": "Mein Leben war eine lange Suche danach, wie wir Sinn schaffen: durch Körper, Kultur, Ort und Ritual. An diese Orte hat sie mich geführt.",
+    "intro": "Mode, Frauennetzwerke, Kulturarbeit, Tanz und Retreats: Mein Weg war weit. Diese Orte haben ihn geprägt.",
     "closing": "Keine Sammlung von Orten, sondern eine Frage: wie man ein *ganzes* Leben lebt.",
     "places": [
       {
@@ -172,7 +178,7 @@
       },
       {
         "place": "Provence",
-        "line": "Auf dem Weg der Maria Magdalena."
+        "line": "Mit meinen Töchtern auf dem Weg der Maria Magdalena."
       },
       {
         "place": "Assisi",
@@ -215,16 +221,16 @@
           ]
         },
         {
-          "name": "Gruppensitzungen",
-          "text": "Gruppensitzungen bieten die Möglichkeit, gemeinsame Themen zu erkunden, Perspektiven auszutauschen und durch gemeinsame Erfahrung zu lernen. Je nach Format können lösungsfokussierte Ansätze, Bewegung, Yoga, Reflexion oder kreative Praktiken einfließen."
+          "name": "Masterclass Vier Lichtungen",
+          "text": "Vier Lichtungen ist eine vierwöchige begleitete Masterclass für Frauen in der Lebensmitte, die bereit sind, Raum für das Leben zu schaffen, das jetzt wirklich ihres ist: in Raum, Zeit, Beziehungen und Innenleben."
         },
         {
-          "name": "Workshops",
-          "text": "Meine Workshops verbinden verschiedene Aspekte meiner Arbeit und schaffen Raum für konzentriertes Erforschen, verkörpertes Lernen, Kreativität und persönliche Entwicklung. Jeder Workshop kann um ein bestimmtes Thema, eine Praxis oder eine bestimmte Gruppe von Teilnehmenden herum gestaltet werden."
+          "name": "Workshops & Gruppensitzungen",
+          "text": "Workshops und Gruppensitzungen bringen Frauen rund um ein gemeinsames Thema zusammen. Je nach Format verbinden sie lösungsorientierte Ansätze, Bewegung, Yoga, Reflexion, kreative Praxis und Gespräch."
         },
         {
-          "name": "Retreats",
-          "text": "Ich organisiere Retreats, die Zeit und Raum bieten, um aus dem Alltag herauszutreten, wieder mit dir selbst in Verbindung zu kommen und neue Perspektiven zu entdecken. Durch sorgfältig kombinierte Praktiken und gemeinsame Erfahrungen laden Retreats dazu ein, langsamer zu werden, zu reflektieren und ein tieferes Gefühl der Verbundenheit zu nähren."
+          "name": "Retreats & Pilgerwege",
+          "text": "Retreats und begleitete Wege schenken Zeit abseits des Alltags, in Umbrien, Latium und der Provence. Wer langsam durch diese Landschaften geht, findet Raum zum Ausruhen, Nachdenken und tieferen Zuhören."
         }
       ]
     },
@@ -271,53 +277,90 @@
     "background": {
       "title": "Beruflicher *Werdegang*",
       "paragraphs": [
-        "Meine berufliche Erfahrung reicht von Kunstkuratierung, Kunstvermittlung und Kunsttherapie über den Tourismus bis hin zur Luxusmodebranche. Diese vielfältigen Bereiche haben mein Interesse an Kreativität, menschlichen Beziehungen, kultureller Vielfalt, Identität und persönlicher Transformation geprägt.",
-        "Heute verbinde ich diese Perspektiven in einer Praxis, die individuelle Erfahrung, verkörpertes Bewusstsein und das Entdecken neuer Möglichkeiten wertschätzt."
+        "Meine berufliche Erfahrung reicht von Kunstkuratierung, Kunstvermittlung und Kunsttherapie über den Tourismus bis zur hochwertigen Mode. Ich habe slowakische Mode kuratiert, in Frauen-Business-Netzwerken und Kulturvereinen gearbeitet, in Wien eine Volkstanzgruppe gegründet und geleitet und Retreats und Workshops in der Slowakei und in Italien organisiert.",
+        "Dabei habe ich gelernt, Räume voller Schönheit, Vertrauen, Bewegung und Nachdenken zu schaffen. Heute bringe ich das in meine Arbeit mit Frauen ein, die bereit sind, mit mehr Klarheit, Lebendigkeit und Präsenz in ihr nächstes Lebenskapitel zu gehen."
       ]
     }
   },
   "pilgrimagePage": {
     "meta": {
       "title": "La Via del Cuore · Aurea",
-      "description": "Eine Pilgerreise zu Fuß für Frauen im Wandel, von Assisi nach Spoleto durch das grüne Herz Umbriens."
+      "description": "Ein Retreat für Frauen von 3 bis 5 Tagen in Spoleto, Umbrien: Yoga, Atemarbeit, Meditation, ayurvedische Küche, persönliche Gespräche und eine Pilgerwanderung nach Assisi."
     },
     "eyebrow": "La Via del Cuore",
-    "title": "Nicht vor dem Leben fliehen.\n*Zurück* ins Leben gehen.",
-    "intro": "Eine Pilgerreise zu Fuß für Frauen im Wandel, von Assisi nach Spoleto durch das grüne Herz Umbriens.",
-    "isTitle": "Was es ist",
-    "is": [
-      "Eine Schwelle für Frauen in einer Zeit des Wandels",
-      "Gehen, Stille und ehrliche Gespräche",
-      "Einfache Mahlzeiten, einfache Zimmer, eine kleine Gruppe von Frauen",
-      "Zeit, neu zu bedenken, was du trägst"
-    ],
-    "notTitle": "Was es nicht ist",
-    "not": [
-      "Ein Wellnessurlaub",
-      "Eine Besichtigungstour",
-      "Eine sportliche Herausforderung"
-    ],
-    "routeTitle": "Der Weg",
-    "routeIntro": "Wir gehen auf den Spuren des heiligen Franziskus und der heiligen Klara, von einer umbrischen Stadt zur nächsten.",
-    "roadTitle": "Unterwegs",
-    "road": "Du lässt deinen Alltag hinter dir. Du trägst weniger. Du gehst, und du wirst müde. Du schläfst an einem anderen Ort und isst einfach. Du sprichst, und du wirst still. Du begegnest anderen Frauen. Und langsam bedenkst du neu, was du trägst.",
-    "returnTitle": "Die Heimkehr",
-    "returnText": "Die Pilgerreise endet nicht in Spoleto. Gemeinsam bereiten wir den Rückweg vor, damit das, was du unterwegs gefunden hast, einen Platz in deinem Alltag bekommt. Die Frage ist nicht nur, was du zurücklässt, sondern was du *mit nach Hause nimmst*.",
-    "dates": "Nächste Pilgerreise: Termine folgen",
-    "cta": "Nach der nächsten Pilgerreise fragen",
+    "title": "Eine Pilgerreise zur *Klarheit*.\nZurück zu dir im Herzen Umbriens.",
+    "intro": "Manchmal brauchst du keinen weiteren Plan. Du brauchst Zeit und Raum, um herauszufinden, was du wirklich willst.",
     "carousel": {
       "pause": "Diashow anhalten",
       "play": "Diashow abspielen",
       "show": "Zeigen"
     },
     "stops": [
-      "Assisi",
-      "Spello",
-      "Foligno",
-      "Trevi",
+      "Spoleto",
       "Campello",
-      "Spoleto"
-    ]
+      "Trevi",
+      "Foligno",
+      "Spello",
+      "Assisi"
+    ],
+    "retreat": {
+      "title": "Zeit, die *dir* gehört",
+      "paragraphs": [
+        "Ich lade dich für 3 bis 5 Tage ins schöne Umbrien in Italien ein. Halte inne, werde langsamer und steig für eine Weile aus dem Alltagstrubel aus.",
+        "In der ruhigen Kleinstadt Spoleto schaffe ich Raum für Frauen, die neue Kraft schöpfen, ihre Gedanken ordnen und wiederentdecken möchten, was ihnen im Leben wirklich wichtig ist."
+      ],
+      "listTitle": "Während deines Aufenthalts begleite ich dich mit",
+      "items": [
+        "Yoga und Bewegung, damit dein Körper loslassen kann und du dich wieder wohl in ihm fühlst",
+        "Atemübungen und Meditation, damit dein Geist zur Ruhe kommt und du dich selbst hörst",
+        "Sanften ayurvedischen Empfehlungen, die das natürliche Gleichgewicht deines Körpers unterstützen",
+        "Persönlichen Gesprächen, in denen du auf deine Lebenssituation schaust, benennst, was du ändern möchtest, und konkrete nächste Schritte findest"
+      ],
+      "closing": "Damit du erholt nach Hause fährst, mit klarerem Kopf und einem besseren Gefühl dafür, wohin du in deinem Leben willst."
+    },
+    "routeTitle": "Durch die Landschaft wandern, zurück zu *dir*",
+    "routeIntro": "Zum Aufenthalt gehört eine Pilgerwanderung durch die umbrische Landschaft nach Assisi, der Heimat des heiligen Franziskus und der heiligen Klara. Wähle die kürzere Strecke von Spello nach Assisi (etwa 11 km) oder den ganzen Weg von Spoleto nach Assisi (etwa 65 km) in fünf Tagen.",
+    "includedTitle": "Für dich ist gesorgt",
+    "included": [
+      "Unterkunft in der Altstadt von Spoleto",
+      "Ayurvedisches Frühstück und Abendessen",
+      "Persönliche Begleitung während des ganzen Aufenthalts",
+      "Yoga, Bewegung, Atemübungen, Meditation und spirituelle Übungen",
+      "Persönliche Gespräche, um deine eigene Richtung zu finden",
+      "Die Anreise kann auf Wunsch organisiert werden"
+    ],
+    "takeTitle": "Was du mit nach Hause nimmst",
+    "take": [
+      "Mehr Ruhe im Kopf",
+      "Einen besseren Kontakt zu deinem Körper",
+      "Eine klarere Vorstellung davon, was du willst und was du nicht mehr brauchst",
+      "Vielleicht den Mut, einen ersten Schritt in eine neue Richtung zu gehen"
+    ],
+    "takeLine": "Es ist nicht wichtig, wie schnell du gehst. Wichtig ist, wohin dich der Weg *führt*.",
+    "galleryTitle": "Spoleto",
+    "walks": {
+      "title": "Gehen wir *gemeinsam*",
+      "intro": "Für Frauen, die den Mut haben, langsamer zu werden, die Stille zu vertiefen und sich Zeit für sich selbst zu schenken. Eine kleine Gruppe. Fünf Tage. Ein gemeinsamer Weg.",
+      "items": [
+        {
+          "region": "Umbrien · Latium",
+          "route": "Von Orvieto zum Bolsenasee, zum Abschluss Palmsonntag in Rom",
+          "dates": "18.–21. März 2027"
+        },
+        {
+          "region": "Umbrien",
+          "route": "La Via del Cuore, von Spoleto nach Assisi",
+          "dates": "15.–19. April und 12.–17. Mai 2027"
+        },
+        {
+          "region": "Provence",
+          "route": "Aix-en-Provence, Saint-Maximin-la-Sainte-Baume und das Verdon-Tal",
+          "dates": "16.–20. Juni 2027"
+        }
+      ]
+    },
+    "dates": "Nächste Pilgerwege in Umbrien: 15.–19. April und 12.–17. Mai 2027",
+    "cta": "Nach der nächsten Pilgerreise fragen"
   },
   "researchPage": {
     "meta": {
@@ -355,5 +398,68 @@
     "contactTitle": "Zusammenarbeit in der Forschung",
     "contactText": "Für Konferenzen, akademischen Austausch und Forschungskooperationen freue ich mich über Ihre Nachricht.",
     "contactButton": "Kontakt aufnehmen"
+  },
+  "masterclassPage": {
+    "meta": {
+      "title": "Masterclass Vier Lichtungen · Aurea",
+      "description": "Eine vierwöchige begleitete Masterclass für Frauen in der Lebensmitte: Raum schaffen in Zuhause, Zeit, Beziehungen und Innenleben. 89 €."
+    },
+    "eyebrow": "Masterclass · 4 Wochen · 89 €",
+    "title": "Vier Lichtungen, um *Raum* für dein Leben zu schaffen",
+    "intro": "Eine begleitete Masterclass für Frauen in der Lebensmitte, die viele Rollen getragen und für viele Menschen gesorgt haben und jetzt bereit sind für mehr Raum, Klarheit und Lebendigkeit im eigenen Leben.",
+    "why": {
+      "title": "Warum *jetzt*",
+      "paragraphs": [
+        "Mit etwa fünfzig weißt du, dass ein Leben mehr ist als ein Jobtitel, ein Beziehungsstatus oder eine Liste von Erfolgen. Vielleicht warst du die Frau, die dazugehören wollte, die alles richtig machen wollte, die für andere gesorgt hat, die dem Erfolg nachgelaufen ist.",
+        "Jetzt kommen leisere Fragen. Was ist wirklich meins? Was will jetzt durch mich lebendig werden? In dieser Masterclass geht es nicht darum, eine andere Frau oder Minimalistin zu werden, sondern zu einem Leben zurückzufinden, das trägt, wer du heute bist."
+      ]
+    },
+    "how": {
+      "title": "So *funktioniert* es",
+      "paragraphs": [
+        "Jede Woche schauen wir freundlich und genau auf einen Bereich deines Lebens. Nichts wird überstürzt, und nichts aus deiner Vergangenheit muss weggeworfen werden. Du bemerkst, was dein nächstes Kapitel stärkt, was dir Energie raubt und was nicht mehr dazugehört.",
+        "Die Arbeit ist praktisch und persönlich und folgt einem ayurvedischen Protokoll, das deine Energie und Lebendigkeit unterstützt. Du räumst nicht nur auf, was sichtbar ist, sondern auch, was leise deine Aufmerksamkeit besetzt."
+      ]
+    },
+    "clearings": {
+      "title": "Die vier *Lichtungen*",
+      "prompts": [
+        [
+          "Was in meinem Raum stärkt die Frau, die ich werde?",
+          "Was behalte ich aus Gewohnheit, Schuldgefühl oder einer alten Identität?"
+        ],
+        [
+          "Was nimmt mir Zeit, ohne mein Leben zu nähren?",
+          "Welche Verpflichtungen gehören zu einer früheren Version von mir?"
+        ],
+        [
+          "Welche Beziehungen fühlen sich gegenseitig und lebendig an?",
+          "Wer bin ich, wenn ich nicht mehr alles für alle sein muss?"
+        ],
+        [
+          "Was ist mir jetzt wichtig?",
+          "Was habe ich zu lange aufgeschoben?"
+        ]
+      ]
+    },
+    "receive": {
+      "title": "Was du *bekommst*",
+      "items": [
+        "Vier Wochen Begleitung durch die vier Lichtungen",
+        "Ein ayurvedisches Protokoll, das den Prozess unterstützt",
+        "Impulse zur Reflexion und praktische Übungen für jede Woche",
+        "Raum, in deinem eigenen Tempo zu arbeiten"
+      ]
+    },
+    "facts": [
+      "4 Wochen",
+      "Begleitete Masterclass",
+      "89 €"
+    ],
+    "cta": {
+      "title": "Eine Schublade. Eine Stunde. Eine Grenze. Eine *Wahrheit*.",
+      "note": "Von dort aus kann sich ein Leben verändern.",
+      "button": "Jetzt für 89 € anmelden"
+    }
   }
 }

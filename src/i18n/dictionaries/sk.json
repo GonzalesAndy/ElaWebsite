@@ -8,7 +8,7 @@
     "menu": "Menu",
     "close": "Zavrieť",
     "home": "Domov",
-    "about": "O mne",
+    "about": "Ekológia jasnosti",
     "way": "Cesta",
     "offers": "Spolupráca",
     "pilgrimage": "Púť",
@@ -20,44 +20,49 @@
   },
   "hero": {
     "eyebrow": "Koučing a púte pre ženy",
-    "title": "Po rokoch, keď si\nniesla všetkých,\n*vráť* sa k sebe",
+    "title": "Púť k vnútornej *jasnosti*\nv uponáhľanom svete",
     "subtitle": "Koučing a pešie púte pre ženy, ktoré sú pripravené odložiť to, čo už nie je ich.",
-    "cta": "Urob prvý krok",
-    "secondary": "Ako pracujem"
+    "cta": "Urob prvý krok"
   },
   "about": {
-    "eyebrow": "O mne",
-    "title": "Ahoj, som *Elena*.",
-    "p1": "Vyrastala som na Slovensku a už mnoho rokov žijem vo Viedni. Študovala som filozofiu a umenie, vychovala tri deti a prešla pútnické cesty od Tamilnádu po Assisi.",
-    "p2": "Na tej ceste som sa naučila niečo, čo sa ľahko povie a ťažko žije: celistvý život nie je ten, v ktorom nesieš viac, ale ten, v ktorom si *vyberáš*, čo nesieš. A práve v tom pomáham ženám.",
-    "more": "Prečítaj si môj príbeh"
+    "eyebrow": "Čo ponúkam",
+    "title": "Ekológia *jasnosti*",
+    "p1": "Úplné nové nastavenie tvojho vnútorného aj vonkajšieho prostredia, cez upratanie tvojho priestoru, času a vzťahov.",
+    "bubbleTitle": "Vytváram priestor pre to, na čom *naozaj záleží*.",
+    "bubble": [
+      "Jemná, no hlboká premena tvojho života, ktorá začína tvojím domovom, tvojím časom a tvojimi vzťahmi.",
+      "Spoločne odstránime, čo ti už neslúži, zjednodušíme, čo ťa zahlcuje, a urobíme miesto pre to, čo ti prináša pokoj, zmysel a radosť.",
+      "Pretože keď sa tvoj vonkajší svet vyjasní, aj tvoj vnútorný svet si môže vydýchnuť."
+    ],
+    "more": "Spoznaj Elu: moja cesta"
   },
   "way": {
     "eyebrow": "Cesta",
-    "title": "Štyri čistinky pre viac *priestoru* v tvojom živote",
-    "intro": "Upratovanie nie je len o zásuvkách a kalendároch. Je o tom, jemne a úprimne sa rozhodnúť,\nčo si v tvojom živote ešte zaslúži miesto. Štyrmi čistinkami prejdeme tvojím tempom.",
+    "title": "Uvoľni svoj priestor. Získaj späť svoj čas. Ži *autenticky*.",
+    "intro": "Predstav si domov, ktorý ťa podporuje namiesto toho, aby ťa zahlcoval, rutiny, ktoré ti dávajú štruktúru bez toho, aby ti brali slobodu, a vzťahy, ktoré ťa vyživujú namiesto toho, aby ťa vyčerpávali. Výsledkom nie je len uprataný domov. Je to život, ktorý je znovu tvoj. Menej zahltenia, viac jasnosti, viac života.",
     "items": [
       {
         "name": "Priestor",
         "question": "Čo ma obklopuje?",
-        "line": "Tvoj domov a veci, s ktorými žiješ každý deň."
+        "line": "Tvoj domov, tvoje veci, tvoje každodenné prostredie."
       },
       {
         "name": "Čas",
         "question": "Čomu dávam svoj život?",
-        "line": "Kam naozaj odchádzajú tvoje dni, energia a pozornosť."
+        "line": "Tvoje dni, energia a pozornosť, tvoje rytmy a záväzky."
       },
       {
         "name": "Vzťahy",
         "question": "Kto a čo má ku mne prístup?",
-        "line": "Ľudia, roly a očakávania, ktoré nesieš."
+        "line": "Ľudia, roly, očakávania a citová zodpovednosť, ktorú nesieš."
       },
       {
         "name": "Vnútorný život",
         "question": "Čomu som oddaná?",
-        "line": "Hodnoty a túžby pod tým všetkým."
+        "line": "Hodnoty, túžby a hlbšie záväzky pod tým všetkým."
       }
-    ]
+    ],
+    "more": "Spoznaj masterclass Štyri čistinky"
   },
   "offers": {
     "eyebrow": "Spolupráca",
@@ -65,27 +70,27 @@
     "items": [
       {
         "name": "Individuálne stretnutia",
-        "line": "Life koučing, joga a terapeutická či tvorivá práca.",
+        "line": "Osobné sprevádzanie cez life koučing, jogu a terapeutickú či tvorivú prácu.",
         "link": "Zistiť viac",
         "href": "/journey/#offering-1"
       },
       {
-        "name": "Skupinové stretnutia",
-        "line": "Spoločná prax, reflexia a objavovanie.",
-        "link": "Zistiť viac",
-        "href": "/journey/#offering-2"
+        "name": "Masterclass Štyri čistinky",
+        "line": "Štvortýždňová sprevádzaná cesta priestorom, časom, vzťahmi a vnútorným životom. 89 €.",
+        "link": "Spoznať masterclass",
+        "href": "/masterclass/"
       },
       {
-        "name": "Workshopy",
-        "line": "Tematické zážitky, ktoré spájajú pohyb, reflexiu a tvorivosť.",
+        "name": "Workshopy a skupiny",
+        "line": "Spoločné zážitky, ktoré spájajú pohyb, reflexiu, tvorivosť a rozhovor.",
         "link": "Zistiť viac",
         "href": "/journey/#offering-3"
       },
       {
-        "name": "Retreaty",
-        "line": "Priestor pre zmenu, telesné uvedomenie a tvorivé objavovanie.",
-        "link": "Zistiť viac",
-        "href": "/journey/#offering-4"
+        "name": "Retreaty a púte",
+        "line": "Čas na zmenu, oddych a telesné uvedomenie, aj na sprevádzaných cestách v Umbrii, Laciu a Provensalsku.",
+        "link": "Pozrieť termíny",
+        "href": "/pilgrimage/#walks"
       }
     ]
   },
@@ -127,9 +132,10 @@
     "interest": "Čo ťa zaujíma?",
     "interestOptions": [
       "Ešte neviem",
-      "Koučing 1:1",
-      "Ženský kruh",
-      "Púť La Via del Cuore"
+      "Individuálne stretnutia",
+      "Masterclass Štyri čistinky",
+      "Workshopy a skupiny",
+      "Retreaty a púte"
     ]
   },
   "footer": {
@@ -151,7 +157,7 @@
     },
     "eyebrow": "Môj príbeh",
     "title": "Život cez *hranice*",
-    "intro": "Môj život bol dlhým hľadaním toho, ako vytvárame zmysel cez telo, kultúru, miesto a rituál. Na tieto miesta ma priviedol.",
+    "intro": "Móda, ženské siete, kultúrna práca, tanec a retreaty: moja cesta bola široká. Tieto miesta ju formovali.",
     "closing": "Nie zbierka miest, ale jedna otázka: ako žiť *celistvý* život.",
     "places": [
       {
@@ -172,7 +178,7 @@
       },
       {
         "place": "Provensalsko",
-        "line": "Na ceste Márie Magdalény."
+        "line": "S mojimi dcérami na ceste Márie Magdalény."
       },
       {
         "place": "Assisi",
@@ -215,16 +221,16 @@
           ]
         },
         {
-          "name": "Skupinové stretnutia",
-          "text": "Skupinové stretnutia ponúkajú príležitosť skúmať spoločné témy, vymieňať si pohľady a učiť sa prostredníctvom spoločnej skúsenosti. V závislosti od formátu môžu zahŕňať prístupy zamerané na riešenia, pohyb, jogu, reflexiu alebo tvorivé praktiky."
+          "name": "Masterclass Štyri čistinky",
+          "text": "Štyri čistinky je štvortýždňová sprevádzaná masterclass pre ženy v strednom veku, ktoré sú pripravené urobiť miesto pre život, ktorý je teraz naozaj ich: v priestore, čase, vzťahoch a vnútornom živote."
         },
         {
-          "name": "Workshopy",
-          "text": "Moje workshopy spájajú rôzne aspekty mojej práce a vytvárajú priestor na sústredené skúmanie, učenie sa cez telo, tvorivosť a osobný rozvoj. Každý workshop môže byť postavený na konkrétnej téme, praxi alebo skupine účastníkov."
+          "name": "Workshopy a skupinové stretnutia",
+          "text": "Workshopy a skupinové stretnutia spájajú ženy okolo spoločnej témy. Podľa formátu kombinujú prístupy zamerané na riešenie, pohyb, jogu, reflexiu, tvorivú prax a rozhovor."
         },
         {
-          "name": "Retreaty",
-          "text": "Organizujem retreaty, ktoré ponúkajú čas a priestor vystúpiť z každodennej rutiny, znovu sa spojiť so sebou a objaviť nové perspektívy. Prostredníctvom starostlivo prepojených praktík a spoločných zážitkov retreaty pozývajú spomaliť, zamyslieť sa a pestovať hlbší pocit prepojenia."
+          "name": "Retreaty a púte",
+          "text": "Retreaty a sprevádzané cesty ponúkajú čas mimo každodennej rutiny, v Umbrii, Laciu a Provensalsku. Pri pomalej chôdzi krajinou vzniká priestor na oddych, premýšľanie a hlbšie počúvanie."
         }
       ]
     },
@@ -271,53 +277,90 @@
     "background": {
       "title": "Profesijné *zázemie*",
       "paragraphs": [
-        "Moja profesijná skúsenosť zahŕňa kurátorstvo umenia, umelecké vzdelávanie, arteterapiu, cestovný ruch a obchod s luxusnou módou. Tieto rozmanité oblasti formovali môj záujem o tvorivosť, medziľudské vzťahy, kultúrnu rozmanitosť, identitu a osobnú premenu.",
-        "Dnes tieto pohľady spájam v praxi, ktorá si cení individuálnu skúsenosť, telesné uvedomenie a objavovanie nových možností."
+        "Moja profesijná skúsenosť zahŕňa kurátorstvo a vzdelávanie v umení, arteterapiu, cestovný ruch a módu vysokej kvality. Kurátorovala som slovenskú módu, pôsobila v ženských podnikateľských sieťach a kultúrnych spolkoch, vo Viedni som založila a viedla folklórny súbor a organizovala retreaty a workshopy na Slovensku a v Taliansku.",
+        "Naučila som sa tak vytvárať priestory krásy, dôvery, pohybu a reflexie. Dnes to prinášam do práce so ženami, ktoré sú pripravené vstúpiť do ďalšej kapitoly života s väčšou jasnosťou, vitalitou a prítomnosťou."
       ]
     }
   },
   "pilgrimagePage": {
     "meta": {
       "title": "La Via del Cuore · Aurea",
-      "description": "Pešia púť pre ženy v období zmeny, z Assisi do Spoleta cez zelené srdce Umbrie."
+      "description": "Pobyt pre ženy na 3 až 5 dní v Spolete v Umbrii: joga, dychové cvičenia, meditácia, ajurvédska strava, osobné rozhovory a pešia púť do Assisi."
     },
     "eyebrow": "La Via del Cuore",
-    "title": "Neutekať pred životom,\nale *vrátiť sa* doň.",
-    "intro": "Pešia púť pre ženy v období zmeny, z Assisi do Spoleta cez zelené srdce Umbrie.",
-    "isTitle": "Čo to je",
-    "is": [
-      "Prah pre ženy v období zmeny",
-      "Chôdza, ticho a úprimné rozhovory",
-      "Jednoduché jedlá, jednoduché izby, malá skupina žien",
-      "Čas zamyslieť sa, čo nesieš"
-    ],
-    "notTitle": "Čo to nie je",
-    "not": [
-      "Wellness dovolenka",
-      "Poznávací zájazd",
-      "Turistická výzva"
-    ],
-    "routeTitle": "Cesta",
-    "routeIntro": "Kráčame v stopách svätého Františka a svätej Kláry, z jedného umbrijského mestečka do druhého.",
-    "roadTitle": "Na ceste",
-    "road": "Necháš svoj bežný život za sebou. Nesieš menej. Kráčaš a si unavená. Spíš niekde inde a ješ jednoducho. Rozprávaš sa a stíchneš. Stretneš iné ženy. A pomaly prehodnocuješ, čo nesieš.",
-    "returnTitle": "Návrat domov",
-    "returnText": "Púť sa nekončí v Spolete. Spolu pripravíme cestu späť, aby to, čo si našla na ceste, malo miesto v tvojom každodennom živote. Otázkou nie je len to, čo necháš za sebou, ale čo si *odnesieš domov*.",
-    "dates": "Ďalšia púť: termíny čoskoro oznámime",
-    "cta": "Opýtaj sa na ďalšiu púť",
+    "title": "Púť k *jasnosti*.\nNávrat k sebe v srdci Umbrie.",
+    "intro": "Niekedy nepotrebuješ ďalší plán. Potrebuješ čas a priestor, aby si zistila, čo naozaj chceš.",
     "carousel": {
       "pause": "Pozastaviť prezentáciu",
       "play": "Spustiť prezentáciu",
       "show": "Zobraziť"
     },
     "stops": [
-      "Assisi",
-      "Spello",
-      "Foligno",
-      "Trevi",
+      "Spoleto",
       "Campello",
-      "Spoleto"
-    ]
+      "Trevi",
+      "Foligno",
+      "Spello",
+      "Assisi"
+    ],
+    "retreat": {
+      "title": "Čas, ktorý patrí *tebe*",
+      "paragraphs": [
+        "Pozývam ťa na 3 až 5 dní do krásnej Umbrie v Taliansku. Dopraj si čas zastaviť sa, spomaliť a na chvíľu vystúpiť z každodenného zhonu.",
+        "V pokojnom prostredí mestečka Spoleto vytváram priestor pre ženy, ktoré potrebujú načerpať nové sily, utriediť si myšlienky a znovu objaviť, čo je pre ne v živote skutočne dôležité."
+      ],
+      "listTitle": "Počas pobytu ťa budem sprevádzať cez",
+      "items": [
+        "Jogu a pohyb, aby si uvoľnila telo a cítila sa v ňom dobre",
+        "Dychové cvičenia a meditáciu, aby si upokojila myseľ a počula samu seba",
+        "Jemné ajurvédske odporúčania, ktoré podporia prirodzenú rovnováhu tvojho tela",
+        "Osobné rozhovory, v ktorých sa pozrieš na svoju životnú situáciu, pomenuješ, čo chceš zmeniť, a nájdeš konkrétne kroky ďalej"
+      ],
+      "closing": "Aby si sa vrátila domov oddýchnutá, s jasnejšou mysľou, novou energiou a lepším pocitom z toho, kam chceš vo svojom živote smerovať."
+    },
+    "routeTitle": "Putovanie krajinou aj k *sebe*",
+    "routeIntro": "Súčasťou pobytu je pešia púť krásnou umbrijskou krajinou do Assisi, rodného mesta sv. Františka a sv. Kláry. Môžeš si vybrať kratšie putovanie zo Spella do Assisi (približne 11 km) alebo celú trasu zo Spoleta do Assisi (približne 65 km) rozdelenú do piatich dní.",
+    "includedTitle": "O teba bude postarané",
+    "included": [
+      "Ubytovanie v historickom centre Spoleta",
+      "Raňajky a večere v duchu ajurvédskeho stravovania",
+      "Osobné sprevádzanie počas celého pobytu",
+      "Joga, pohyb, dychové cvičenia, meditácia a duchovné cvičenia",
+      "Osobné rozhovory pri hľadaní vlastného smeru",
+      "Dopravu je možné zabezpečiť po dohode"
+    ],
+    "takeTitle": "Čo si odnesieš domov",
+    "take": [
+      "Viac pokoja v mysli",
+      "Lepší kontakt so svojím telom",
+      "Jasnejšiu predstavu o tom, čo chceš a čo už nepotrebuješ",
+      "A možno aj odvahu urobiť prvý krok novým smerom"
+    ],
+    "takeLine": "Nie je dôležité, ako rýchlo kráčaš. Dôležité je, kam ťa cesta *vedie*.",
+    "galleryTitle": "Spoleto",
+    "walks": {
+      "title": "Kráčajme *spolu*",
+      "intro": "Pozývam ženy, ktoré majú odvahu spomaliť, prehĺbiť ticho a dopriať si čas pre seba. Malá skupina. Päť dní. Spoločná cesta.",
+      "items": [
+        {
+          "region": "Umbria · Lazio",
+          "route": "Z Orvieta k jazeru Bolsena, na záver Kvetná nedeľa v Ríme",
+          "dates": "18. – 21. marca 2027"
+        },
+        {
+          "region": "Umbria",
+          "route": "La Via del Cuore, zo Spoleta do Assisi",
+          "dates": "15. – 19. apríla a 12. – 17. mája 2027"
+        },
+        {
+          "region": "Provensalsko",
+          "route": "Aix-en-Provence, Saint-Maximin-la-Sainte-Baume a údolie Verdon",
+          "dates": "16. – 20. júna 2027"
+        }
+      ]
+    },
+    "dates": "Ďalšie púte v Umbrii: 15. – 19. apríla a 12. – 17. mája 2027",
+    "cta": "Opýtaj sa na ďalšiu púť"
   },
   "researchPage": {
     "meta": {
@@ -355,5 +398,68 @@
     "contactTitle": "Výskumná spolupráca",
     "contactText": "Pri konferenciách, akademickej výmene a výskumnej spolupráci sa teším na vašu správu.",
     "contactButton": "Kontaktovať"
+  },
+  "masterclassPage": {
+    "meta": {
+      "title": "Masterclass Štyri čistinky · Aurea",
+      "description": "Štvortýždňová sprevádzaná masterclass pre ženy v strednom veku: urob miesto vo svojom priestore, čase, vzťahoch a vnútornom živote. 89 €."
+    },
+    "eyebrow": "Masterclass · 4 týždne · 89 €",
+    "title": "Štyri čistinky pre viac *priestoru* v tvojom živote",
+    "intro": "Sprevádzaná masterclass pre ženy v strednom veku, ktoré niesli veľa rolí a starali sa o mnohých ľudí a teraz sú pripravené na viac priestoru, jasnosti a vitality vo vlastnom živote.",
+    "why": {
+      "title": "Prečo *teraz*",
+      "paragraphs": [
+        "Okolo päťdesiatky vieš, že život je viac než pracovná pozícia, rodinný stav či zoznam úspechov. Možno si bola ženou, ktorá chcela niekam patriť, ktorá sa snažila robiť všetko správne, ktorá sa starala o druhých, ktorá sa hnala za úspechom.",
+        "Teraz prichádzajú tichšie otázky. Čo je naozaj moje? Čo chce cezo mňa teraz ožiť? Táto masterclass nie je o tom stať sa inou ženou ani minimalistkou. Je o návrate k životu, ktorý podporuje to, kým si dnes."
+      ]
+    },
+    "how": {
+      "title": "Ako to *funguje*",
+      "paragraphs": [
+        "Každý týždeň sa láskavo a presne pozrieme na jednu oblasť tvojho života. Nič sa neuponáhľa a nič z tvojej minulosti nemusíš vyhodiť. Všímaš si, čo podporuje tvoju ďalšiu kapitolu, čo ti berie energiu a čo už k tebe nepatrí.",
+        "Práca je praktická a osobná a riadi sa ájurvédskym protokolom, ktorý podporuje tvoju energiu a vitalitu. Upraceš nielen to, čo je viditeľné, ale aj to, čo potichu zamestnáva tvoju pozornosť."
+      ]
+    },
+    "clearings": {
+      "title": "Štyri *čistinky*",
+      "prompts": [
+        [
+          "Čo v mojom priestore podporuje ženu, ktorou sa stávam?",
+          "Čo si nechávam zo zvyku, z pocitu viny alebo zo starej identity?"
+        ],
+        [
+          "Čo mi berie čas bez toho, aby to živilo môj život?",
+          "Ktoré záväzky patria staršej verzii mňa?"
+        ],
+        [
+          "Ktoré vzťahy sú vzájomné a živé?",
+          "Kto som, keď už nemusím byť všetkým pre všetkých?"
+        ],
+        [
+          "Čo je pre mňa teraz dôležité?",
+          "Čo som príliš dlho odkladala?"
+        ]
+      ]
+    },
+    "receive": {
+      "title": "Čo *dostaneš*",
+      "items": [
+        "Štyri týždne sprevádzania štyrmi čistinkami",
+        "Ájurvédsky protokol, ktorý podporuje celý proces",
+        "Otázky na reflexiu a praktické cvičenia na každý týždeň",
+        "Priestor pracovať vlastným tempom"
+      ]
+    },
+    "facts": [
+      "4 týždne",
+      "Sprevádzaná masterclass",
+      "89 €"
+    ],
+    "cta": {
+      "title": "Jedna zásuvka. Jedna hodina. Jedna hranica. Jedna *pravda*.",
+      "note": "Odtiaľ sa môže začať meniť celý život.",
+      "button": "Pridaj sa za 89 €"
+    }
   }
 }

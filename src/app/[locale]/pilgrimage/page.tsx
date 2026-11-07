@@ -12,16 +12,17 @@ import Route from "@/components/Route";
 import TownCarousel from "@/components/TownCarousel";
 import Rich from "@/components/Rich";
 
-/* Photos for this page (in /public/images/pilgrimage/). The towns follow the order of the route. */
+/* Photos for this page (in /public/images/pilgrimage/). The towns follow the order of the route, Spoleto to Assisi. */
 const townPhotos = [
-  "/images/pilgrimage/1-assisi.webp",
-  "/images/pilgrimage/2-spello.webp",
-  "/images/pilgrimage/3-foligno.webp",
-  "/images/pilgrimage/4-trevi.webp",
-  "/images/pilgrimage/5-campello.webp",
   "/images/pilgrimage/6-spoleto.webp",
+  "/images/pilgrimage/5-campello.webp",
+  "/images/pilgrimage/4-trevi.webp",
+  "/images/pilgrimage/3-foligno.webp",
+  "/images/pilgrimage/2-spello.webp",
+  "/images/pilgrimage/1-assisi.webp",
 ];
-const roadPhoto: string | null = "/images/pilgrimage/st-francis.webp"; // St Francis: the pilgrimage follows his footsteps
+/* Photos of Spoleto, where the retreat is based (one wide, or several in a grid). The section stays hidden while empty. */
+const spoletoPhotos: string[] = ["/images/pilgrimage/spoleto-street.webp"];
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -44,25 +45,26 @@ export default async function PilgrimagePage({ params }: Props) {
 
       <TownCarousel towns={page.stops} photos={townPhotos} labels={page.carousel} />
 
-      <section className="section" aria-labelledby="is-title">
-        <div className="container is-not-grid">
-          <div data-reveal>
-            <h2 id="is-title" className="list-title">
-              {page.isTitle}
-            </h2>
-            <ul className="plain-list plain-list--yes">
-              {page.is.map((line) => (
-                <li key={line}>{line}</li>
+      <section className="section" aria-labelledby="retreat-title">
+        <div className="container split-text">
+          <h2 id="retreat-title" className="h2" data-reveal>
+            <Rich text={page.retreat.title} />
+          </h2>
+          <div className="split-text-body">
+            {page.retreat.paragraphs.map((paragraph, i) => (
+              <p key={i} className={i === 0 ? "lead" : undefined} data-reveal>
+                {paragraph}
+              </p>
+            ))}
+            <h3 className="list-title retreat-list-title" data-reveal>
+              {page.retreat.listTitle}
+            </h3>
+            <ul className="plain-list plain-list--yes" data-reveal>
+              {page.retreat.items.map((item) => (
+                <li key={item}>{item}</li>
               ))}
             </ul>
-          </div>
-          <div data-reveal style={{ "--i": 1 } as React.CSSProperties}>
-            <h2 className="list-title">{page.notTitle}</h2>
-            <ul className="plain-list plain-list--no">
-              {page.not.map((line) => (
-                <li key={line}>{line}</li>
-              ))}
-            </ul>
+            <p data-reveal>{page.retreat.closing}</p>
           </div>
         </div>
       </section>
@@ -73,39 +75,88 @@ export default async function PilgrimagePage({ params }: Props) {
         <div className="container">
           <div className="section-head">
             <h2 id="route-title" className="h2" data-reveal>
-              {page.routeTitle}
+              <Rich text={page.routeTitle} />
             </h2>
             <p className="section-intro" data-reveal>
               {page.routeIntro}
             </p>
           </div>
-          <Route stops={page.stops} label={page.routeTitle} />
+          <Route stops={page.stops} label={page.routeTitle.replaceAll("*", "")} />
         </div>
       </section>
 
-      <section className="section road-section" aria-labelledby="road-title">
-        <div className="container road-grid">
-          <div className="road-photo" data-reveal aria-hidden="true">
-            <Photo src={roadPhoto} sizes="(max-width: 960px) 100vw, 45vw" />
+      <section className="section" aria-labelledby="included-title">
+        <div className="container is-not-grid">
+          <div data-reveal>
+            <h2 id="included-title" className="list-title">
+              {page.includedTitle}
+            </h2>
+            <ul className="plain-list plain-list--yes">
+              {page.included.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
           </div>
-          <div>
-            <h2 id="road-title" className="h2" data-reveal>
-              {page.roadTitle}
-            </h2>
-            <p className="road-text" data-reveal>
-              {page.road}
-            </p>
-            <h2 className="h2 road-return-title" data-reveal>
-              {page.returnTitle}
-            </h2>
-            <p className="lead" data-reveal>
-              <Rich text={page.returnText} />
-            </p>
+          <div data-reveal style={{ "--i": 1 } as React.CSSProperties}>
+            <h2 className="list-title">{page.takeTitle}</h2>
+            <ul className="plain-list plain-list--yes">
+              {page.take.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
           </div>
         </div>
+        <div className="container">
+          <p className="take-line" data-reveal>
+            <Rich text={page.takeLine} />
+          </p>
+        </div>
       </section>
+
+      {spoletoPhotos.length > 0 && (
+        <section className="section spoleto-section" aria-labelledby="spoleto-title">
+          <div className="container">
+            <h2 id="spoleto-title" className="h2" data-reveal>
+              {page.galleryTitle}
+            </h2>
+            <div className={`spoleto-gallery ${spoletoPhotos.length === 1 ? "spoleto-gallery--single" : ""}`}>
+              {spoletoPhotos.map((src) => (
+                <div key={src} className="wide-photo" data-reveal>
+                  <Photo src={src} sizes="(max-width: 960px) 100vw, 60vw" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <Divider />
+
+      {/* All guided walks with dates; the home page's "Retreats & walks" links here */}
+      <section id="walks" className="section" aria-labelledby="walks-title">
+        <div className="container">
+          <div className="section-head">
+            <h2 id="walks-title" className="h2" data-reveal>
+              <Rich text={page.walks.title} />
+            </h2>
+            <p className="section-intro" data-reveal>
+              {page.walks.intro}
+            </p>
+          </div>
+          <ul className="ledger">
+            {page.walks.items.map((walk) => (
+              <li key={walk.route} className="ledger-row" data-reveal>
+                <h3 className="ledger-name">{walk.region}</h3>
+                <div>
+                  <p className="walk-route">{walk.route}</p>
+                  <p className="walk-dates">{walk.dates}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <PageCta cta={dict.pageCta} locale={locale} button={page.cta} note={page.dates} />
     </PageShell>
   );

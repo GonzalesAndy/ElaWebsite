@@ -6,7 +6,7 @@ export const SITE_URL = "https://elarepka.com";
 export const SITE_NAME = "Aurea · Elena Repka";
 
 /** Every page of the site, without its locale (also the sitemap's list). */
-export const pages = ["/", "/journey/", "/pilgrimage/", "/research/"] as const;
+export const pages = ["/", "/journey/", "/masterclass/", "/pilgrimage/", "/research/"] as const;
 export type PagePath = (typeof pages)[number];
 
 const ogLocales: Record<Locale, string> = {

@@ -9,6 +9,7 @@ import Offers from "@/components/Offers";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Divider from "@/components/Divider";
+import { features } from "@/lib/features";
 import { pageUrl, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 /** Structured data for search engines: who Elena is and what the site offers. */
@@ -62,10 +63,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Hero hero={dict.hero} />
       <About about={dict.about} locale={locale} />
       <Divider />
-      <Way way={dict.way} />
+      <Way way={dict.way} locale={locale} />
       <Offers offers={dict.offers} locale={locale} />
       <Divider />
-      <Testimonials testimonials={dict.testimonials} />
+      {features.testimonials && <Testimonials testimonials={dict.testimonials} />}
       <Contact contact={dict.contact} locale={locale} />
     </PageShell>
   );

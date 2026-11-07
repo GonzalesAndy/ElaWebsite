@@ -1137,8 +1137,35 @@ section[id] {
   translate: 4px 0;
 }
 
+/* Ecology of Clarity: the promise in a soft speech-bubble card */
+.clarity-bubble {
+  position: relative;
+  display: grid;
+  gap: 0.85rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  border-radius: 2rem 2rem 2rem 0.5rem;
+  background: var(--paper);
+  box-shadow: 0 30px 60px -40px rgba(46, 38, 34, 0.35);
+  color: var(--ink-soft);
+}
+
+.about-text .clarity-bubble {
+  margin-top: 2rem;
+}
+
+.clarity-bubble-title {
+  font-family: var(--font-display);
+  font-size: calc(clamp(1.35rem, 2vw, 1.65rem) * var(--display-scale));
+  line-height: 1.3;
+  color: var(--ink);
+}
+
 .about-more {
   margin-top: 2rem !important;
+}
+
+.way-more {
+  margin-top: 1.5rem;
 }
 
 /* Photo placeholder: a warm wash with a faint olive sprig, until the real photo is added */
@@ -1220,7 +1247,6 @@ section[id] {
 }
 
 /* Photo frames on the pilgrimage page */
-.road-photo,
 .wide-photo {
   position: relative;
   overflow: hidden;
@@ -1229,15 +1255,6 @@ section[id] {
   box-shadow: 0 40px 80px -40px rgba(46, 38, 34, 0.45);
 }
 
-.road-photo {
-  aspect-ratio: 4 / 5; /* portrait: the St Francis statue */
-}
-
-.road-photo img {
-  object-position: 50% 35%; /* keep his face and hands in view */
-}
-
-.road-photo img,
 .wide-photo img {
   object-fit: cover;
 }
@@ -1728,24 +1745,42 @@ html:not([data-fonts="fraunces"]) .page-title em {
   padding-bottom: clamp(2rem, 4vw, 3rem);
 }
 
-.road-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: clamp(3rem, 7vw, 6rem);
-  align-items: center;
+/* Pilgrimage page: the retreat, what's included, Spoleto */
+.retreat-list-title {
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
-.road-text {
-  margin-top: 1.25rem;
+.take-line {
+  max-width: 44rem;
+  margin-top: clamp(3rem, 6vw, 4.5rem);
   font-family: var(--font-display);
   font-style: italic;
   font-size: calc(clamp(1.3rem, 1.9vw, 1.6rem) * var(--display-scale));
   line-height: 1.45;
 }
 
-.road-return-title {
-  margin-top: clamp(2.5rem, 5vw, 3.5rem);
-  margin-bottom: 1.25rem;
+.take-line em {
+  color: var(--olive);
+}
+
+.spoleto-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.spoleto-gallery .wide-photo {
+  aspect-ratio: 4 / 3;
+}
+
+.spoleto-gallery--single {
+  grid-template-columns: 1fr;
+}
+
+.spoleto-gallery--single .wide-photo {
+  aspect-ratio: 21 / 9;
 }
 
 /* Closing call to action on inner pages */
@@ -1997,6 +2032,53 @@ html:not([data-fonts="fraunces"]) .page-title em {
   font-weight: 500;
   line-height: 1.25;
   color: var(--clay);
+}
+
+/* Pilgrimage page: guided walks with dates */
+.walk-route {
+  font-family: var(--font-display);
+  font-size: calc(1.35rem * var(--display-scale));
+  line-height: 1.3;
+}
+
+.walk-dates {
+  margin-top: 0.4rem;
+  color: var(--clay);
+  font-weight: 500;
+}
+
+/* Masterclass page */
+.clearing-prompts {
+  margin-top: 1rem;
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+}
+
+.mc-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mc-facts li {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--field-border);
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+
+.mc-facts li:last-child {
+  border-color: var(--clay);
+  color: var(--clay);
+  font-weight: 500;
+}
+
+.mc-receive {
+  font-size: 1.0625rem;
 }
 
 /* Education & training */
@@ -2454,7 +2536,6 @@ html:not([data-fonts="fraunces"]) .page-title em {
 
   .page-hero--split .page-hero-grid,
   .is-not-grid,
-  .road-grid,
   .research-columns,
   .split-text,
   .ledger-row {
@@ -2490,7 +2571,8 @@ html:not([data-fonts="fraunces"]) .page-title em {
       "p7 p8";
   }
 
-  .wide-photo {
+  .wide-photo,
+  .spoleto-gallery--single .wide-photo {
     aspect-ratio: 4 / 3;
   }
 

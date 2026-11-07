@@ -3,7 +3,9 @@
 import { useState } from "react";
 import Rich from "./Rich";
 import Photo from "./Photo";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
+import { withBase } from "@/lib/basePath";
 
 /* One photo per clearing, shown whole (3:2). Use null for a soft placeholder. */
 const photos: (string | null)[] = [
@@ -17,7 +19,7 @@ const photos: (string | null)[] = [
  * The Four Clearings as a vertical path on the left; the photo on the right follows
  * the clearing the visitor hovers or taps. All text stays visible; there is no timer.
  */
-export default function Way({ way }: { way: Dictionary["way"] }) {
+export default function Way({ way, locale }: { way: Dictionary["way"]; locale: Locale }) {
   const [active, setActive] = useState(0);
 
   return (
@@ -32,6 +34,12 @@ export default function Way({ way }: { way: Dictionary["way"] }) {
           </h2>
           <p className="section-intro" data-reveal>
             <Rich text={way.intro} />
+          </p>
+          <p className="way-more" data-reveal>
+            <a href={withBase(`/${locale}/masterclass/`)} className="text-link">
+              {way.more}
+              <span aria-hidden="true">→</span>
+            </a>
           </p>
         </div>
 

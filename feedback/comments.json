@@ -1,1 +1,547 @@
-[]
+[
+  {
+    "id": "9795161c",
+    "createdAt": "2026-10-27T11:11:46.496Z",
+    "status": "resolved",
+    "text": "What is truly mine to carry now?\nAnd what am I finally allowed to lay down?\n\nToday, I guide women who, after years of caring, achieving, and holding so much together, long to return to themselves — to their clarity, strength, body, heart, and truth.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#about > div > div:nth-of-type(2) > p:nth-of-type(3)",
+    "tag": "p",
+    "snippet": "Along the way I learned something simple to say and hard to live: a whole life is not one where you carry more, but one where you choose what to carry. This is what I help women do.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "91a722bb",
+    "createdAt": "2026-10-27T11:11:57.274Z",
+    "status": "resolved",
+    "text": "Ela",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#about-title",
+    "tag": "h2",
+    "snippet": "Hello, I'm Elena.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "79dd803e",
+    "createdAt": "2026-10-27T11:18:19.872Z",
+    "status": "resolved",
+    "text": "There comes a time when decluttering is no longer about having less.\n\nIt becomes a way of listening.\n\nTo your home.\nTo your time.\nTo your relationships.\nTo the quiet truth of what your life is asking for now.\n\nTogether, we move through four clearings — gently, honestly, and at your pace — so you can release what no longer belongs and make space for what is ready to live.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#the-way > div > div:nth-of-type(1) > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "Decluttering is not only about drawers and calendars. It is about deciding, gently and honestly, what still deserves a place in your life. We work through four clearings, at your pace.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "8966e39a",
+    "createdAt": "2026-10-27T11:20:13.659Z",
+    "status": "resolved",
+    "text": "Your home, your objects, your everyday environment.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#the-way > div > ol > li:nth-of-type(1) > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "Your home and the things you live with every day.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "87f03d17",
+    "createdAt": "2026-10-27T11:20:31.932Z",
+    "status": "resolved",
+    "text": "Your days, energy, attention, rhythms, discipline and commitments.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#the-way > div > ol > li:nth-of-type(2) > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "Where your days, energy and attention really go.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "07c84b2c",
+    "createdAt": "2026-10-27T11:21:10.448Z",
+    "status": "resolved",
+    "text": "The people, roles, expectations, and emotional responsibilities you carry.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#the-way > div > ol > li:nth-of-type(3) > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "The people, roles and expectations you carry.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "08388fe6",
+    "createdAt": "2026-10-27T11:21:17.095Z",
+    "status": "resolved",
+    "text": "The values, longings, and deeper commitments beneath it all.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#the-way > div > ol > li:nth-of-type(4) > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "The values and longings beneath it all.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "6c671321",
+    "createdAt": "2026-10-27T11:27:19.499Z",
+    "status": "resolved",
+    "text": "Personal guidance through life coaching, yoga practice, and therapeutic or creative work.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#offers > div > ul > li:nth-of-type(1) > p",
+    "tag": "p",
+    "snippet": "Life coaching, yoga, and therapeutic or creative work.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "74bf02d8",
+    "createdAt": "2026-10-27T11:28:36.073Z",
+    "status": "resolved",
+    "text": "Here I would add a masterclass: Four Clearings to Make Room for Your Life\n\nAn 8-week guided masterclass for women who have carried many roles, supported many people, and now feel ready to create more space, clarity, and vitality in their own lives.\n\nDecluttering is not only about drawers, wardrobes, or calendars.\n\nIt is a deeper practice of discernment: gently and honestly deciding what still deserves a place in your life, and what is ready to be released.\n\nThis masterclass gives you a calm, structured path through 4 essential clearings: your space, your time, your relationships, and your inner life.\n\nNot to become a different woman.\nTo return to the woman you have perhaps been postponing.\n\n### What this masterclass is\n\nFour Clearings is an 8-week guided journey designed to help you make room for the life that is truly yours now.\n\nEach clearing invites you to look with kindness and precision at one area of your life. You will not be rushed. You will not be asked to discard your past. You will be guided to notice what supports your next chapter, what drains your energy, and what no longer belongs.\n\nThe work is practical, reflective, and deeply personal.\n\nYou will clear not only what is visible, but also what quietly occupies your attention, your emotional space, and your sense of possibility.\n\n### The 4 Clearings\n\n#### 1. Space\n**What surrounds me?**\n\nWe begin with your physical environment: your home, your objects, your rooms, your daily surroundings.\n\nYou will explore:\n\n- What in my space supports the woman I am becoming?\n- What feels heavy, unfinished, or no longer alive?\n- What am I keeping out of habit, guilt, or old identity?\n- How can my home become a place of clarity, beauty, and restoration?\n\n#### 2. Time\n**What receives my life?**\n\nWe look at where your days, energy, and attention truly go.\n\nYou will explore:\n\n- What is taking my time without nourishing my life?\n- Which commitments still feel true, and which belong to an older version of me?\n- Where do I confuse availability with love or responsibility?\n- What rhythm would allow more vitality, creativity, and ease?\n\n#### 3. Relationships\n**Who and what has access to me?**\n\nWe gently examine the people, roles, expectations, and emotional responsibilities you carry.\n\nYou will explore:\n\n- Which relationships feel mutual, alive, and respectful?\n- Where am I over-functioning, pleasing, rescuing, or disappearing?\n- What boundaries would protect my peace and energy?\n- Who am I when I no longer need to be everything for everyone?\n\n#### 4. Inner Life\n**What am I devoted to?**\n\nWe return to the values, longings, truths, and quiet commitments beneath it all.\n\nYou will explore:\n\n- What matters to me now?\n- What part of me wants more room to breathe?\n- What have I postponed for too long?\n- What kind of life feels honest, beautiful, and mine?\n\n### Duration and price\n\n**8 weeks**\n**Guided masterclass**\n**€89**\n\nA spacious, accessible journey for women who want to begin with clarity, intention, and support.\n\n### What you receive\n\n- 8 weeks of gentle guidance through the 4 clearings\n- Reflective prompts for each stage of the process\n- Practical exercises to help you clear with intention\n- Space to work at your own pace\n- A clear structure for reviewing your space, time, relationships, and inner life\n- A grounded process to help you release what no longer belongs\n- Support in reconnecting with what feels true, vital, and life-giving now\n\nThis is not a course about becoming minimal.\n\nIt is an invitation to become more honest about what your life is holding, and what your heart is ready to make room for.\nJoin my masterclass for 89,- Euro\n\np Themed experiences combining movement, reflection, and creativity.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#offers > div > ul > li:nth-of-type(2) > p",
+    "tag": "p",
+    "snippet": "Shared practice, reflection, and exploration.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "1f735f74",
+    "createdAt": "2026-10-27T11:28:59.124Z",
+    "status": "resolved",
+    "text": "Shared experiences combining movement, reflection, creativity, and conversation.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#offers > div > ul > li:nth-of-type(3) > p",
+    "tag": "p",
+    "snippet": "Themed experiences combining movement, reflection, and creativity.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "d48cad21",
+    "createdAt": "2026-10-27T11:29:16.305Z",
+    "status": "resolved",
+    "text": "Workshops & Group Sessions",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#offers > div > ul > li:nth-of-type(3) > h3",
+    "tag": "h3",
+    "snippet": "Workshops",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "c04660e8",
+    "createdAt": "2026-10-27T11:33:04.842Z",
+    "status": "resolved",
+    "text": "Immersive spaces for change, embodied awareness, rest, and creative exploration — including guided walking journeys in Austria, Umbria, and Provence.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#offers > div > ul > li:nth-of-type(4) > p",
+    "tag": "p",
+    "snippet": "A space for change, embodied awareness, and creative exploration.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "40eafc8e",
+    "createdAt": "2026-10-27T11:37:20.855Z",
+    "status": "resolved",
+    "text": "Walk with me in places such as:\n\nAustria — Mariazell, Rax - every weekend from March 2027\nUmbria — Spoleto to Assisi on 15th April to 19th April 2027, and on 12th -17th May 2027\nOrvieto to Lake Bolsena on 18th - 21st March - Palm Sunday in Rome.\nProvence — Aix-en-Provence, Saint-Maximin-la-Sainte-Baume, and the Verdon Valley on 16th June to 20th june 2027\nThese journeys invite you to slow down, listen more deeply, and let the outer landscape become a mirror for your inner life.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#offers > div > ul > li:nth-of-type(4) > a",
+    "tag": "a",
+    "snippet": "Learn more →",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "eb2aab39",
+    "createdAt": "2026-10-27T11:45:46.788Z",
+    "status": "resolved",
+    "text": "Four Clearings Masterclass",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#offers > div > ul > li:nth-of-type(2) > h3",
+    "tag": "h3",
+    "snippet": "Group sessions",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "f6e0f145",
+    "createdAt": "2026-10-27T11:46:48.339Z",
+    "status": "resolved",
+    "text": "Four Clearings to Make Room for Your Life\n\nA 4-week guided masterclass for women at midlife who have carried many roles, supported many people, and now feel ready to create more space, clarity, and vitality in their own lives.\n\nAt around 50, you have lived enough to know that a life cannot be reduced to a job title, relationship status, income, achievements, or social identity.\n\nYou may have lived through many versions of yourself: the woman who wanted to belong, the woman who tried to get things right, the woman who cared for others, the woman who pursued success. And perhaps now you are asking deeper questions:\n\n**What is truly mine?**\n**What wants to come alive through me now?**\n\nDecluttering is not only about drawers, wardrobes, or calendars.\n\nIt is a deeper practice of discernment: gently and honestly deciding what still deserves a place in your life, and what is ready to be released.\n\nThis masterclass gives you a calm, structured path through 4 essential clearings: your space, your time, your relationships, and your inner life.\n\nNot to become a different woman.\nTo return to the life that can support who you genuinely are now.\n\n### What this masterclass is\n\nFour Clearings is a 4-week guided journey designed to help you make room for the life that is truly yours now: your body, energy, health, attention, relationships, and inner direction.\n\nEach clearing invites you to look with kindness and precision at one area of your life. You will not be rushed. You will not be asked to discard your past. You will be guided to notice what supports your next chapter, what drains your energy, and what no longer belongs.\n\nThe work is practical, reflective, and deeply personal. It follows a strict Ayurvedic protocol, with the aim of supporting your underlying vitality, aliveness, creativity, and capacity to engage with life.\n\nYou will clear not only what is visible, but also what quietly occupies your attention, your emotional space, and your sense of possibility.\n\n### The 4 Clearings\n\n#### 1. Space\n**What surrounds me?**\n\nWe begin with your physical environment: your home, your objects, your rooms, your daily surroundings.\n\nYou will explore:\n\n- What in my space supports the woman I am becoming?\n- What feels heavy, unfinished, or no longer alive?\n- What am I keeping out of habit, guilt, or old identity?\n- How can my home become a place of clarity, beauty, and restoration?\n\n#### 2. Time\n**What receives my life?**\n\nWe look at where your days, energy, and attention truly go.\n\nYou will explore:\n\n- What is taking my time without nourishing my life?\n- Which commitments still feel true, and which belong to an older version of me?\n- Where do I confuse availability with love or responsibility?\n- What rhythm would allow more vitality, creativity, and ease?\n\n#### 3. Relationships\n**Who and what has access to me?**\n\nWe gently examine the people, roles, expectations, and emotional responsibilities you carry.\n\nYou will explore:\n\n- Which relationships feel mutual, alive, and respectful?\n- Where am I over-functioning, pleasing, rescuing, or disappearing?\n- What boundaries would protect my peace and energy?\n- Who am I when I no longer need to be everything for everyone?\n\n#### 4. Inner Life\n**What am I devoted to?**\n\nWe return to the values, longings, truths, and quiet commitments beneath it all.\n\nYou will explore:\n\n- What matters to me now?\n- What part of me wants more room to breathe?\n- What have I postponed for too long?\n- What kind of life feels honest, beautiful, and mine?\n\n### Duration and price\n\n**4 weeks**\n**Guided masterclass**\n**€89**\n\nA spacious, accessible journey for women who want to begin with clarity, intention, and support.\n\n### What you receive\n\n- 4 weeks of gentle guidance through the 4 clearings\n- A clear Ayurvedic protocol to support the process\n- Reflective prompts for each stage of the journey\n- Practical exercises to help you clear with intention\n- Space to work at your own pace\n- A structure for reviewing your space, time, relationships, and inner life\n- A grounded process to help you release what no longer belongs\n- Support in reconnecting with what feels true, vital, creative, and life-giving now\n\nThis is not a course about becoming minimal.\n\nIt is an invitation to become more honest about what your life is holding, what your energy is asking for, and what your heart is ready to make room for.\n\n### Begin gently\n\nIf you feel that your life has become too full of what no longer fits, this masterclass is a place to begin.\n\nOne drawer.\nOne hour.\nOne boundary.\nOne truth.\n\nA life can begin to change from there.\n\n**Join Four Clearings for €89 →**",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#offers > div > ul > li:nth-of-type(2) > p",
+    "tag": "p",
+    "snippet": "Shared practice, reflection, and exploration.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "ed67b122",
+    "createdAt": "2026-10-27T11:56:35.839Z",
+    "status": "resolved",
+    "text": "I am Slovak by origin, and my life has been shaped by movement — through European cities, art, philosophy, yoga, dance, motherhood, and pilgrimage.\n\nI have lived in London, Berlin, and Vienna; worked in education and the arts; raised three children; and walked routes from Tamil Nadu to the Himalayas, from Mariazell to Assisi.\n\nFor many years, I followed life through cycles of intensity, change, and reinvention. I began new chapters often, sometimes with courage, sometimes with restlessness. Over time, I began to see that beneath all these movements was a quieter longing: to feel at home in my own life.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#about > div > div:nth-of-type(2) > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "I grew up in Slovakia and have lived in Vienna for many years. I studied philosophy and the arts, raised three children, and walked pilgrim roads from Tamil Nadu to Assisi.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "b6d29775",
+    "createdAt": "2026-10-27T11:57:15.580Z",
+    "status": "resolved",
+    "text": "The deeper work is not to become more impressive, more capable, or more interesting.\n\nIt is to become more present.\nMore honest.\nMore content.\nMore able to receive and participate in life as it is.\n\nThis is what my own path has taught me, and what I now bring into my work with women.\n\nA woman does not need to carry more in order to flourish.\nShe needs space to return to what is true, alive, and genuinely hers.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#about > div > div:nth-of-type(2) > p:nth-of-type(3)",
+    "tag": "p",
+    "snippet": "Along the way I learned something simple to say and hard to live: a whole life is not one where you carry more, but one where you choose what to carry. This is what I help women do.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "493b3ae3",
+    "createdAt": "2026-10-27T15:32:49.386Z",
+    "status": "resolved",
+    "text": "The Pilgrimage of Mary Magdalene - her legendary landing in Provence, and her traditional decades of penitent solitude at La Sainte-Baume.\nMy daugters brought me to Provence in 2024 — to places such as Saint-Maximin-la-Sainte-Baume and the landscapes leading towards the Verdon Valley.\n\nThrough my daughters I travelled into this landscape in a deeply personal way. It became not only a journey through sacred geography, but also a reflection on lineage, motherhood, the courage to remain faithful to one’s own inner knowing, and the hidden histories of women.\n\nMary Magdalene’s presence speaks to something many women recognise: the longing to be seen beyond roles, beyond projections, beyond what tradition has allowed or denied.",
+    "locale": "en",
+    "page": "/journey/",
+    "url": "https://elarepka.com/en/journey/",
+    "selector": "#main > section:nth-of-type(2) > div > ul > li:nth-of-type(5)",
+    "tag": "li",
+    "snippet": "05 Provence On the way of Mary Magdalene.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "acd72248",
+    "createdAt": "2026-10-28T11:09:26.463Z",
+    "status": "resolved",
+    "text": "My background spans fashion, women’s business networks, cultural leadership, dance, retreats, and embodied practice.\n\nI have curated high-end Slovak fashion, worked within women’s networks and cultural associations, founded and led a folk dance ensemble in Vienna, and organised retreats and workshops across Slovakia and Italy.\n\nThis experience has taught me how to create spaces of beauty, trust, movement, reflection, and meaningful change.\n\nToday, I bring this into my work with women who are ready to return to themselves and step into the next chapter of their lives with more clarity, vitality, and presence.",
+    "locale": "en",
+    "page": "/journey/",
+    "url": "https://elarepka.com/en/journey/",
+    "selector": "#main > section:nth-of-type(1) > div > div:nth-of-type(1) > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "My life has been a long inquiry into how we create meaning through body, culture, place and ritual. These are the places it has taken me.",
+    "viewport": {
+      "w": 1470,
+      "h": 835
+    }
+  },
+  {
+    "id": "cfa6e4b4",
+    "createdAt": "2026-11-06T17:21:31.797Z",
+    "status": "open",
+    "text": "„Púť k vnútornej jasnosti v uponáhľanom svete“",
+    "locale": "sk",
+    "page": "/",
+    "url": "https://elarepka.com/sk/",
+    "selector": "#hero-title",
+    "tag": "h1",
+    "snippet": "Po rokoch, keď si niesla všetkých, vráť sa k sebe",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "4b052455",
+    "createdAt": "2026-11-06T17:25:03.318Z",
+    "status": "open",
+    "text": "Zurück zur inneren Klarheit in einer hektischen Welt.",
+    "locale": "de",
+    "page": "/",
+    "url": "https://elarepka.com/de/",
+    "selector": "#hero-title",
+    "tag": "h1",
+    "snippet": "Du hast lange alle getragen. Kehr zu dir zurück.",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "3a227a72",
+    "createdAt": "2026-11-06T17:25:46.553Z",
+    "status": "open",
+    "text": "Delete it, only first step.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#top > div > div:nth-of-type(2) > div > a:nth-of-type(2)",
+    "tag": "a",
+    "snippet": "How I work",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "f1c70e69",
+    "createdAt": "2026-11-06T17:38:23.238Z",
+    "status": "open",
+    "text": "Here not about me, but about What I offer - \"Ecology of clarity\" - a complete recalibration of a woman’s inner and outer environment through decluttering her space, time and relationships. \n\n\nwrite this in bubble:\n\nEcology of Clarity\nCreating space for what truly matters.\n\nA gentle yet profound transformation of your life, starting with your home, your time and your relationships.\n\nTogether, we clear away what no longer serves you, simplify what feels overwhelming and make room for what brings you peace, meaning and joy.\n\nBecause when your outer world becomes clearer, your inner world can breathe, too.",
+    "locale": "de",
+    "page": "/",
+    "url": "https://elarepka.com/de/",
+    "selector": "#about > div",
+    "tag": "div",
+    "snippet": "ÜBER MICH Hallo, ich bin Ela. Ich bin gebürtige Slowakin und habe in London, Berlin und Wien gelebt. Ich habe in Bildung und Kunst gearbeitet, drei Kinder großgezogen und bin Pilgerwege gegangen, von Tamil Nadu bis in den Himalaya, von Mariazell bis Assisi. Lange habe ich immer wieder neue Kapitel b",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "e22fc0e7",
+    "createdAt": "2026-11-06T17:38:56.951Z",
+    "status": "open",
+    "text": "other foto (name: spolleto room)",
+    "locale": "de",
+    "page": "/",
+    "url": "https://elarepka.com/de/",
+    "selector": "#about > div > div:nth-of-type(1) > div",
+    "tag": "div",
+    "snippet": "Portrait of Elena Repka",
+    "src": "https://elarepka.com/_next/static/media/portrait.3zlym331azve9.jpg",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "6d58d16b",
+    "createdAt": "2026-11-06T18:20:03.435Z",
+    "status": "open",
+    "text": "Imagine a life that feels lighter, calmer and more aligned with who you truly are.\n\nA home that supports you rather than overwhelms you. Daily routines that give you structure without taking away your freedom. Time for what matters, space to breathe and relationships that nourish rather than drain you.\n\nThrough our work together, you will:\n\nFind inner peace and mental clarity — create more calm, focus and space in your mind.\n\nReclaim your time and energy — build supportive routines and make conscious choices about how you spend your days.\n\nCreate a harmonious home and lifestyle — shape an environment that reflects your values and supports your well-being.\n\nReconnect with yourself — rediscover what matters to you, establish healthier boundaries and make room for the life you genuinely want.\n\nThe result is more than an organised home or a better routine. It is a life that feels like your own again.\n\nLess overwhelm. More clarity. More intention. More life.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#the-way > div > div:nth-of-type(1) > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "There comes a time when decluttering is no longer about having less. It becomes a way of listening to your home, your time, your relationships, and to what your life is asking for now. We move through four clearings, gently and at your pace.",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "103f5c41",
+    "createdAt": "2026-11-06T18:23:13.589Z",
+    "status": "open",
+    "text": "Clear your space. Reclaim your time. Live authentically.",
+    "locale": "en",
+    "page": "/",
+    "url": "https://elarepka.com/en/",
+    "selector": "#way-title",
+    "tag": "h2",
+    "snippet": "Four clearings to make room for your life",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "1f870d53",
+    "createdAt": "2026-11-06T18:44:13.550Z",
+    "status": "open",
+    "text": "Pozývam ťa na 3 až 5 dní do krásnej Umbrie v Taliansku. Dopraj si čas zastaviť sa, spomaliť a na chvíľu vystúpiť z každodenného zhonu.\n\nV pokojnom prostredí mestečka Spoleto vytváram priestor pre ženy, ktoré potrebujú načerpať nové sily, utriediť si myšlienky a znovu objaviť, čo je pre ne v živote skutočne dôležité.\n\nPočas tvojho pobytu ťa budem sprevádzať prostrednictvom:\n\nJogy a pohybu – aby si uvoľnila telo, načerpala energiu a cítila sa vo svojom tele dobre.\n\nDychových cvičení a meditácie – aby si upokojila myseľ a našla viac vnútorného pokoja a vytvorila priestor počúvať samu seba.\n\nJemných ajurvédskych odporúčaní – aby si podporila svoje telo a jeho prirodzenú rovnováhu.\n\nOsobných rozhovorov – aby si sa pozrela na svoju súčasnú životnú situáciu, pomenovala, čo chceš zmeniť, a našla konkrétne kroky, ako sa posunúť ďalej.\n\nTento čas je venovaný tebe.\n\nAby si sa vrátila domov oddýchnutá, s jasnejšou mysľou, novou energiou a lepším pocitom z toho, kam chceš vo svojom živote smerovať.",
+    "locale": "sk",
+    "page": "/pilgrimage/",
+    "url": "https://elarepka.com/sk/pilgrimage/",
+    "selector": "#main > section:nth-of-type(2)",
+    "tag": "section",
+    "snippet": "Čo to je Prah pre ženy v období zmeny Chôdza, ticho a úprimné rozhovory Jednoduché jedlá, jednoduché izby, malá skupina žien Čas zamyslieť sa, čo nesieš Čo to nie je Wellness dovolenka Poznávací zájazd Turistická výzva",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "8d7d0ca8",
+    "createdAt": "2026-11-06T18:48:57.264Z",
+    "status": "open",
+    "text": "Púť k jasnosti – návrat k sebe v srdci Umbrie.",
+    "locale": "sk",
+    "page": "/pilgrimage/",
+    "url": "https://elarepka.com/sk/pilgrimage/",
+    "selector": "#page-title",
+    "tag": "h1",
+    "snippet": "Neutekať pred životom, ale vrátiť sa doň.",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "12513ad7",
+    "createdAt": "2026-11-06T18:49:14.223Z",
+    "status": "open",
+    "text": "Niekedy nepotrebuješ ďalší plán.\n\nPotrebuješ čas a priestor, aby si zistila, čo naozaj chceš.",
+    "locale": "sk",
+    "page": "/pilgrimage/",
+    "url": "https://elarepka.com/sk/pilgrimage/",
+    "selector": "#main > section:nth-of-type(1) > div > div > p:nth-of-type(2)",
+    "tag": "p",
+    "snippet": "Pešia púť pre ženy v období zmeny, z Assisi do Spoleta cez zelené srdce Umbrie.",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "8e636a65",
+    "createdAt": "2026-11-06T19:03:40.936Z",
+    "status": "open",
+    "text": "PUTOVAŤ - pomaly, uvedomele a s odvahou zostúpiť hlbšie do vlastného života... \n\nTáto cesta vznikla z môjho presvedčenia, že žena v určitých životných obdobiach potrebuje viac než len oddych. Potrebuje bezpečný priestor, v ktorom môže spomaliť, načúvať sebe a znovu objaviť, čo je pre ňu dôležité.\n\nV srdci Umbrie, v historickom mestečku Spoleto, vytváram priestor na návrat k telu, vnútornému pokoju a jasnejšiemu životnému smeru.\n\nPrepájam jogu, pohyb, dychové cvičenia, meditáciu, ajurvédsky prístup a osobné rozhovory zamerané na hľadanie riešení. Spoločne sa pozrieme na to, čo vo svojom živote potrebuješ zmeniť, čo si chceš zachovať a kam chceš ďalej smerovať.\n\nPutovanie krajinou aj k sebe\n\nSúčasťou pobytu je aj pešia púť krásnou umbrijskou krajinou do Assisi, rodného mesta sv. Františka a sv. Klary\n\nMôžeš si vybrať kratšie putovanie zo Spella do Assisi (približne 11 km) alebo sa vydať na celú trasu zo Spoleta do Assisi (približne 65 km), rozdelenú do piatich dní.\n\nKaždý krok ti dáva príležitosť spomaliť, nadýchnuť sa, nechať myšlienky doznieť a vnímať, čo sa v tebe postupne mení.\n\nO teba bude postarané\n\nPočas pobytu v Umbrii máš vytvorené zázemie, v ktorom sa môžeš sústrediť predovšetkým na seba a svoju cestu.\n\nV cene pobytu je zahrnuté:\n\nUbytovanie v historickom centre Spoleta.\n\nRaňajky a večere pripravené v duchu ajurvédskeho stravovania.\n\nOsobné sprevádzanie počas pobytu.\n\nSpoločný program zahŕňajúci jogu, pohyb, dychové cvičenia, meditáciu a duchovné cvičenia.\n\nOsobné rozhovory zamerané na riešenia a hľadanie vlastného životného smeru.\n\nDopravu je možné zabezpečiť po dohode.\n\nČo si môžeš odniesť domov?\n\nViac pokoja v mysli. Lepší kontakt so svojím telom. Jasnejšiu predstavu o tom, čo chceš a čo už vo svojom živote nepotrebuješ.\n\nA možno aj odvahu urobiť prvý krok novým smerom.\n\nNie je dôležité, ako rýchlo kráčaš. Dôležité je, kam ťa cesta vedie.",
+    "locale": "sk",
+    "page": "/pilgrimage/",
+    "url": "https://elarepka.com/sk/pilgrimage/",
+    "selector": "#main > section:nth-of-type(3) > div",
+    "tag": "div",
+    "snippet": "Cesta Kráčame v stopách svätého Františka a svätej Kláry, z jedného umbrijského mestečka do druhého. Assisi Spello Foligno Trevi Campello Spoleto",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "b039b079",
+    "createdAt": "2026-11-06T19:15:46.784Z",
+    "status": "open",
+    "text": "Kráčajme spolu",
+    "locale": "sk",
+    "page": "/pilgrimage/",
+    "url": "https://elarepka.com/sk/pilgrimage/",
+    "selector": "#walks-title",
+    "tag": "h2",
+    "snippet": "Kráčaj so mnou",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "4911e3f3",
+    "createdAt": "2026-11-06T19:20:20.088Z",
+    "status": "open",
+    "text": "This please take away",
+    "locale": "sk",
+    "page": "/pilgrimage/",
+    "url": "https://elarepka.com/sk/pilgrimage/",
+    "selector": "#walks > div > ul > li:nth-of-type(1)",
+    "tag": "li",
+    "snippet": "Rakúsko Mariazell a Rax Každý víkend od marca 2027",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "55595a28",
+    "createdAt": "2026-11-06T19:23:15.220Z",
+    "status": "open",
+    "text": "Pozývam ženy, ktoré majú odvahu spomaliť, prehĺbiť ticho a dopriať si čas pre seba.\nMalá skupina. Päť dní. Spoločná cesta.",
+    "locale": "sk",
+    "page": "/pilgrimage/",
+    "url": "https://elarepka.com/sk/pilgrimage/",
+    "selector": "#walks > div > div > p",
+    "tag": "p",
+    "snippet": "Tieto cesty ťa pozývajú spomaliť, hlbšie počúvať a nechať krajinu, aby sa stala zrkadlom tvojho vnútra.",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  },
+  {
+    "id": "f9fac21d",
+    "createdAt": "2026-11-06T19:24:24.557Z",
+    "status": "open",
+    "text": "This all delete and add Here Pictures from Spoleto",
+    "locale": "sk",
+    "page": "/pilgrimage/",
+    "url": "https://elarepka.com/sk/pilgrimage/",
+    "selector": "#main > section:nth-of-type(4)",
+    "tag": "section",
+    "snippet": "Na ceste Necháš svoj bežný život za sebou. Nesieš menej. Kráčaš a si unavená. Spíš niekde inde a ješ jednoducho. Rozprávaš sa a stíchneš. Stretneš iné ženy. A pomaly prehodnocuješ, čo nesieš. Návrat domov Púť sa nekončí v Spolete. Spolu pripravíme cestu späť, aby to, čo si našla na ceste, malo miest",
+    "viewport": {
+      "w": 1318,
+      "h": 723
+    }
+  }
+]
